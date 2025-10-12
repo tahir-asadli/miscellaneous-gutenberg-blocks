@@ -11,7 +11,7 @@ $imageAlt = !empty($attributes['imageAlt']) ? $attributes['imageAlt'] : '';
 $postThumbnail = get_the_post_thumbnail_url($postId);
 $postLink = get_the_permalink($postId);
 $postTitle = get_the_title($postId);
-if ($showFeaturedImage) {
+if ($showFeaturedImage && $postThumbnail) {
   $imageUrl = $postThumbnail;
   $imageAlt = 'Post image';
 }
