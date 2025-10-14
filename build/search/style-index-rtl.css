@@ -57,7 +57,6 @@
 .wp-block-miscellaneous-gutenberg-blocks-search.has-style input[type=search].search-input {
   padding: 8px 25px 8px 0;
   padding-left: 0;
-  width: 50%;
 }
 .wp-block-miscellaneous-gutenberg-blocks-search.has-style button[type=submit].search-button {
   display: flex;
@@ -67,6 +66,7 @@
   border-radius: 56px;
   padding: 0 25px 0 25px;
   height: 100%;
+  cursor: pointer;
 }
 .wp-block-miscellaneous-gutenberg-blocks-search.has-style button[type=submit].search-button svg {
   color: #333;

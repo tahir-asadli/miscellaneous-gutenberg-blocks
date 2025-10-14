@@ -58,7 +58,7 @@
 		input[type="search"].search-input {
 			padding: 8px 0 8px 25px;
 			padding-right: 0;
-			width: 50%;
+			// width: 50%;
 		}
 		button[type="submit"].search-button {
 			display: flex;
@@ -68,6 +68,7 @@
 			border-radius: 56px;
 			padding: 0 25px 0 25px;
 			height: 100%;
+			cursor: pointer;
 			svg {
 				color: #333;
 				width: 14px;
