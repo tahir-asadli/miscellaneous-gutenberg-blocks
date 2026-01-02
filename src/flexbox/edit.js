@@ -2,19 +2,17 @@
  * WordPress dependencies
  */
 import { __ } from "@wordpress/i18n";
-import { select, subscribe, useDispatch, useSelect } from "@wordpress/data";
+import { select, subscribe, useDispatch } from "@wordpress/data";
 import {
 	PanelBody,
 	RangeControl,
 	__experimentalToggleGroupControl as ToggleGroupControl,
-	__experimentalUnitControl as UnitControl,
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
 	__experimentalToggleGroupControlOptionIcon as ToggleGroupControlOptionIcon,
 	SelectControl,
 } from "@wordpress/components"; // For the plus icon
 import {
 	useBlockProps,
-	InnerBlocks,
 	useInnerBlocksProps,
 	InspectorControls,
 } from "@wordpress/block-editor";
@@ -1645,51 +1643,7 @@ export default function Edit(props) {
 					)}
 				</PanelBody>
 			</InspectorControls>
-			<div
-				{...innerBlocksProps}
-				// {...blockProps}
-				// style={{
-				// 	width: `${
-				// 		layout == "desktop"
-				// 			? width > 0
-				// 				? `${width}${widthUnit}`
-				// 				: "initial"
-				// 			: layout == "tablet"
-				// 			? tabletWidth > 0
-				// 				? `${tabletWidth}${tabletWidthUnit}`
-				// 				: "initial"
-				// 			: mobileWidth > 0
-				// 			? `${mobileWidth}${mobileWidthUnit}`
-				// 			: "initial"
-				// 	}`,
-				// 	columnGap: `${
-				// 		layout == "desktop"
-				// 			? columnGap > 0
-				// 				? `${columnGap}${columnGapUnit}`
-				// 				: "initial"
-				// 			: layout == "tablet"
-				// 			? tabletColumnGap > 0
-				// 				? `${tabletColumnGap}${tabletColumnGapUnit}`
-				// 				: "initial"
-				// 			: mobileColumnGap > 0
-				// 			? `${mobileColumnGap}${mobileColumnGapUnit}`
-				// 			: "initial"
-				// 	}`,
-				// 	rowGap: `${
-				// 		layout == "desktop"
-				// 			? rowGap > 0
-				// 				? `${rowGap}${rowGapUnit}`
-				// 				: "initial"
-				// 			: layout == "tablet"
-				// 			? tabletRowGap > 0
-				// 				? `${tabletRowGap}${tabletRowGapUnit}`
-				// 				: "initial"
-				// 			: mobileRowGap > 0
-				// 			? `${mobileRowGap}${mobileRowGapUnit}`
-				// 			: "initial"
-				// 	}`,
-				// }}
-			></div>
+			<div {...innerBlocksProps}></div>
 		</>
 	);
 }

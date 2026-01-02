@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { __ } from "@wordpress/i18n";
 import { useDispatch, useSelect, subscribe, select } from "@wordpress/data";
 import {
-	InnerBlocks,
 	BlockControls,
 	InspectorControls,
 	useBlockProps,
@@ -15,12 +14,10 @@ import {
 import {
 	__experimentalToggleGroupControl as ToggleGroupControl,
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
-	__experimentalToggleGroupControlOptionIcon as ToggleGroupControlOptionIcon,
 	Button,
 	ToolbarGroup,
 	ToolbarButton,
 	TextControl,
-	PanelRow,
 	PanelBody,
 	RangeControl,
 	ColorPalette,
@@ -63,20 +60,17 @@ export default function Edit({
 	clientId,
 }) {
 	const [layout, setLayout] = useState("desktop");
-	const [svgContent, setSvgContent] = useState("");
 	useEffect(() => {
 		if (imageUrl && imageUrl.endsWith(".svg")) {
 			fetch(imageUrl)
 				.then((response) => response.text())
 				.then((svgText) => {
-					setSvgContent(svgText);
 					setAttributes({ imageContent: svgText });
 				})
 				.catch((error) => {
 					console.error("Error fetching SVG:", error);
 				});
 		} else {
-			setSvgContent("");
 		}
 	}, [imageUrl]);
 	let previousDeviceType = select("core/editor").getDeviceType();

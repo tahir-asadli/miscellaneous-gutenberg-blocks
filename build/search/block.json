@@ -5,7 +5,6 @@
   "version": "0.1.0",
   "title": "Search",
   "category": "miscellaneous-gutenberg-blocks",
-  "icon": "search",
   "description": "Search using post category.",
   "example": {},
   "supports": {

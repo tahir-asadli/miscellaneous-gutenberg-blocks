@@ -327,7 +327,7 @@ const hasA11yProp = (props) => {
   \***********************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"miscellaneous-gutenberg-blocks/default-featured-image","version":"0.1.0","title":"Default featured image","category":"miscellaneous-gutenberg-blocks","icon":"","description":"Default featured image for post query.","example":{},"usesContext":["postId","postType"],"supports":{"html":false,"color":{"background":true,"text":true},"typography":{"fontSize":true,"lineHeight":true,"textAlign":true},"background":{"backgroundSize":true},"spacing":{"margin":true,"padding":true,"blockGap":true},"multiple":false,"shadow":true,"border":{"radius":true,"color":true,"width":true,"style":true}},"attributes":{"style":{"type":"object","default":{}},"imageId":{"type":"number","default":0},"imageUrl":{"type":"string","default":""},"imageName":{"type":"string","default":""},"imagePosition":{"type":"string","default":"center"},"showFeaturedImage":{"type":"boolean","default":true},"height":{"type":"number","default":230},"isLink":{"type":"boolean","default":true}},"textdomain":"miscellaneous-gutenberg-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"miscellaneous-gutenberg-blocks/default-featured-image","version":"0.1.0","title":"Default featured image","category":"miscellaneous-gutenberg-blocks","description":"Default featured image for post query.","example":{},"usesContext":["postId","postType"],"supports":{"html":false,"color":{"background":true,"text":true},"typography":{"fontSize":true,"lineHeight":true,"textAlign":true},"background":{"backgroundSize":true},"spacing":{"margin":true,"padding":true,"blockGap":true},"multiple":false,"shadow":true,"border":{"radius":true,"color":true,"width":true,"style":true}},"attributes":{"style":{"type":"object","default":{}},"imageId":{"type":"number","default":0},"imageUrl":{"type":"string","default":""},"imageName":{"type":"string","default":""},"imagePosition":{"type":"string","default":"center"},"showFeaturedImage":{"type":"boolean","default":true},"height":{"type":"number","default":230},"isLink":{"type":"boolean","default":true}},"textdomain":"miscellaneous-gutenberg-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ }),
 
@@ -397,7 +397,6 @@ function Edit(props) {
     },
     setAttributes,
     context,
-    clientId,
     isSelected,
     toggleSelection
   } = props;
@@ -417,11 +416,7 @@ function Edit(props) {
 
   // Get the image URL (falls back to full size if no specific size is available)
   const featuredImageUrl = media?.source_url || "";
-  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
-    // style: {
-    // 	objectPosition: imagePosition,
-    // },
-  });
+  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({});
   const onImageSelect = media => {
     if (!media || !media.url) {
       setAttributes({

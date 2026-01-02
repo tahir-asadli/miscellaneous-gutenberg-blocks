@@ -8,7 +8,6 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Category card',
 		'category' => 'miscellaneous-gutenberg-blocks',
-		'icon' => 'search',
 		'description' => 'Category card.',
 		'example' => array(
 			
@@ -92,8 +91,7 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
-		'render' => 'file:./render.php',
-		'viewScript' => 'file:./view.js'
+		'render' => 'file:./render.php'
 	),
 	'default-featured-image' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -102,7 +100,6 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Default featured image',
 		'category' => 'miscellaneous-gutenberg-blocks',
-		'icon' => '',
 		'description' => 'Default featured image for post query.',
 		'example' => array(
 			
@@ -179,8 +176,7 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
-		'render' => 'file:./render.php',
-		'viewScript' => 'file:./view.js'
+		'render' => 'file:./render.php'
 	),
 	'flexbox' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -189,7 +185,6 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Flexbox',
 		'category' => 'miscellaneous-gutenberg-blocks',
-		'icon' => '<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" ><path stroke-linecap="round" stroke-linejoin="round" d="M9 4.5v15m6-15v15m-10.875 0h15.75c.621 0 1.125-.504 1.125-1.125V5.625c0-.621-.504-1.125-1.125-1.125H4.125C3.504 4.5 3 5.004 3 5.625v12.75c0 .621.504 1.125 1.125 1.125Z" /></svg>',
 		'description' => 'Flexbox container',
 		'example' => array(
 			
@@ -505,8 +500,7 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
-		'render' => 'file:./render.php',
-		'viewScript' => 'file:./view.js'
+		'render' => 'file:./render.php'
 	),
 	'media-and-text' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -603,7 +597,6 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Search',
 		'category' => 'miscellaneous-gutenberg-blocks',
-		'icon' => 'search',
 		'description' => 'Search using post category.',
 		'example' => array(
 			

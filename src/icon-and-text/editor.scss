@@ -1,34 +1,4 @@
-/**
- * The following styles get applied inside the editor only.
- *
- * Replace them with your own styles or remove the file completely.
- */
-
-// .wp-block-miscellaneous-gutenberg-blocks-icon-and-text {
-// 	.miscellaneous-gutenberg-blocks-icon-and-text--right {
-// 		> div {
-// 			> .block-editor-inner-blocks {
-// 				display: flex;
-// 				width: 100%;
-// 				> .block-editor-block-list__layout {
-// 					display: flex;
-// 					width: 100%;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
 .icon_svg__miscellaneous-gutenberg-blocks-icon-and-text-icon {
 	fill: none !important;
 	stroke: #2c817b !important;
 }
-// .block-editor-list-view-block__contents-cell {
-// 	&[aria-selected="true"] {
-// 		.icon_svg__miscellaneous-gutenberg-blocks-icon-and-text-icon {
-// 			stroke: #fff !important;
-// 		}
-// 	}
-// }
-// .svg-no-fill {
-// 	fill: none !important;
-// }

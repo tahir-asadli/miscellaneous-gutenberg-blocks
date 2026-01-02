@@ -1,10 +1,8 @@
 /**
  * WordPress dependencies
  */
-import { useDispatch, useSelect, subscribe, select } from "@wordpress/data";
+import { useDispatch, useSelect } from "@wordpress/data";
 import {
-	InnerBlocks,
-	BlockControls,
 	InspectorControls,
 	useBlockProps,
 	MediaUpload,
@@ -14,13 +12,9 @@ import {
 	__experimentalToggleGroupControl as ToggleGroupControl,
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
 	Button,
-	ToolbarGroup,
-	ToolbarButton,
 	PanelBody,
-	RangeControl,
 	ResizableBox,
 	ToggleControl,
-	BaseControl,
 } from "@wordpress/components";
 import { __ } from "@wordpress/i18n";
 import { useEntityProp, store as coreStore } from "@wordpress/core-data";
@@ -54,7 +48,6 @@ export default function Edit(props) {
 		},
 		setAttributes,
 		context,
-		clientId,
 		isSelected,
 		toggleSelection,
 	} = props;
@@ -84,11 +77,7 @@ export default function Edit(props) {
 	// Get the image URL (falls back to full size if no specific size is available)
 	const featuredImageUrl = media?.source_url || "";
 
-	const blockProps = useBlockProps({
-		// style: {
-		// 	objectPosition: imagePosition,
-		// },
-	});
+	const blockProps = useBlockProps({});
 
 	const onImageSelect = (media) => {
 		if (!media || !media.url) {

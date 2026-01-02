@@ -4,23 +4,16 @@ import {
 	MediaUploadCheck,
 } from "@wordpress/block-editor";
 import {
-	__experimentalToggleGroupControl as ToggleGroupControl,
-	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
-	__experimentalToggleGroupControlOptionIcon as ToggleGroupControlOptionIcon,
 	PanelBody,
 	PanelRow,
 	TextControl,
 	RangeControl,
-	CheckboxControl,
 	ToggleControl,
 	Button,
-	Popover,
-	Spinner,
 	SelectControl,
 	ResizableBox,
 } from "@wordpress/components";
 
-import { ReactSortable } from "react-sortablejs";
 import { useSelect } from "@wordpress/data";
 /**
  * Retrieves the translation of text.
@@ -297,16 +290,6 @@ export default function Edit({
 							: attributes.postNameSingular}
 					</span>
 				</div>
-				{/* Display a preview in the editor */}
-				{/* {categories.length > 0
-					? __(
-							"Categories selected. See Inspector.",
-							"miscellaneous-gutenberg-blocks",
-					  )
-					: __(
-							"Please select categories from the sidebar.",
-							"miscellaneous-gutenberg-blocks",
-					  )} */}
 			</div>
 		</>
 	);

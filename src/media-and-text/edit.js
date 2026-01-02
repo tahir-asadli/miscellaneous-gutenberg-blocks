@@ -13,7 +13,6 @@ import {
 import {
 	__experimentalToggleGroupControl as ToggleGroupControl,
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
-	__experimentalToggleGroupControlOptionIcon as ToggleGroupControlOptionIcon,
 	Button,
 	ToolbarGroup,
 	ToolbarButton,
@@ -57,16 +56,6 @@ export default function Edit({
 	clientId,
 }) {
 	const [layout, setLayout] = useState("desktop");
-	// let previousDeviceType = select("core/editor").getDeviceType();
-	// subscribe(() => {
-	// 	const newDeviceType = select("core/editor").getDeviceType();
-
-	// 	if (newDeviceType !== previousDeviceType) {
-	// 		setLayout(newDeviceType?.toLowerCase());
-	// 		previousDeviceType = newDeviceType;
-	// 	}
-	// });
-
 	let __experimentalSetPreviewDeviceType = (device) => {};
 	const siteEditor = useDispatch("core/edit-site");
 	if (siteEditor) {

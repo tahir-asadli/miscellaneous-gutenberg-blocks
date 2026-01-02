@@ -482,16 +482,6 @@ function Edit({
   clientId
 }) {
   const [layout, setLayout] = (0,react__WEBPACK_IMPORTED_MODULE_5__.useState)("desktop");
-  // let previousDeviceType = select("core/editor").getDeviceType();
-  // subscribe(() => {
-  // 	const newDeviceType = select("core/editor").getDeviceType();
-
-  // 	if (newDeviceType !== previousDeviceType) {
-  // 		setLayout(newDeviceType?.toLowerCase());
-  // 		previousDeviceType = newDeviceType;
-  // 	}
-  // });
-
   let __experimentalSetPreviewDeviceType = device => {};
   const siteEditor = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_0__.useDispatch)("core/edit-site");
   if (siteEditor) {
