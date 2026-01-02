@@ -4273,20 +4273,21 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 var SvgIcon = function SvgIcon(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
     xmlns: "http://www.w3.org/2000/svg",
-    width: 24,
-    height: 24,
+    width: 200,
+    height: 200,
     fill: "none",
     stroke: "currentColor",
     strokeLinecap: "round",
     strokeLinejoin: "round",
     strokeWidth: 2,
-    className: "icon_svg__miscellaneous-gutenberg-blocks-category-icon"
+    className: "icon_svg__miscellaneous-gutenberg-blocks-category-card-icon",
+    viewBox: "0 0 24 24"
   }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
-    d: "M4 4h6v6H4zm10 0h6v6h-6zM4 14h6v6H4zm10 3h6m-3-3v6"
+    d: "M3 6.5a3.5 3.5 0 1 0 7 0 3.5 3.5 0 1 0-7 0M2.5 21h8l-4-7zM14 3l7 7M14 10l7-7M14 14h7v7h-7z"
   })));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgY2xhc3M9Im1pc2NlbGxhbmVvdXMtZ3V0ZW5iZXJnLWJsb2Nrcy1jYXRlZ29yeS1pY29uIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTQgNGg2djZoLTZ6bTEwIDBoNnY2aC02em0tMTAgMTBoNnY2aC02em0xMCAzaDZtLTMgLTN2NiI+PC9wYXRoPjwvc3ZnPgo=");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ibWlzY2VsbGFuZW91cy1ndXRlbmJlcmctYmxvY2tzLWNhdGVnb3J5LWNhcmQtaWNvbiIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGhlaWdodD0iMjAwcHgiIHdpZHRoPSIyMDBweCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNi41IDYuNW0tMy41IDBhMy41IDMuNSAwIDEgMCA3IDBhMy41IDMuNSAwIDEgMCAtNyAwIj48L3BhdGg+PHBhdGggZD0iTTIuNSAyMWg4bC00IC03eiI+PC9wYXRoPjxwYXRoIGQ9Ik0xNCAzbDcgNyI+PC9wYXRoPjxwYXRoIGQ9Ik0xNCAxMGw3IC03Ij48L3BhdGg+PHBhdGggZD0iTTE0IDE0aDd2N2gtN3oiPjwvcGF0aD48L3N2Zz4=");
 
 /***/ }),
 

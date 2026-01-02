@@ -805,25 +805,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _path;
+var _path, _path2;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 
 var SvgIcon = function SvgIcon(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
     xmlns: "http://www.w3.org/2000/svg",
+    width: 200,
+    height: 200,
     fill: "none",
     stroke: "currentColor",
-    strokeWidth: 1.5,
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
     className: "icon_svg__miscellaneous-gutenberg-blocks-icon-and-text-icon",
     viewBox: "0 0 24 24"
   }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    d: "M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75m-.375 0h.008v.015h-.008zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75m-.375 0h.008v.015h-.008z"
+    d: "M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18"
+  })), _path2 || (_path2 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M10 10c-.5-1-2.5-1-3 0M17 10c-.5-1-2.5-1-3 0M14.5 15a3.5 3.5 0 0 1-5 0"
   })));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBjbGFzcz0ibWlzY2VsbGFuZW91cy1ndXRlbmJlcmctYmxvY2tzLWljb24tYW5kLXRleHQtaWNvbiI+CiAgPHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNMTUuMTgyIDE1LjE4MmE0LjUgNC41IDAgMCAxLTYuMzY0IDBNMjEgMTJhOSA5IDAgMSAxLTE4IDAgOSA5IDAgMCAxIDE4IDBaTTkuNzUgOS43NWMwIC40MTQtLjE2OC43NS0uMzc1Ljc1UzkgMTAuMTY0IDkgOS43NSA5LjE2OCA5IDkuMzc1IDlzLjM3NS4zMzYuMzc1Ljc1Wm0tLjM3NSAwaC4wMDh2LjAxNWgtLjAwOFY5Ljc1Wm01LjYyNSAwYzAgLjQxNC0uMTY4Ljc1LS4zNzUuNzVzLS4zNzUtLjMzNi0uMzc1LS43NS4xNjgtLjc1LjM3NS0uNzUuMzc1LjMzNi4zNzUuNzVabS0uMzc1IDBoLjAwOHYuMDE1aC0uMDA4VjkuNzVaIiAvPgo8L3N2Zz4KCg==");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ibWlzY2VsbGFuZW91cy1ndXRlbmJlcmctYmxvY2tzLWljb24tYW5kLXRleHQtaWNvbiIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGhlaWdodD0iMjAwcHgiIHdpZHRoPSIyMDBweCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMjFhOSA5IDAgMSAxIDAgLTE4YTkgOSAwIDAgMSAwIDE4eiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMCAxMGMtLjUgLTEgLTIuNSAtMSAtMyAwIj48L3BhdGg+PHBhdGggZD0iTTE3IDEwYy0uNSAtMSAtMi41IC0xIC0zIDAiPjwvcGF0aD48cGF0aCBkPSJNMTQuNSAxNWEzLjUgMy41IDAgMCAxIC01IDAiPjwvcGF0aD48L3N2Zz4=");
 
 /***/ }),
 

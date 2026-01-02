@@ -102,7 +102,7 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Default featured image',
 		'category' => 'miscellaneous-gutenberg-blocks',
-		'icon' => 'search',
+		'icon' => '',
 		'description' => 'Default featured image for post query.',
 		'example' => array(
 			

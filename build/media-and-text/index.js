@@ -793,14 +793,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _rect, _circle, _path;
+var _path, _path2, _path3;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 
 var SvgIcon = function SvgIcon(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
     xmlns: "http://www.w3.org/2000/svg",
-    width: 20,
-    height: 20,
+    width: 200,
+    height: 200,
     fill: "none",
     stroke: "currentColor",
     strokeLinecap: "round",
@@ -808,23 +808,16 @@ var SvgIcon = function SvgIcon(props) {
     strokeWidth: 2,
     className: "icon_svg__miscellaneous-gutenberg-blocks-media-and-text-icon",
     viewBox: "0 0 24 24"
-  }, props), _rect || (_rect = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("rect", {
-    width: 18,
-    height: 18,
-    x: 3,
-    y: 3,
-    rx: 2,
-    ry: 2
-  })), _circle || (_circle = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", {
-    cx: 9,
-    cy: 9,
-    r: 2
-  })), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
-    d: "m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"
+  }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M15 8h.01M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"
+  })), _path2 || (_path2 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "m3 16 5-5c.928-.893 2.072-.893 3 0l5 5"
+  })), _path3 || (_path3 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "m14 14 1-1c.928-.893 2.072-.893 3 0l3 3"
   })));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJtaXNjZWxsYW5lb3VzLWd1dGVuYmVyZy1ibG9ja3MtbWVkaWEtYW5kLXRleHQtaWNvbiI+CiAgPHJlY3Qgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiB4PSIzIiB5PSIzIiByeD0iMiIgcnk9IjIiIC8+CiAgPGNpcmNsZSBjeD0iOSIgY3k9IjkiIHI9IjIiIC8+CiAgPHBhdGggZD0ibTIxIDE1LTMuMDg2LTMuMDg2YTIgMiAwIDAgMC0yLjgyOCAwTDYgMjEiIC8+Cjwvc3ZnPgo=");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ibWlzY2VsbGFuZW91cy1ndXRlbmJlcmctYmxvY2tzLW1lZGlhLWFuZC10ZXh0LWljb24iIHN0cm9rZT0iY3VycmVudENvbG9yIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBoZWlnaHQ9IjIwMHB4IiB3aWR0aD0iMjAwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE1IDhoLjAxIj48L3BhdGg+PHBhdGggZD0iTTMgNmEzIDMgMCAwIDEgMyAtM2gxMmEzIDMgMCAwIDEgMyAzdjEyYTMgMyAwIDAgMSAtMyAzaC0xMmEzIDMgMCAwIDEgLTMgLTN2LTEyeiI+PC9wYXRoPjxwYXRoIGQ9Ik0zIDE2bDUgLTVjLjkyOCAtLjg5MyAyLjA3MiAtLjg5MyAzIDBsNSA1Ij48L3BhdGg+PHBhdGggZD0iTTE0IDE0bDEgLTFjLjkyOCAtLjg5MyAyLjA3MiAtLjg5MyAzIDBsMyAzIj48L3BhdGg+PC9zdmc+");
 
 /***/ }),
 

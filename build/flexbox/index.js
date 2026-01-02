@@ -2085,20 +2085,21 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 var SvgIcon = function SvgIcon(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
     xmlns: "http://www.w3.org/2000/svg",
-    width: 24,
-    height: 24,
-    fill: "#fff",
-    stroke: "#000",
-    strokeWidth: 1.5,
-    className: "icon_svg__miscellaneous-gutenberg-blocks-flexbox-icon"
-  }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    width: 200,
+    height: 200,
+    fill: "none",
+    stroke: "currentColor",
     strokeLinecap: "round",
     strokeLinejoin: "round",
-    d: "M9 4.5v15m6-15v15m-10.875 0h15.75c.621 0 1.125-.504 1.125-1.125V5.625c0-.621-.504-1.125-1.125-1.125H4.125C3.504 4.5 3 5.004 3 5.625v12.75c0 .621.504 1.125 1.125 1.125"
+    strokeWidth: 2,
+    className: "icon_svg__miscellaneous-gutenberg-blocks-flexbox-icon",
+    viewBox: "0 0 24 24"
+  }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zM3 10h18M10 3v18"
   })));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ibWlzY2VsbGFuZW91cy1ndXRlbmJlcmctYmxvY2tzLWZsZXhib3gtaWNvbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJibGFjayIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHN0cm9rZS13aWR0aD0iMS41IiA+CiAgPHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNOSA0LjV2MTVtNi0xNXYxNW0tMTAuODc1IDBoMTUuNzVjLjYyMSAwIDEuMTI1LS41MDQgMS4xMjUtMS4xMjVWNS42MjVjMC0uNjIxLS41MDQtMS4xMjUtMS4xMjUtMS4xMjVINC4xMjVDMy41MDQgNC41IDMgNS4wMDQgMyA1LjYyNXYxMi43NWMwIC42MjEuNTA0IDEuMTI1IDEuMTI1IDEuMTI1WiIgLz4KPC9zdmc+Cg==");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ibWlzY2VsbGFuZW91cy1ndXRlbmJlcmctYmxvY2tzLWZsZXhib3gtaWNvbiIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGhlaWdodD0iMjAwcHgiIHdpZHRoPSIyMDBweCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMyA1YTIgMiAwIDAgMSAyIC0yaDE0YTIgMiAwIDAgMSAyIDJ2MTRhMiAyIDAgMCAxIC0yIDJoLTE0YTIgMiAwIDAgMSAtMiAtMnYtMTR6Ij48L3BhdGg+PHBhdGggZD0iTTMgMTBoMTgiPjwvcGF0aD48cGF0aCBkPSJNMTAgM3YxOCI+PC9wYXRoPjwvc3ZnPg==");
 
 /***/ }),
 

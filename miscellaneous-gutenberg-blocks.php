@@ -106,21 +106,3 @@ if (!function_exists('register_miscellaneous_gutenberg_blocks_category')) {
 	}
 	add_filter('block_categories_all', 'register_miscellaneous_gutenberg_blocks_category', 10, 2);
 }
-
-// function miscellaneous_gutenberg_blocks_enqueue_styles()
-// {
-// 	wp_enqueue_style(
-// 		'misc-gb-blocks-variables',
-// 		plugins_url('assets/css/misc-gb-blocks-variables.css', __FILE__),
-// 		array(),
-// 		'1.0'
-// 	);
-// 	add_editor_style(plugins_url('assets/css/misc-gb-blocks-variables.css', __FILE__));
-// }
-// add_action('wp_enqueue_scripts', 'miscellaneous_gutenberg_blocks_enqueue_styles');
-
-// function miscellaneous_gutenberg_blocks_add_editor_styles()
-// {
-// 	add_editor_style(plugins_url('assets/css/misc-gb-blocks-variables.css', __FILE__));
-// }
-// add_action('admin_init', 'miscellaneous_gutenberg_blocks_add_editor_styles');
