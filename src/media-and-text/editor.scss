@@ -1,5 +1,5 @@
-.wp-block-miscellaneous-gutenberg-blocks-media-and-text {
-	.miscellaneous-gutenberg-blocks-media-and-text--right {
+.wp-block-misc-gutenberg-blocks-media-and-text {
+	.misc-gutenberg-blocks-media-and-text--right {
 		> div {
 			> .block-editor-inner-blocks {
 				display: flex;
@@ -12,13 +12,13 @@
 		}
 	}
 }
-.icon_svg__miscellaneous-gutenberg-blocks-media-and-text-icon {
+.icon_svg__misc-gutenberg-blocks-media-and-text-icon {
 	fill: none !important;
 	stroke: #2c817b !important;
 }
 .block-editor-list-view-block__contents-cell {
 	&[aria-selected="true"] {
-		.icon_svg__miscellaneous-gutenberg-blocks-media-and-text-icon {
+		.icon_svg__misc-gutenberg-blocks-media-and-text-icon {
 			stroke: #fff !important;
 		}
 	}

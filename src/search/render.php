@@ -1,52 +1,55 @@
 <?php
-$showCategory = !empty($attributes['showCategory']) && $attributes['showCategory'] == 1;
-$showSearchIcon = !empty($attributes['showSearchIcon']) && $attributes['showSearchIcon'] == 1;
-$disableCSS = !empty($attributes['disableCSS']) && $attributes['disableCSS'] == 1;
-$searchPlaceholder = !empty($attributes['searchPlaceholder']) ? $attributes['searchPlaceholder'] : '';
-$categoryText = !empty($attributes['categoryText']) ? $attributes['categoryText'] : '';
-$buttonText = !empty($attributes['buttonText']) ? $attributes['buttonText'] : '';
-$height = !empty($attributes['height']) && (int) $attributes['height'] > 0 ? (int) $attributes['height'] : '0';
-$width = !empty($attributes['width']) && (int) $attributes['width'] > 0 ? (int) $attributes['width'] : '0';
+if (!defined('ABSPATH')) {
+  exit; // Exit if accessed directly
+}
+$misc_gutenberg_blocks_showCategory = !empty($attributes['showCategory']) && $attributes['showCategory'] == 1;
+$misc_gutenberg_blocks_showSearchIcon = !empty($attributes['showSearchIcon']) && $attributes['showSearchIcon'] == 1;
+$misc_gutenberg_blocks_disableCSS = !empty($attributes['disableCSS']) && $attributes['disableCSS'] == 1;
+$misc_gutenberg_blocks_searchPlaceholder = !empty($attributes['searchPlaceholder']) ? $attributes['searchPlaceholder'] : '';
+$misc_gutenberg_blocks_categoryText = !empty($attributes['categoryText']) ? $attributes['categoryText'] : '';
+$misc_gutenberg_blocks_buttonText = !empty($attributes['buttonText']) ? $attributes['buttonText'] : '';
+$misc_gutenberg_blocks_height = !empty($attributes['height']) && (int) $attributes['height'] > 0 ? (int) $attributes['height'] : '0';
+$misc_gutenberg_blocks_width = !empty($attributes['width']) && (int) $attributes['width'] > 0 ? (int) $attributes['width'] : '0';
 
-$classes = [];
-if (!$disableCSS) {
-  $classes[] = 'has-style';
+$misc_gutenberg_blocks_classes = [];
+if (!$misc_gutenberg_blocks_disableCSS) {
+  $misc_gutenberg_blocks_classes[] = 'has-style';
 }
-if ($showSearchIcon) {
-  $classes[] = 'show-search-icon';
+if ($misc_gutenberg_blocks_showSearchIcon) {
+  $misc_gutenberg_blocks_classes[] = 'show-search-icon';
 }
-if ($showCategory) {
-  $classes[] = 'show-category';
+if ($misc_gutenberg_blocks_showCategory) {
+  $misc_gutenberg_blocks_classes[] = 'show-category';
 }
-$additional_attributes['class'] = join(' ', $classes);
-$additional_attributes['id'] = 'miscellaneous-gutenberg-blocks-' . uniqid();
-$categories = get_categories();
+$misc_gutenberg_blocks_additional_attributes['class'] = join(' ', $misc_gutenberg_blocks_classes);
+$misc_gutenberg_blocks_additional_attributes['id'] = 'misc-gutenberg-blocks-' . uniqid();
+$misc_gutenberg_blocks_categories = get_categories();
 ?>
-<div class="miscellaneous-gutenberg-blocks-search-container">
+<div class="misc-gutenberg-blocks-search-container">
   <form action="/">
-    <div <?php echo get_block_wrapper_attributes($additional_attributes); ?>>
-      <?php if ($showCategory && !empty($categories)) { ?>
+    <div <?php echo esc_html(get_block_wrapper_attributes($misc_gutenberg_blocks_additional_attributes)); ?>>
+      <?php if ($misc_gutenberg_blocks_showCategory && !empty($misc_gutenberg_blocks_categories)) { ?>
         <select name="cat" class="search-category">
-          <?php if ($categoryText != '') { ?>
-            <option value=""><?php echo $categoryText; ?></option>
+          <?php if ($misc_gutenberg_blocks_categoryText != '') { ?>
+            <option value=""><?php echo esc_html($misc_gutenberg_blocks_categoryText); ?></option>
           <?php } ?>
-          <?php foreach ($categories as $category) { ?>
-            <option <?php echo get_query_var('cat') == $category->term_id ? 'selected' : ''; ?> value="<?php echo $category->term_id; ?>"><?php echo $category->name; ?></option>
+          <?php foreach ($misc_gutenberg_blocks_categories as $misc_gutenberg_blocks_category) { ?>
+            <option <?php echo get_query_var('cat') == $misc_gutenberg_blocks_category->term_id ? 'selected' : ''; ?> value="<?php echo esc_html($misc_gutenberg_blocks_category->term_id); ?>"><?php echo esc_html($misc_gutenberg_blocks_category->name); ?></option>
           <?php } ?>
         </select>
       <?php } ?>
-      <input name="s" type="search" value="<?php echo get_query_var('s'); ?>" class="search-input" placeholder="<?php echo $searchPlaceholder; ?>" />
-      <button type="submit" class="search-button"><?php echo !$showSearchIcon && $buttonText ? $buttonText : '&nbsp;' ?></button>
+      <input name="s" type="search" value="<?php echo esc_html(get_query_var('s')); ?>" class="search-input" placeholder="<?php echo esc_html($misc_gutenberg_blocks_searchPlaceholder); ?>" />
+      <button type="submit" class="search-button"><?php echo !$misc_gutenberg_blocks_showSearchIcon && $misc_gutenberg_blocks_buttonText ? esc_html($misc_gutenberg_blocks_buttonText) : '&nbsp;' ?></button>
     </div>
   </form>
 </div>
 <style>
-  #<?php echo $additional_attributes['id']; ?> {
-    <?php if ($height > 0) { ?>
-      <?php echo "height: {$height}px;" ?>
+  #<?php echo esc_html($misc_gutenberg_blocks_additional_attributes['id']); ?> {
+    <?php if ($misc_gutenberg_blocks_height > 0) { ?>
+      <?php echo esc_html("height: {$misc_gutenberg_blocks_height}px;") ?>
     <?php } ?>
-    <?php if ($width > 0) { ?>
-      <?php echo "width: {$width}px;" ?>
+    <?php if ($misc_gutenberg_blocks_width > 0) { ?>
+      <?php echo esc_html("width: {$misc_gutenberg_blocks_width}px;") ?>
     <?php } ?>
   }
 </style>

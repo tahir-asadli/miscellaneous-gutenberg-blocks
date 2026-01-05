@@ -676,7 +676,7 @@ const hasA11yProp = (props) => {
   \********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"miscellaneous-gutenberg-blocks/flexbox","version":"0.1.0","title":"Flexbox","category":"miscellaneous-gutenberg-blocks","description":"Flexbox container","example":{},"supports":{"color":{"background":true,"text":true},"typography":{"fontSize":true,"lineHeight":true,"textAlign":true},"background":{"backgroundImage":true,"backgroundSize":true},"shadow":true,"align":true,"alignWide":true,"spacing":{"margin":true,"padding":true}},"attributes":{"widthType":{"type":"string","default":"full"},"tabletWidthType":{"type":"string","default":"full"},"mobileWidthType":{"type":"string","default":"full"},"width":{"type":"number","default":100},"tabletWidth":{"type":"number","default":100},"mobileWidth":{"type":"number","default":100},"widthUnit":{"type":"string","default":"%"},"tabletWidthUnit":{"type":"string","default":"%"},"mobileWidthUnit":{"type":"string","default":"%"},"columnGap":{"type":"number","default":0},"tabletColumnGap":{"type":"number","default":0},"mobileColumnGap":{"type":"number","default":0},"columnGapUnit":{"type":"string","default":"px"},"tabletColumnGapUnit":{"type":"string","default":"px"},"mobileColumnGapUnit":{"type":"string","default":"px"},"rowGap":{"type":"number","default":0},"tabletRowGap":{"type":"number","default":0},"mobileRowGap":{"type":"number","default":0},"rowGapUnit":{"type":"string","default":"px"},"tabletRowGapUnit":{"type":"string","default":"px"},"mobileRowGapUnit":{"type":"string","default":"px"},"wrap":{"type":"string","default":""},"tabletWrap":{"type":"string","default":""},"mobileWrap":{"type":"string","default":""},"direction":{"type":"string","default":""},"tabletDirection":{"type":"string","default":""},"mobileDirection":{"type":"string","default":""},"reverse":{"type":"boolean","default":false},"tabletReverse":{"type":"boolean","default":false},"mobileReverse":{"type":"boolean","default":false},"justifyContent":{"type":"string","default":""},"tabletJustifyContent":{"type":"string","default":""},"mobileJustifyContent":{"type":"string","default":""},"alignItems":{"type":"string","default":"flex-start"},"tabletAlignItems":{"type":"string","default":"flex-start"},"mobileAlignItems":{"type":"string","default":"flex-start"},"grow":{"type":"string","default":""},"tabletGrow":{"type":"string","default":""},"mobileGrow":{"type":"string","default":""},"shrink":{"type":"string","default":""},"tabletShrink":{"type":"string","default":""},"mobileShrink":{"type":"string","default":""},"display":{"type":"string","default":""},"tabletDisplay":{"type":"string","default":""},"mobileDisplay":{"type":"string","default":""}},"textdomain":"miscellaneous-gutenberg-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"misc-gutenberg-blocks/flexbox","version":"0.1.0","title":"Flexbox","category":"misc-gutenberg-blocks","description":"Flexbox container","example":{},"supports":{"color":{"background":true,"text":true},"typography":{"fontSize":true,"lineHeight":true,"textAlign":true},"background":{"backgroundImage":true,"backgroundSize":true},"shadow":true,"align":true,"alignWide":true,"spacing":{"margin":true,"padding":true}},"attributes":{"widthType":{"type":"string","default":"full"},"tabletWidthType":{"type":"string","default":"full"},"mobileWidthType":{"type":"string","default":"full"},"width":{"type":"number","default":100},"tabletWidth":{"type":"number","default":100},"mobileWidth":{"type":"number","default":100},"widthUnit":{"type":"string","default":"%"},"tabletWidthUnit":{"type":"string","default":"%"},"mobileWidthUnit":{"type":"string","default":"%"},"columnGap":{"type":"number","default":0},"tabletColumnGap":{"type":"number","default":0},"mobileColumnGap":{"type":"number","default":0},"columnGapUnit":{"type":"string","default":"px"},"tabletColumnGapUnit":{"type":"string","default":"px"},"mobileColumnGapUnit":{"type":"string","default":"px"},"rowGap":{"type":"number","default":0},"tabletRowGap":{"type":"number","default":0},"mobileRowGap":{"type":"number","default":0},"rowGapUnit":{"type":"string","default":"px"},"tabletRowGapUnit":{"type":"string","default":"px"},"mobileRowGapUnit":{"type":"string","default":"px"},"wrap":{"type":"string","default":""},"tabletWrap":{"type":"string","default":""},"mobileWrap":{"type":"string","default":""},"direction":{"type":"string","default":""},"tabletDirection":{"type":"string","default":""},"mobileDirection":{"type":"string","default":""},"reverse":{"type":"boolean","default":false},"tabletReverse":{"type":"boolean","default":false},"mobileReverse":{"type":"boolean","default":false},"justifyContent":{"type":"string","default":""},"tabletJustifyContent":{"type":"string","default":""},"mobileJustifyContent":{"type":"string","default":""},"alignItems":{"type":"string","default":"flex-start"},"tabletAlignItems":{"type":"string","default":"flex-start"},"mobileAlignItems":{"type":"string","default":"flex-start"},"grow":{"type":"string","default":""},"tabletGrow":{"type":"string","default":""},"mobileGrow":{"type":"string","default":""},"shrink":{"type":"string","default":""},"tabletShrink":{"type":"string","default":""},"mobileShrink":{"type":"string","default":""},"display":{"type":"string","default":""},"tabletDisplay":{"type":"string","default":""},"mobileDisplay":{"type":"string","default":""}},"textdomain":"misc-gutenberg-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ }),
 
@@ -844,127 +844,127 @@ function Edit(props) {
   });
   const classNames = [];
   if (wrap == "wrap") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--wrap");
+    classNames.push("misc-gutenberg-blocks-flexbox--wrap");
   } else if (wrap == "no-wrap") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--no-wrap");
+    classNames.push("misc-gutenberg-blocks-flexbox--no-wrap");
   }
   if (tabletWrap == "wrap") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--tablet-wrap");
+    classNames.push("misc-gutenberg-blocks-flexbox--tablet-wrap");
   } else if (tabletWrap == "no-wrap") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--tablet-no-wrap");
+    classNames.push("misc-gutenberg-blocks-flexbox--tablet-no-wrap");
   }
   if (mobileWrap == "wrap") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--mobile-wrap");
+    classNames.push("misc-gutenberg-blocks-flexbox--mobile-wrap");
   } else if (mobileWrap == "no-wrap") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--mobile-no-wrap");
+    classNames.push("misc-gutenberg-blocks-flexbox--mobile-no-wrap");
   }
   if (direction == "horizontal") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--horizontal");
+    classNames.push("misc-gutenberg-blocks-flexbox--horizontal");
   } else if (direction == "vertical") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--vertical");
+    classNames.push("misc-gutenberg-blocks-flexbox--vertical");
   }
   if (tabletDirection == "horizontal") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--tablet-horizontal");
+    classNames.push("misc-gutenberg-blocks-flexbox--tablet-horizontal");
   } else if (tabletDirection == "vertical") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--tablet-vertical");
+    classNames.push("misc-gutenberg-blocks-flexbox--tablet-vertical");
   }
   if (mobileDirection == "horizontal") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--mobile-horizontal");
+    classNames.push("misc-gutenberg-blocks-flexbox--mobile-horizontal");
   } else if (mobileDirection == "vertical") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--mobile-vertical");
+    classNames.push("misc-gutenberg-blocks-flexbox--mobile-vertical");
   }
   if (reverse) {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--reverse");
+    classNames.push("misc-gutenberg-blocks-flexbox--reverse");
   }
   if (tabletReverse) {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--tablet-reverse");
+    classNames.push("misc-gutenberg-blocks-flexbox--tablet-reverse");
   }
   if (mobileReverse) {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--mobile-reverse");
+    classNames.push("misc-gutenberg-blocks-flexbox--mobile-reverse");
   }
   if (justifyContent) {
-    classNames.push(`miscellaneous-gutenberg-blocks-flexbox--justify-${justifyContent}`);
+    classNames.push(`misc-gutenberg-blocks-flexbox--justify-${justifyContent}`);
   }
   if (tabletJustifyContent) {
-    classNames.push(`miscellaneous-gutenberg-blocks-flexbox--justify-tablet-${tabletJustifyContent}`);
+    classNames.push(`misc-gutenberg-blocks-flexbox--justify-tablet-${tabletJustifyContent}`);
   }
   if (mobileJustifyContent) {
-    classNames.push(`miscellaneous-gutenberg-blocks-flexbox--justify-mobile-${mobileJustifyContent}`);
+    classNames.push(`misc-gutenberg-blocks-flexbox--justify-mobile-${mobileJustifyContent}`);
   }
   if (alignItems) {
-    classNames.push(`miscellaneous-gutenberg-blocks-flexbox--align-${alignItems}`);
+    classNames.push(`misc-gutenberg-blocks-flexbox--align-${alignItems}`);
   }
   if (tabletAlignItems) {
-    classNames.push(`miscellaneous-gutenberg-blocks-flexbox--align-tablet-${tabletAlignItems}`);
+    classNames.push(`misc-gutenberg-blocks-flexbox--align-tablet-${tabletAlignItems}`);
   }
   if (mobileAlignItems) {
-    classNames.push(`miscellaneous-gutenberg-blocks-flexbox--align-mobile-${mobileAlignItems}`);
+    classNames.push(`misc-gutenberg-blocks-flexbox--align-mobile-${mobileAlignItems}`);
   }
   if (grow == "grow") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--grow");
+    classNames.push("misc-gutenberg-blocks-flexbox--grow");
   } else if (grow == "no-grow") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--grow");
+    classNames.push("misc-gutenberg-blocks-flexbox--grow");
   }
   if (tabletGrow == "grow") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--tablet-grow");
+    classNames.push("misc-gutenberg-blocks-flexbox--tablet-grow");
   } else if (tabletGrow == "no-grow") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--tablet-grow");
+    classNames.push("misc-gutenberg-blocks-flexbox--tablet-grow");
   }
   if (mobileGrow == "grow") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--mobile-grow");
+    classNames.push("misc-gutenberg-blocks-flexbox--mobile-grow");
   } else if (mobileGrow == "no-grow") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--mobile-grow");
+    classNames.push("misc-gutenberg-blocks-flexbox--mobile-grow");
   }
   if (shrink == "shrink") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--shrink");
+    classNames.push("misc-gutenberg-blocks-flexbox--shrink");
   } else if (shrink == "no-shrink") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--no-shrink");
+    classNames.push("misc-gutenberg-blocks-flexbox--no-shrink");
   }
   if (tabletShrink == "shrink") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--tablet-shrink");
+    classNames.push("misc-gutenberg-blocks-flexbox--tablet-shrink");
   } else if (tabletShrink == "no-shrink") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--tablet-no-shrink");
+    classNames.push("misc-gutenberg-blocks-flexbox--tablet-no-shrink");
   }
   if (mobileShrink == "shrink") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--mobile-shrink");
+    classNames.push("misc-gutenberg-blocks-flexbox--mobile-shrink");
   } else if (mobileShrink == "no-shrink") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--mobile-no-shrink");
+    classNames.push("misc-gutenberg-blocks-flexbox--mobile-no-shrink");
   }
   if (display == "flex") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--flex");
+    classNames.push("misc-gutenberg-blocks-flexbox--flex");
   } else if (display == "inline-flex") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--inline-flex");
+    classNames.push("misc-gutenberg-blocks-flexbox--inline-flex");
   } else if (display == "none") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--none");
+    classNames.push("misc-gutenberg-blocks-flexbox--none");
   }
   if (tabletDisplay == "flex") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--tablet-flex");
+    classNames.push("misc-gutenberg-blocks-flexbox--tablet-flex");
   } else if (tabletDisplay == "inline-flex") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--tablet-inline-flex");
+    classNames.push("misc-gutenberg-blocks-flexbox--tablet-inline-flex");
   } else if (tabletDisplay == "none") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--tablet-none");
+    classNames.push("misc-gutenberg-blocks-flexbox--tablet-none");
   }
   if (mobileDisplay == "flex") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--mobile-flex");
+    classNames.push("misc-gutenberg-blocks-flexbox--mobile-flex");
   } else if (mobileDisplay == "inline-flex") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--mobile-inline-flex");
+    classNames.push("misc-gutenberg-blocks-flexbox--mobile-inline-flex");
   } else if (mobileDisplay == "none") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--mobile-none");
+    classNames.push("misc-gutenberg-blocks-flexbox--mobile-none");
   }
   if (widthType == "auto") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--width-auto");
+    classNames.push("misc-gutenberg-blocks-flexbox--width-auto");
   } else if (widthType == "initial") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--width-initial");
+    classNames.push("misc-gutenberg-blocks-flexbox--width-initial");
   }
   if (tabletWidthType == "auto") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--width-tablet-auto");
+    classNames.push("misc-gutenberg-blocks-flexbox--width-tablet-auto");
   } else if (tabletWidthType == "initial") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--width-tablet-initial");
+    classNames.push("misc-gutenberg-blocks-flexbox--width-tablet-initial");
   }
   if (mobileWidthType == "auto") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--width-mobile-auto");
+    classNames.push("misc-gutenberg-blocks-flexbox--width-mobile-auto");
   } else if (mobileWidthType == "initial") {
-    classNames.push("miscellaneous-gutenberg-blocks-flexbox--width-mobile-initial");
+    classNames.push("misc-gutenberg-blocks-flexbox--width-mobile-initial");
   }
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)({
     className: classNames.join(" "),
@@ -978,9 +978,9 @@ function Edit(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Settings", "miscellaneous-gutenberg-blocks"),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Settings", "misc-gutenberg-blocks"),
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
-          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Width", "miscellaneous-gutenberg-blocks"),
+          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Width", "misc-gutenberg-blocks"),
           defaultValue: layout,
           onChange: value => {
             setLayout(value);
@@ -998,19 +998,19 @@ function Edit(props) {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
               isAdaptiveWidth: true,
               value: "full",
-              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Full", "miscellaneous-gutenberg-blocks")
+              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Full", "misc-gutenberg-blocks")
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
               isAdaptiveWidth: true,
               value: "auto",
-              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Auto", "miscellaneous-gutenberg-blocks")
+              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Auto", "misc-gutenberg-blocks")
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
               isAdaptiveWidth: true,
               value: "initial",
-              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Initial", "miscellaneous-gutenberg-blocks")
+              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Initial", "misc-gutenberg-blocks")
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
               isAdaptiveWidth: true,
               value: "custom",
-              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Custom", "miscellaneous-gutenberg-blocks")
+              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Custom", "misc-gutenberg-blocks")
             })]
           }), widthType == "custom" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
             style: {
@@ -1061,19 +1061,19 @@ function Edit(props) {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
               isAdaptiveWidth: true,
               value: "full",
-              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Full", "miscellaneous-gutenberg-blocks")
+              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Full", "misc-gutenberg-blocks")
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
               isAdaptiveWidth: true,
               value: "auto",
-              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Auto", "miscellaneous-gutenberg-blocks")
+              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Auto", "misc-gutenberg-blocks")
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
               isAdaptiveWidth: true,
               value: "initial",
-              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Initial", "miscellaneous-gutenberg-blocks")
+              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Initial", "misc-gutenberg-blocks")
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
               isAdaptiveWidth: true,
               value: "custom",
-              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Custom", "miscellaneous-gutenberg-blocks")
+              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Custom", "misc-gutenberg-blocks")
             })]
           }), tabletWidthType == "custom" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
             style: {
@@ -1123,19 +1123,19 @@ function Edit(props) {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
               isAdaptiveWidth: true,
               value: "full",
-              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Full", "miscellaneous-gutenberg-blocks")
+              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Full", "misc-gutenberg-blocks")
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
               isAdaptiveWidth: true,
               value: "auto",
-              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Auto", "miscellaneous-gutenberg-blocks")
+              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Auto", "misc-gutenberg-blocks")
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
               isAdaptiveWidth: true,
               value: "initial",
-              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Initial", "miscellaneous-gutenberg-blocks")
+              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Initial", "misc-gutenberg-blocks")
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
               isAdaptiveWidth: true,
               value: "custom",
-              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Custom", "miscellaneous-gutenberg-blocks")
+              label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Custom", "misc-gutenberg-blocks")
             })]
           }), mobileWidthType == "custom" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
             style: {
@@ -1174,7 +1174,7 @@ function Edit(props) {
             })]
           }) : null]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
-          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Column gap", "miscellaneous-gutenberg-blocks"),
+          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Column gap", "misc-gutenberg-blocks"),
           defaultValue: layout,
           onChange: value => {
             setLayout(value);
@@ -1292,7 +1292,7 @@ function Edit(props) {
             }
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
-          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Row gap", "miscellaneous-gutenberg-blocks"),
+          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Row gap", "misc-gutenberg-blocks"),
           defaultValue: layout,
           onChange: value => {
             setLayout(value);
@@ -1413,7 +1413,7 @@ function Edit(props) {
             }
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
-          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Wrap", "miscellaneous-gutenberg-blocks"),
+          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Wrap", "misc-gutenberg-blocks"),
           defaultValue: layout,
           onChange: value => {
             setLayout(value);
@@ -1430,15 +1430,15 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "wrap",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Wrap", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Wrap", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "no-wrap",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("No wrap", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("No wrap", "misc-gutenberg-blocks")
           })]
         }) : layout == "tablet" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: tabletWrap,
@@ -1451,15 +1451,15 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "wrap",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Wrap", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Wrap", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "no-wrap",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("No wrap", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("No wrap", "misc-gutenberg-blocks")
           })]
         }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: mobileWrap,
@@ -1472,18 +1472,18 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "wrap",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Wrap", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Wrap", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "no-wrap",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("No wrap", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("No wrap", "misc-gutenberg-blocks")
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
-          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Direction", "miscellaneous-gutenberg-blocks"),
+          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Direction", "misc-gutenberg-blocks"),
           defaultValue: layout,
           onChange: value => {
             setLayout(value);
@@ -1500,15 +1500,15 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "horizontal",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Horizontal", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Horizontal", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "vertical",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Vertical", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Vertical", "misc-gutenberg-blocks")
           })]
         }) : layout == "tablet" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: tabletDirection,
@@ -1521,15 +1521,15 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "horizontal",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Horizontal", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Horizontal", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "vertical",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Vertical", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Vertical", "misc-gutenberg-blocks")
           })]
         }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: mobileDirection,
@@ -1542,18 +1542,18 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "horizontal",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Horizontal", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Horizontal", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "vertical",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Vertical", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Vertical", "misc-gutenberg-blocks")
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
-          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Reverse", "miscellaneous-gutenberg-blocks"),
+          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Reverse", "misc-gutenberg-blocks"),
           defaultValue: layout,
           onChange: value => {
             setLayout(value);
@@ -1570,11 +1570,11 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: false,
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Disabled", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Disabled", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: true,
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Enabled", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Enabled", "misc-gutenberg-blocks")
           })]
         }) : layout == "tablet" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: tabletReverse,
@@ -1587,11 +1587,11 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: false,
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Disabled", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Disabled", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: true,
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Enabled", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Enabled", "misc-gutenberg-blocks")
           })]
         }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: mobileReverse,
@@ -1604,14 +1604,14 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: false,
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Disabled", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Disabled", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: true,
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Enabled", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Enabled", "misc-gutenberg-blocks")
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
-          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Justify Content", "miscellaneous-gutenberg-blocks"),
+          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Justify Content", "misc-gutenberg-blocks"),
           defaultValue: layout,
           onChange: value => {
             setLayout(value);
@@ -1628,27 +1628,27 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsNoneIcon,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignStartVerticalIcon,
             value: "flex-start",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex start", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex start", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignEndVerticalIcon,
             value: "flex-end",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex end", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex end", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignHorizontalJustifyCenterIcon,
             value: "center",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignHorizontalSpaceBetweenIcon,
             value: "space-between",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Space Between", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Space Between", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignHorizontalSpaceAroundIcon,
             value: "space-around",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Space Around", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Space Around", "misc-gutenberg-blocks")
           })]
         }) : layout == "tablet" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: tabletJustifyContent,
@@ -1661,27 +1661,27 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsNoneIcon,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignStartVerticalIcon,
             value: "flex-start",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex start", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex start", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignEndVerticalIcon,
             value: "flex-end",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex end", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex end", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignHorizontalJustifyCenterIcon,
             value: "center",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignHorizontalSpaceBetweenIcon,
             value: "space-between",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Space Between", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Space Between", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignHorizontalSpaceAroundIcon,
             value: "space-around",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Space Around", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Space Around", "misc-gutenberg-blocks")
           })]
         }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: mobileJustifyContent,
@@ -1694,30 +1694,30 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsNoneIcon,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignStartVerticalIcon,
             value: "flex-start",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex start", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex start", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignEndVerticalIcon,
             value: "flex-end",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex end", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex end", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignHorizontalJustifyCenterIcon,
             value: "center",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignHorizontalSpaceBetweenIcon,
             value: "space-between",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Space Between", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Space Between", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: AlignHorizontalSpaceAroundIcon,
             value: "space-around",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Space Around", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Space Around", "misc-gutenberg-blocks")
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
-          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Align items", "miscellaneous-gutenberg-blocks"),
+          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Align items", "misc-gutenberg-blocks"),
           defaultValue: layout,
           onChange: value => {
             setLayout(value);
@@ -1734,27 +1734,27 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsNoneIcon,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsStartIcon,
             value: "flex-start",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex start", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex start", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsEndIcon,
             value: "flex-end",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex end", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex end", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsCenterIcon,
             value: "center",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsBaselineIcon,
             value: "baseline",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Baseline", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Baseline", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsStretchIcon,
             value: "stretch",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Stretch", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Stretch", "misc-gutenberg-blocks")
           })]
         }) : layout == "tablet" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: tabletAlignItems,
@@ -1767,27 +1767,27 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsNoneIcon,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsStartIcon,
             value: "flex-start",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex start", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex start", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsEndIcon,
             value: "flex-end",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex end", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex end", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsCenterIcon,
             value: "center",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsBaselineIcon,
             value: "baseline",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Baseline", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Baseline", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsStretchIcon,
             value: "stretch",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Stretch", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Stretch", "misc-gutenberg-blocks")
           })]
         }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: mobileAlignItems,
@@ -1800,30 +1800,30 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsNoneIcon,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsStartIcon,
             value: "flex-start",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex start", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex start", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsEndIcon,
             value: "flex-end",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex end", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex end", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsCenterIcon,
             value: "center",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Center", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsBaselineIcon,
             value: "baseline",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Baseline", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Baseline", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOptionIcon, {
             icon: alignItemsStretchIcon,
             value: "stretch",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Stretch", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Stretch", "misc-gutenberg-blocks")
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
-          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Grow", "miscellaneous-gutenberg-blocks"),
+          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Grow", "misc-gutenberg-blocks"),
           defaultValue: layout,
           onChange: value => {
             setLayout(value);
@@ -1840,15 +1840,15 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "grow",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("On", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("On", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "no-grow",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Off", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Off", "misc-gutenberg-blocks")
           })]
         }) : layout == "tablet" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: tabletGrow,
@@ -1861,15 +1861,15 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "grow",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("On", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("On", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "no-grow",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Off", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Off", "misc-gutenberg-blocks")
           })]
         }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: mobileGrow,
@@ -1882,18 +1882,18 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "grow",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("On", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("On", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "no-grow",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Off", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Off", "misc-gutenberg-blocks")
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
-          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Shrink", "miscellaneous-gutenberg-blocks"),
+          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Shrink", "misc-gutenberg-blocks"),
           defaultValue: layout,
           onChange: value => {
             setLayout(value);
@@ -1910,15 +1910,15 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "shrink",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("On", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("On", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "no-shrink",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Off", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Off", "misc-gutenberg-blocks")
           })]
         }) : layout == "tablet" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: tabletShrink,
@@ -1931,15 +1931,15 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "shrink",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("On", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("On", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "no-shrink",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Off", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Off", "misc-gutenberg-blocks")
           })]
         }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: mobileShrink,
@@ -1952,18 +1952,18 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "shrink",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("On", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("On", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "no-shrink",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Off", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Off", "misc-gutenberg-blocks")
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
-          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Display", "miscellaneous-gutenberg-blocks"),
+          title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Display", "misc-gutenberg-blocks"),
           defaultValue: layout,
           onChange: value => {
             setLayout(value);
@@ -1980,19 +1980,19 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "flex",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "inline-flex",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Inline flex", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Inline flex", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "none",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("None", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("None", "misc-gutenberg-blocks")
           })]
         }) : layout == "tablet" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: tabletDisplay,
@@ -2005,19 +2005,19 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "flex",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "inline-flex",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Inline flex", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Inline flex", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "none",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("None", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("None", "misc-gutenberg-blocks")
           })]
         }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
           value: mobileDisplay,
@@ -2030,19 +2030,19 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Not set", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "flex",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Flex", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "inline-flex",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Inline flex", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Inline flex", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "none",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("None", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("None", "misc-gutenberg-blocks")
           })]
         })]
       })
@@ -2092,14 +2092,14 @@ var SvgIcon = function SvgIcon(props) {
     strokeLinecap: "round",
     strokeLinejoin: "round",
     strokeWidth: 2,
-    className: "icon_svg__miscellaneous-gutenberg-blocks-flexbox-icon",
+    className: "icon_svg__misc-gutenberg-blocks-flexbox-icon",
     viewBox: "0 0 24 24"
   }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
     d: "M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zM3 10h18M10 3v18"
   })));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ibWlzY2VsbGFuZW91cy1ndXRlbmJlcmctYmxvY2tzLWZsZXhib3gtaWNvbiIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGhlaWdodD0iMjAwcHgiIHdpZHRoPSIyMDBweCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMyA1YTIgMiAwIDAgMSAyIC0yaDE0YTIgMiAwIDAgMSAyIDJ2MTRhMiAyIDAgMCAxIC0yIDJoLTE0YTIgMiAwIDAgMSAtMiAtMnYtMTR6Ij48L3BhdGg+PHBhdGggZD0iTTMgMTBoMTgiPjwvcGF0aD48cGF0aCBkPSJNMTAgM3YxOCI+PC9wYXRoPjwvc3ZnPg==");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ibWlzYy1ndXRlbmJlcmctYmxvY2tzLWZsZXhib3gtaWNvbiIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGhlaWdodD0iMjAwcHgiIHdpZHRoPSIyMDBweCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMyA1YTIgMiAwIDAgMSAyIC0yaDE0YTIgMiAwIDAgMSAyIDJ2MTRhMiAyIDAgMCAxIC0yIDJoLTE0YTIgMiAwIDAgMSAtMiAtMnYtMTR6Ij48L3BhdGg+PHBhdGggZD0iTTMgMTBoMTgiPjwvcGF0aD48cGF0aCBkPSJNMTAgM3YxOCI+PC9wYXRoPjwvc3ZnPg==");
 
 /***/ }),
 
@@ -2372,7 +2372,7 @@ const generateTemplate = number => {
   };
   const templates = [];
   for (let index = 0; index < number; index++) {
-    templates.push(["miscellaneous-gutenberg-blocks/box", innerBlocksAttributes]);
+    templates.push(["misc-gutenberg-blocks/box", innerBlocksAttributes]);
   }
   return templates;
 };

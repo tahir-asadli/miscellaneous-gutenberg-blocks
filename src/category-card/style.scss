@@ -1,4 +1,4 @@
-.wp-block-miscellaneous-gutenberg-blocks-category-card {
+.wp-block-misc-gutenberg-blocks-category-card {
 	box-sizing: border-box;
 	width: 100%;
 	display: flex;
@@ -6,7 +6,7 @@
 	height: 100%;
 	border-radius: 6px;
 	text-decoration: none;
-	.wp-block-miscellaneous-gutenberg-blocks-category-card--image-wrapper {
+	.wp-block-misc-gutenberg-blocks-category-card--image-wrapper {
 		display: flex;
 		border: solid 1px #ddd;
 		width: 64px;
@@ -21,7 +21,7 @@
 			height: 100%;
 			object-fit: cover;
 		}
-		&.wp-block-miscellaneous-gutenberg-blocks-category-card--type-svg {
+		&.wp-block-misc-gutenberg-blocks-category-card--type-svg {
 			img {
 				width: 32px;
 				aspect-ratio: 1;
@@ -29,27 +29,27 @@
 			}
 		}
 	}
-	.wp-block-miscellaneous-gutenberg-blocks-category-card--left,
-	.wp-block-miscellaneous-gutenberg-blocks-category-card--right {
+	.wp-block-misc-gutenberg-blocks-category-card--left,
+	.wp-block-misc-gutenberg-blocks-category-card--right {
 		display: flex;
 	}
-	.wp-block-miscellaneous-gutenberg-blocks-category-card--left {
+	.wp-block-misc-gutenberg-blocks-category-card--left {
 		align-items: center;
 	}
-	.wp-block-miscellaneous-gutenberg-blocks-category-card--right {
+	.wp-block-misc-gutenberg-blocks-category-card--right {
 		flex-direction: column;
 		span {
 			display: flex;
-			&.wp-block-miscellaneous-gutenberg-blocks-category-card--name {
+			&.wp-block-misc-gutenberg-blocks-category-card--name {
 				color: black;
 				font-weight: bold;
 			}
-			&.wp-block-miscellaneous-gutenberg-blocks-category-card--count {
+			&.wp-block-misc-gutenberg-blocks-category-card--count {
 				color: gray;
 			}
 		}
 	}
-	&.wp-block-miscellaneous-gutenberg-blocks-category-card--vertical {
+	&.wp-block-misc-gutenberg-blocks-category-card--vertical {
 		flex-direction: column;
 	}
 }

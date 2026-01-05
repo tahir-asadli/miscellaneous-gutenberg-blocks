@@ -1,245 +1,248 @@
 <?php
-
-$classes = [];
-
-$widthType = !empty($attributes['widthType']) ? $attributes['widthType'] : 'full';
-$tabletWidthType = !empty($attributes['tabletWidthType']) ? $attributes['tabletWidthType'] : 'full';
-$mobileWidthType = !empty($attributes['mobileWidthType']) ? $attributes['mobileWidthType'] : 'full';
-
-$width = !empty($attributes['width']) && $attributes['width'] > 0 ? $attributes['width'] . $attributes['widthUnit'] : '';
-$tabletWidth = !empty($attributes['tabletWidth']) && $attributes['tabletWidth'] > 0 ? $attributes['tabletWidth'] . $attributes['tabletWidthUnit'] : '';
-$mobileWidth = !empty($attributes['mobileWidth']) && $attributes['mobileWidth'] > 0 ? $attributes['mobileWidth'] . $attributes['mobileWidthUnit'] : '';
-
-$wrap = !empty($attributes['wrap']) ? $attributes['wrap'] : '';
-$tabletWrap = !empty($attributes['tabletWrap']) ? $attributes['tabletWrap'] : '';
-$mobileWrap = !empty($attributes['mobileWrap']) ? $attributes['mobileWrap'] : '';
-
-$direction = !empty($attributes['direction']) ? $attributes['direction'] : '';
-$tabletDirection = !empty($attributes['tabletDirection']) ? $attributes['tabletDirection'] : '';
-$mobileDirection = !empty($attributes['mobileDirection']) ? $attributes['mobileDirection'] : '';
-
-$reverse = !empty($attributes['reverse']) && $attributes['reverse'] == 1;
-$tabletReverse = !empty($attributes['tabletReverse']) && $attributes['tabletReverse'] == 1;
-$mobileReverse = !empty($attributes['mobileReverse']) && $attributes['mobileReverse'] == 1;
-
-$justifyContent = !empty($attributes['justifyContent']) ? $attributes['justifyContent'] : '';
-$tabletJustifyContent = !empty($attributes['tabletJustifyContent']) ? $attributes['tabletJustifyContent'] : '';
-$mobileJustifyContent = !empty($attributes['mobileJustifyContent']) ? $attributes['mobileJustifyContent'] : '';
-
-$alignItems = !empty($attributes['alignItems']) ? $attributes['alignItems'] : '';
-$tabletAlignItems = !empty($attributes['tabletAlignItems']) ? $attributes['tabletAlignItems'] : '';
-$mobileAlignItems = !empty($attributes['mobileAlignItems']) ? $attributes['mobileAlignItems'] : '';
-
-$grow = !empty($attributes['grow']) ? $attributes['grow'] : '';
-$tabletGrow = !empty($attributes['tabletGrow']) ? $attributes['tabletGrow'] : '';
-$mobileGrow = !empty($attributes['mobileGrow']) ? $attributes['mobileGrow'] : '';
-
-$shrink = !empty($attributes['shrink']) ? $attributes['shrink'] : '';
-$tabletShrink = !empty($attributes['tabletShrink']) ? $attributes['tabletShrink'] : '';
-$mobileShrink = !empty($attributes['mobileShrink']) ? $attributes['mobileShrink'] : '';
-
-$display = !empty($attributes['display']) ? $attributes['display'] : '';
-$tabletDisplay = !empty($attributes['tabletDisplay']) ? $attributes['tabletDisplay'] : '';
-$mobileDisplay = !empty($attributes['mobileDisplay']) ? $attributes['mobileDisplay'] : '';
-
-if ($widthType == 'auto') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--width-auto';
-} else if ($widthType == 'initial') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--width-initial';
-}
-if ($tabletWidthType == 'auto') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--width-tablet-auto';
-} else if ($tabletWidthType == 'initial') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--width-tablet-initial';
-}
-if ($mobileWidthType == 'auto') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--width-mobile-auto';
-} else if ($mobileWidthType == 'initial') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--width-mobile-initial';
+if (!defined('ABSPATH')) {
+  exit; // Exit if accessed directly
 }
 
-if ($wrap == 'wrap') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--wrap';
-} else if ($wrap == 'no-wrap') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--no-wrap';
+$misc_gutenberg_blocks_classes = [];
+
+$misc_gutenberg_blocks_widthType = !empty($attributes['widthType']) ? $attributes['widthType'] : 'full';
+$misc_gutenberg_blocks_tabletWidthType = !empty($attributes['tabletWidthType']) ? $attributes['tabletWidthType'] : 'full';
+$misc_gutenberg_blocks_mobileWidthType = !empty($attributes['mobileWidthType']) ? $attributes['mobileWidthType'] : 'full';
+
+$misc_gutenberg_blocks_width = !empty($attributes['width']) && $attributes['width'] > 0 ? $attributes['width'] . $attributes['widthUnit'] : '';
+$misc_gutenberg_blocks_tabletWidth = !empty($attributes['tabletWidth']) && $attributes['tabletWidth'] > 0 ? $attributes['tabletWidth'] . $attributes['tabletWidthUnit'] : '';
+$misc_gutenberg_blocks_mobileWidth = !empty($attributes['mobileWidth']) && $attributes['mobileWidth'] > 0 ? $attributes['mobileWidth'] . $attributes['mobileWidthUnit'] : '';
+
+$misc_gutenberg_blocks_wrap = !empty($attributes['wrap']) ? $attributes['wrap'] : '';
+$misc_gutenberg_blocks_tabletWrap = !empty($attributes['tabletWrap']) ? $attributes['tabletWrap'] : '';
+$misc_gutenberg_blocks_mobileWrap = !empty($attributes['mobileWrap']) ? $attributes['mobileWrap'] : '';
+
+$misc_gutenberg_blocks_direction = !empty($attributes['direction']) ? $attributes['direction'] : '';
+$misc_gutenberg_blocks_tabletDirection = !empty($attributes['tabletDirection']) ? $attributes['tabletDirection'] : '';
+$misc_gutenberg_blocks_mobileDirection = !empty($attributes['mobileDirection']) ? $attributes['mobileDirection'] : '';
+
+$misc_gutenberg_blocks_reverse = !empty($attributes['reverse']) && $attributes['reverse'] == 1;
+$misc_gutenberg_blocks_tabletReverse = !empty($attributes['tabletReverse']) && $attributes['tabletReverse'] == 1;
+$misc_gutenberg_blocks_mobileReverse = !empty($attributes['mobileReverse']) && $attributes['mobileReverse'] == 1;
+
+$misc_gutenberg_blocks_justifyContent = !empty($attributes['justifyContent']) ? $attributes['justifyContent'] : '';
+$misc_gutenberg_blocks_tabletJustifyContent = !empty($attributes['tabletJustifyContent']) ? $attributes['tabletJustifyContent'] : '';
+$misc_gutenberg_blocks_mobileJustifyContent = !empty($attributes['mobileJustifyContent']) ? $attributes['mobileJustifyContent'] : '';
+
+$misc_gutenberg_blocks_alignItems = !empty($attributes['alignItems']) ? $attributes['alignItems'] : '';
+$misc_gutenberg_blocks_tabletAlignItems = !empty($attributes['tabletAlignItems']) ? $attributes['tabletAlignItems'] : '';
+$misc_gutenberg_blocks_mobileAlignItems = !empty($attributes['mobileAlignItems']) ? $attributes['mobileAlignItems'] : '';
+
+$misc_gutenberg_blocks_grow = !empty($attributes['grow']) ? $attributes['grow'] : '';
+$misc_gutenberg_blocks_tabletGrow = !empty($attributes['tabletGrow']) ? $attributes['tabletGrow'] : '';
+$misc_gutenberg_blocks_mobileGrow = !empty($attributes['mobileGrow']) ? $attributes['mobileGrow'] : '';
+
+$misc_gutenberg_blocks_shrink = !empty($attributes['shrink']) ? $attributes['shrink'] : '';
+$misc_gutenberg_blocks_tabletShrink = !empty($attributes['tabletShrink']) ? $attributes['tabletShrink'] : '';
+$misc_gutenberg_blocks_mobileShrink = !empty($attributes['mobileShrink']) ? $attributes['mobileShrink'] : '';
+
+$misc_gutenberg_blocks_display = !empty($attributes['display']) ? $attributes['display'] : '';
+$misc_gutenberg_blocks_tabletDisplay = !empty($attributes['tabletDisplay']) ? $attributes['tabletDisplay'] : '';
+$misc_gutenberg_blocks_mobileDisplay = !empty($attributes['mobileDisplay']) ? $attributes['mobileDisplay'] : '';
+
+if ($misc_gutenberg_blocks_widthType == 'auto') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--width-auto';
+} else if ($misc_gutenberg_blocks_widthType == 'initial') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--width-initial';
 }
-if ($tabletWrap == 'wrap') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--tablet-wrap';
-} else if ($mobileWrap == 'wrap') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--mobile-wrap';
+if ($misc_gutenberg_blocks_tabletWidthType == 'auto') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--width-tablet-auto';
+} else if ($misc_gutenberg_blocks_tabletWidthType == 'initial') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--width-tablet-initial';
 }
-if ($tabletWrap == 'no-wrap') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--tablet-no-wrap';
-} else if ($mobileWrap == 'no-wrap') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--mobile-no-wrap';
+if ($misc_gutenberg_blocks_mobileWidthType == 'auto') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--width-mobile-auto';
+} else if ($misc_gutenberg_blocks_mobileWidthType == 'initial') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--width-mobile-initial';
 }
 
-if ($direction == 'horizontal') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--horizontal';
-} else if ($direction == 'vertical') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--vertical';
+if ($misc_gutenberg_blocks_wrap == 'wrap') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--wrap';
+} else if ($misc_gutenberg_blocks_wrap == 'no-wrap') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--no-wrap';
 }
-if ($tabletDirection == 'horizontal') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--tablet-horizontal';
+if ($misc_gutenberg_blocks_tabletWrap == 'wrap') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--tablet-wrap';
+} else if ($misc_gutenberg_blocks_mobileWrap == 'wrap') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--mobile-wrap';
 }
-if ($tabletDirection == 'vertical') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--tablet-vertical';
-}
-if ($mobileDirection == 'horizontal') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--mobile-horizontal';
-} else if ($mobileDirection == 'vertical') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--mobile-vertical';
-}
-
-if ($reverse) {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--reverse';
-}
-if ($tabletReverse) {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--tablet-reverse';
-}
-if ($mobileReverse) {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--mobile-reverse';
+if ($misc_gutenberg_blocks_tabletWrap == 'no-wrap') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--tablet-no-wrap';
+} else if ($misc_gutenberg_blocks_mobileWrap == 'no-wrap') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--mobile-no-wrap';
 }
 
-if ($grow == 'grow') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--grow';
-} else if ($grow == 'no-grow') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--no-grow';
+if ($misc_gutenberg_blocks_direction == 'horizontal') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--horizontal';
+} else if ($misc_gutenberg_blocks_direction == 'vertical') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--vertical';
 }
-if ($tabletGrow == 'grow') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--tablet-grow';
-} else if ($tabletGrow == 'no-grow') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--tablet-no-grow';
+if ($misc_gutenberg_blocks_tabletDirection == 'horizontal') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--tablet-horizontal';
 }
-if ($mobileGrow == 'grow') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--mobile-grow';
-} else if ($mobileGrow == 'no-grow') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--mobile-no-grow';
+if ($misc_gutenberg_blocks_tabletDirection == 'vertical') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--tablet-vertical';
 }
-
-if ($shrink == 'shrink') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--shrink';
-} else if ($shrink == 'no-shrink') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--no-shrink';
-}
-if ($tabletShrink == 'shrink') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--tablet-shrink';
-} else if ($tabletShrink == 'no-shrink') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--tablet-no-shrink';
-}
-if ($mobileShrink == 'shrink') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--mobile-shrink';
-} else if ($mobileShrink == 'no-shrink') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--mobile-no-shrink';
+if ($misc_gutenberg_blocks_mobileDirection == 'horizontal') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--mobile-horizontal';
+} else if ($misc_gutenberg_blocks_mobileDirection == 'vertical') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--mobile-vertical';
 }
 
-
-if ($display == 'flex') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--flex';
-} else if ($display == 'inline-flex') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--inline-flex';
-} else if ($display == 'none') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--none';
+if ($misc_gutenberg_blocks_reverse) {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--reverse';
+}
+if ($misc_gutenberg_blocks_tabletReverse) {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--tablet-reverse';
+}
+if ($misc_gutenberg_blocks_mobileReverse) {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--mobile-reverse';
 }
 
-if ($tabletDisplay == 'flex') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--tablet-flex';
-} else if ($tabletDisplay == 'inline-flex') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--tablet-inline-flex';
-} else if ($tabletDisplay == 'none') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--tablet-none';
+if ($misc_gutenberg_blocks_grow == 'grow') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--grow';
+} else if ($misc_gutenberg_blocks_grow == 'no-grow') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--no-grow';
+}
+if ($misc_gutenberg_blocks_tabletGrow == 'grow') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--tablet-grow';
+} else if ($misc_gutenberg_blocks_tabletGrow == 'no-grow') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--tablet-no-grow';
+}
+if ($misc_gutenberg_blocks_mobileGrow == 'grow') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--mobile-grow';
+} else if ($misc_gutenberg_blocks_mobileGrow == 'no-grow') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--mobile-no-grow';
 }
 
-if ($mobileDisplay == 'flex') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--mobile-flex';
-} else if ($mobileDisplay == 'inline-flex') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--mobile-inline-flex';
-} else if ($mobileDisplay == 'none') {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--mobile-none';
+if ($misc_gutenberg_blocks_shrink == 'shrink') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--shrink';
+} else if ($misc_gutenberg_blocks_shrink == 'no-shrink') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--no-shrink';
+}
+if ($misc_gutenberg_blocks_tabletShrink == 'shrink') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--tablet-shrink';
+} else if ($misc_gutenberg_blocks_tabletShrink == 'no-shrink') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--tablet-no-shrink';
+}
+if ($misc_gutenberg_blocks_mobileShrink == 'shrink') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--mobile-shrink';
+} else if ($misc_gutenberg_blocks_mobileShrink == 'no-shrink') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--mobile-no-shrink';
 }
 
-if ($justifyContent) {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--justify-' . $justifyContent;
-}
-if ($tabletJustifyContent) {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--justify-tablet-' . $tabletJustifyContent;
-}
-if ($mobileJustifyContent) {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--justify-mobile-' . $mobileJustifyContent;
-}
 
-if ($alignItems) {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--align-' . $alignItems;
-}
-if ($tabletAlignItems) {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--align-tablet-' . $tabletAlignItems;
-}
-if ($mobileAlignItems) {
-  $classes[] = 'miscellaneous-gutenberg-blocks-flexbox--align-mobile-' . $mobileAlignItems;
+if ($misc_gutenberg_blocks_display == 'flex') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--flex';
+} else if ($misc_gutenberg_blocks_display == 'inline-flex') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--inline-flex';
+} else if ($misc_gutenberg_blocks_display == 'none') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--none';
 }
 
-$columnGapUnit = !empty($attributes['columnGapUnit']) ? $attributes['columnGapUnit'] : 'px';
-$tabletColumnGapUnit = !empty($attributes['tabletColumnGapUnit']) ? $attributes['tabletColumnGapUnit'] : 'px';
-$mobileColumnGapUnit = !empty($attributes['mobileColumnGapUnit']) ? $attributes['mobileColumnGapUnit'] : 'px';
+if ($misc_gutenberg_blocks_tabletDisplay == 'flex') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--tablet-flex';
+} else if ($misc_gutenberg_blocks_tabletDisplay == 'inline-flex') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--tablet-inline-flex';
+} else if ($misc_gutenberg_blocks_tabletDisplay == 'none') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--tablet-none';
+}
 
-$rowGapUnit = !empty($attributes['rowGapUnit']) ? $attributes['rowGapUnit'] : 'px';
-$tabletRowGapUnit = !empty($attributes['tabletRowGapUnit']) ? $attributes['tabletRowGapUnit'] : 'px';
-$mobileRowGapUnit = !empty($attributes['mobileRowGapUnit']) ? $attributes['mobileRowGapUnit'] : 'px';
+if ($misc_gutenberg_blocks_mobileDisplay == 'flex') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--mobile-flex';
+} else if ($misc_gutenberg_blocks_mobileDisplay == 'inline-flex') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--mobile-inline-flex';
+} else if ($misc_gutenberg_blocks_mobileDisplay == 'none') {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--mobile-none';
+}
 
-$columnGap = !empty($attributes['columnGap']) && $attributes['columnGap'] > 0 ? $attributes['columnGap'] . $columnGapUnit : 0;
-$tabletColumnGap = !empty($attributes['tabletColumnGap']) && $attributes['tabletColumnGap'] > 0 ? $attributes['tabletColumnGap'] . $tabletColumnGapUnit : 0;
-$mobileColumnGap = !empty($attributes['mobileColumnGap']) && $attributes['mobileColumnGap'] > 0 ? $attributes['mobileColumnGap'] . $mobileColumnGapUnit : 0;
+if ($misc_gutenberg_blocks_justifyContent) {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--justify-' . $misc_gutenberg_blocks_justifyContent;
+}
+if ($misc_gutenberg_blocks_tabletJustifyContent) {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--justify-tablet-' . $misc_gutenberg_blocks_tabletJustifyContent;
+}
+if ($misc_gutenberg_blocks_mobileJustifyContent) {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--justify-mobile-' . $misc_gutenberg_blocks_mobileJustifyContent;
+}
 
-$rowGap = !empty($attributes['rowGap']) && $attributes['rowGap'] > 0 ? $attributes['rowGap'] . $rowGapUnit : 0;
-$tabletRowGap = !empty($attributes['tabletRowGap']) && $attributes['tabletRowGap'] > 0 ? $attributes['tabletRowGap'] . $tabletRowGapUnit : 0;
-$mobileRowGap = !empty($attributes['mobileRowGap']) && $attributes['mobileRowGap'] > 0 ? $attributes['mobileRowGap'] . $mobileRowGapUnit : 0;
+if ($misc_gutenberg_blocks_alignItems) {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--align-' . $misc_gutenberg_blocks_alignItems;
+}
+if ($misc_gutenberg_blocks_tabletAlignItems) {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--align-tablet-' . $misc_gutenberg_blocks_tabletAlignItems;
+}
+if ($misc_gutenberg_blocks_mobileAlignItems) {
+  $misc_gutenberg_blocks_classes[] = 'misc-gutenberg-blocks-flexbox--align-mobile-' . $misc_gutenberg_blocks_mobileAlignItems;
+}
 
-$additional_attributes['class'] = join(' ', $classes);
-$additional_attributes['id'] = 'miscellaneous-gutenberg-blocks-' . uniqid();
+$misc_gutenberg_blocks_columnGapUnit = !empty($attributes['columnGapUnit']) ? $attributes['columnGapUnit'] : 'px';
+$misc_gutenberg_blocks_tabletColumnGapUnit = !empty($attributes['tabletColumnGapUnit']) ? $attributes['tabletColumnGapUnit'] : 'px';
+$misc_gutenberg_blocks_mobileColumnGapUnit = !empty($attributes['mobileColumnGapUnit']) ? $attributes['mobileColumnGapUnit'] : 'px';
 
-$MobileStyles = ($widthType == 'custom' && $width != '') || $columnGap || $rowGap;
-$hasMobileStyles = ($tabletWidthType == 'custom' && $tabletWidth != '') || $tabletColumnGap || $tabletRowGap;
-$hasTabletStyles = ($mobileWidthType == 'custom' && $mobileWidth != '') || $mobileColumnGap || $mobileRowGap;
+$misc_gutenberg_blocks_rowGapUnit = !empty($attributes['rowGapUnit']) ? $attributes['rowGapUnit'] : 'px';
+$misc_gutenberg_blocks_tabletRowGapUnit = !empty($attributes['tabletRowGapUnit']) ? $attributes['tabletRowGapUnit'] : 'px';
+$misc_gutenberg_blocks_mobileRowGapUnit = !empty($attributes['mobileRowGapUnit']) ? $attributes['mobileRowGapUnit'] : 'px';
+
+$misc_gutenberg_blocks_columnGap = !empty($attributes['columnGap']) && $attributes['columnGap'] > 0 ? $attributes['columnGap'] . $misc_gutenberg_blocks_columnGapUnit : 0;
+$misc_gutenberg_blocks_tabletColumnGap = !empty($attributes['tabletColumnGap']) && $attributes['tabletColumnGap'] > 0 ? $attributes['tabletColumnGap'] . $misc_gutenberg_blocks_tabletColumnGapUnit : 0;
+$misc_gutenberg_blocks_mobileColumnGap = !empty($attributes['mobileColumnGap']) && $attributes['mobileColumnGap'] > 0 ? $attributes['mobileColumnGap'] . $misc_gutenberg_blocks_mobileColumnGapUnit : 0;
+
+$misc_gutenberg_blocks_rowGap = !empty($attributes['rowGap']) && $attributes['rowGap'] > 0 ? $attributes['rowGap'] . $misc_gutenberg_blocks_rowGapUnit : 0;
+$misc_gutenberg_blocks_tabletRowGap = !empty($attributes['tabletRowGap']) && $attributes['tabletRowGap'] > 0 ? $attributes['tabletRowGap'] . $misc_gutenberg_blocks_tabletRowGapUnit : 0;
+$misc_gutenberg_blocks_mobileRowGap = !empty($attributes['mobileRowGap']) && $attributes['mobileRowGap'] > 0 ? $attributes['mobileRowGap'] . $misc_gutenberg_blocks_mobileRowGapUnit : 0;
+
+$misc_gutenberg_blocks_additional_attributes['class'] = join(' ', $misc_gutenberg_blocks_classes);
+$misc_gutenberg_blocks_additional_attributes['id'] = 'misc-gutenberg-blocks-' . uniqid();
+
+$misc_gutenberg_blocks_MobileStyles = ($misc_gutenberg_blocks_widthType == 'custom' && $misc_gutenberg_blocks_width != '') || $misc_gutenberg_blocks_columnGap || $misc_gutenberg_blocks_rowGap;
+$misc_gutenberg_blocks_hasMobileStyles = ($misc_gutenberg_blocks_tabletWidthType == 'custom' && $misc_gutenberg_blocks_tabletWidth != '') || $misc_gutenberg_blocks_tabletColumnGap || $misc_gutenberg_blocks_tabletRowGap;
+$misc_gutenberg_blocks_hasTabletStyles = ($misc_gutenberg_blocks_mobileWidthType == 'custom' && $misc_gutenberg_blocks_mobileWidth != '') || $misc_gutenberg_blocks_mobileColumnGap || $misc_gutenberg_blocks_mobileRowGap;
 
 ?>
-<div <?php echo get_block_wrapper_attributes($additional_attributes); ?>>
+<div <?php echo esc_html(get_block_wrapper_attributes($misc_gutenberg_blocks_additional_attributes)); ?>>
   <?php
 
   if (!empty($block->inner_blocks)) {
-    foreach ($block->inner_blocks as $inner_block) {
-      echo $inner_block->render();
+    foreach ($block->inner_blocks as $misc_gutenberg_blocks_inner_block) {
+      echo wp_kses_post($misc_gutenberg_blocks_inner_block->render());
     }
   }
 
   ?>
 </div>
-<?php if ($MobileStyles || $hasMobileStyles || $hasTabletStyles): ?>
+<?php if ($misc_gutenberg_blocks_MobileStyles || $misc_gutenberg_blocks_hasMobileStyles || $misc_gutenberg_blocks_hasTabletStyles): ?>
   <style>
     @media only screen {
-      #<?php echo $additional_attributes['id']; ?> {
-        <?php echo $widthType == 'custom' && $width != '' ? "width: {$width};" : ''; ?>
-        <?php echo $columnGap ? "column-gap: $columnGap;" : ''; ?>
-        <?php echo $rowGap ? "row-gap: $rowGap;" : ''; ?>
+      #<?php echo esc_html($misc_gutenberg_blocks_additional_attributes['id']); ?> {
+        <?php echo $misc_gutenberg_blocks_widthType == 'custom' && $misc_gutenberg_blocks_width != '' ? esc_html("width: {$misc_gutenberg_blocks_width};") : ''; ?>
+        <?php echo $misc_gutenberg_blocks_columnGap ? esc_html("column-gap: $misc_gutenberg_blocks_columnGap;") : ''; ?>
+        <?php echo $misc_gutenberg_blocks_rowGap ? esc_html("row-gap: $misc_gutenberg_blocks_rowGap;") : ''; ?>
       }
     }
 
     @media only screen and (max-width:
-      <?php echo MISC_GB_BLOCKS_MAX_TABLET_BREAKING_POINT; ?>
+      <?php echo esc_html(MISC_GUTENBERG_BLOCKS_MAX_TABLET_BREAKING_POINT); ?>
     ) {
-      #<?php echo $additional_attributes['id']; ?> {
-        <?php echo $tabletWidthType == 'custom' && $tabletWidth != '' ? "width: {$tabletWidth};" : ''; ?>
-        <?php echo $tabletColumnGap ? "column-gap: $tabletColumnGap;" : ''; ?>
-        <?php echo $tabletRowGap ? "row-gap: $tabletRowGap;" : ''; ?>
+      #<?php echo esc_html($misc_gutenberg_blocks_additional_attributes['id']); ?> {
+        <?php echo $misc_gutenberg_blocks_tabletWidthType == 'custom' && $misc_gutenberg_blocks_tabletWidth != '' ? esc_html("width: {$misc_gutenberg_blocks_tabletWidth};") : ''; ?>
+        <?php echo $misc_gutenberg_blocks_tabletColumnGap ? esc_html("column-gap: $misc_gutenberg_blocks_tabletColumnGap;") : ''; ?>
+        <?php echo $misc_gutenberg_blocks_tabletRowGap ? esc_html("row-gap: $misc_gutenberg_blocks_tabletRowGap;") : ''; ?>
       }
     }
 
     @media only screen and (max-width:
-      <?php echo MISC_GB_BLOCKS_MAX_MOBILE_BREAKING_POINT; ?>
+      <?php echo esc_html(MISC_GUTENBERG_BLOCKS_MAX_MOBILE_BREAKING_POINT); ?>
     ) {
-      #<?php echo $additional_attributes['id']; ?> {
-        <?php echo $mobileWidthType == 'custom' && $mobileWidth != '' ? "width: {$mobileWidth};" : ''; ?>
-        <?php echo $mobileColumnGap ? "column-gap: $mobileColumnGap;" : ''; ?>
-        <?php echo $mobileRowGap ? "row-gap: $mobileRowGap;" : ''; ?>
+      #<?php echo esc_html($misc_gutenberg_blocks_additional_attributes['id']); ?> {
+        <?php echo $misc_gutenberg_blocks_mobileWidthType == 'custom' && $misc_gutenberg_blocks_mobileWidth != '' ? esc_html("width: {$misc_gutenberg_blocks_mobileWidth};") : ''; ?>
+        <?php echo $misc_gutenberg_blocks_mobileColumnGap ? esc_html("column-gap: $misc_gutenberg_blocks_mobileColumnGap;") : ''; ?>
+        <?php echo $misc_gutenberg_blocks_mobileRowGap ? esc_html("row-gap: $misc_gutenberg_blocks_mobileRowGap;") : ''; ?>
       }
     }
   </style>

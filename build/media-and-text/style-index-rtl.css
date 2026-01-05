@@ -1,23 +1,23 @@
 /*!******************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/media-and-text/style.scss ***!
   \******************************************************************************************************************************************************************************************************************************************************/
-.wp-block-miscellaneous-gutenberg-blocks-media-and-text {
+.wp-block-misc-gutenberg-blocks-media-and-text {
   display: flex;
   gap: 15px;
 }
-.wp-block-miscellaneous-gutenberg-blocks-media-and-text > * {
+.wp-block-misc-gutenberg-blocks-media-and-text > * {
   min-width: 0;
   width: 50%;
 }
-.wp-block-miscellaneous-gutenberg-blocks-media-and-text > *.miscellaneous-gutenberg-blocks-media-and-text--left {
+.wp-block-misc-gutenberg-blocks-media-and-text > *.misc-gutenberg-blocks-media-and-text--left {
   position: relative;
 }
-.wp-block-miscellaneous-gutenberg-blocks-media-and-text > *.miscellaneous-gutenberg-blocks-media-and-text--left img {
+.wp-block-misc-gutenberg-blocks-media-and-text > *.misc-gutenberg-blocks-media-and-text--left img {
   display: block;
   margin: 0;
   width: 100%;
 }
-.wp-block-miscellaneous-gutenberg-blocks-media-and-text > *.miscellaneous-gutenberg-blocks-media-and-text--left.has-image .miscellaneous-gutenberg-blocks-media-and-text-button-container {
+.wp-block-misc-gutenberg-blocks-media-and-text > *.misc-gutenberg-blocks-media-and-text--left.has-image .misc-gutenberg-blocks-media-and-text-button-container {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -25,61 +25,61 @@
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
 }
-.wp-block-miscellaneous-gutenberg-blocks-media-and-text > *.miscellaneous-gutenberg-blocks-media-and-text--left.has-image .miscellaneous-gutenberg-blocks-media-and-text-button-container button {
+.wp-block-misc-gutenberg-blocks-media-and-text > *.misc-gutenberg-blocks-media-and-text--left.has-image .misc-gutenberg-blocks-media-and-text-button-container button {
   margin: 10px;
 }
-.wp-block-miscellaneous-gutenberg-blocks-media-and-text > *.miscellaneous-gutenberg-blocks-media-and-text--left.has-no-image {
+.wp-block-misc-gutenberg-blocks-media-and-text > *.misc-gutenberg-blocks-media-and-text--left.has-no-image {
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.wp-block-miscellaneous-gutenberg-blocks-media-and-text.miscellaneous-gutenberg-blocks-media-and-text--single-child .miscellaneous-gutenberg-blocks-media-and-text--right {
+.wp-block-misc-gutenberg-blocks-media-and-text.misc-gutenberg-blocks-media-and-text--single-child .misc-gutenberg-blocks-media-and-text--right {
   display: flex;
 }
-.wp-block-miscellaneous-gutenberg-blocks-media-and-text.miscellaneous-gutenberg-blocks-media-and-text--single-child .miscellaneous-gutenberg-blocks-media-and-text--right > div {
+.wp-block-misc-gutenberg-blocks-media-and-text.misc-gutenberg-blocks-media-and-text--single-child .misc-gutenberg-blocks-media-and-text--right > div {
   display: flex;
   width: 100%;
 }
 @media only screen and (min-width: 993px) {
-  .wp-block-miscellaneous-gutenberg-blocks-media-and-text.miscellaneous-gutenberg-blocks-media-and-text--is-stacked {
+  .wp-block-misc-gutenberg-blocks-media-and-text.misc-gutenberg-blocks-media-and-text--is-stacked {
     flex-direction: column;
   }
-  .wp-block-miscellaneous-gutenberg-blocks-media-and-text.miscellaneous-gutenberg-blocks-media-and-text--is-stacked > * {
+  .wp-block-misc-gutenberg-blocks-media-and-text.misc-gutenberg-blocks-media-and-text--is-stacked > * {
     width: 100%;
   }
-  .wp-block-miscellaneous-gutenberg-blocks-media-and-text.miscellaneous-gutenberg-blocks-media-and-text--is-stacked.miscellaneous-gutenberg-blocks-media-and-text--is-reversed {
+  .wp-block-misc-gutenberg-blocks-media-and-text.misc-gutenberg-blocks-media-and-text--is-stacked.misc-gutenberg-blocks-media-and-text--is-reversed {
     flex-direction: column-reverse;
   }
-  .wp-block-miscellaneous-gutenberg-blocks-media-and-text.miscellaneous-gutenberg-blocks-media-and-text--is-reversed {
+  .wp-block-misc-gutenberg-blocks-media-and-text.misc-gutenberg-blocks-media-and-text--is-reversed {
     flex-direction: row-reverse;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-  .wp-block-miscellaneous-gutenberg-blocks-media-and-text.miscellaneous-gutenberg-blocks-media-and-text--tablet-is-stacked {
+  .wp-block-misc-gutenberg-blocks-media-and-text.misc-gutenberg-blocks-media-and-text--tablet-is-stacked {
     flex-direction: column;
   }
-  .wp-block-miscellaneous-gutenberg-blocks-media-and-text.miscellaneous-gutenberg-blocks-media-and-text--tablet-is-stacked > * {
+  .wp-block-misc-gutenberg-blocks-media-and-text.misc-gutenberg-blocks-media-and-text--tablet-is-stacked > * {
     width: 100%;
   }
-  .wp-block-miscellaneous-gutenberg-blocks-media-and-text.miscellaneous-gutenberg-blocks-media-and-text--tablet-is-stacked.miscellaneous-gutenberg-blocks-media-and-text--tablet-is-reversed {
+  .wp-block-misc-gutenberg-blocks-media-and-text.misc-gutenberg-blocks-media-and-text--tablet-is-stacked.misc-gutenberg-blocks-media-and-text--tablet-is-reversed {
     flex-direction: column-reverse;
   }
-  .wp-block-miscellaneous-gutenberg-blocks-media-and-text.miscellaneous-gutenberg-blocks-media-and-text--tablet-is-reversed {
+  .wp-block-misc-gutenberg-blocks-media-and-text.misc-gutenberg-blocks-media-and-text--tablet-is-reversed {
     flex-direction: row-reverse;
   }
 }
 @media only screen and (max-width: 600px) {
-  .wp-block-miscellaneous-gutenberg-blocks-media-and-text.miscellaneous-gutenberg-blocks-media-and-text--mobile-is-stacked {
+  .wp-block-misc-gutenberg-blocks-media-and-text.misc-gutenberg-blocks-media-and-text--mobile-is-stacked {
     flex-direction: column;
   }
-  .wp-block-miscellaneous-gutenberg-blocks-media-and-text.miscellaneous-gutenberg-blocks-media-and-text--mobile-is-stacked > * {
+  .wp-block-misc-gutenberg-blocks-media-and-text.misc-gutenberg-blocks-media-and-text--mobile-is-stacked > * {
     width: 100%;
   }
-  .wp-block-miscellaneous-gutenberg-blocks-media-and-text.miscellaneous-gutenberg-blocks-media-and-text--mobile-is-stacked.miscellaneous-gutenberg-blocks-media-and-text--mobile-is-reversed {
+  .wp-block-misc-gutenberg-blocks-media-and-text.misc-gutenberg-blocks-media-and-text--mobile-is-stacked.misc-gutenberg-blocks-media-and-text--mobile-is-reversed {
     flex-direction: column-reverse;
   }
-  .wp-block-miscellaneous-gutenberg-blocks-media-and-text.miscellaneous-gutenberg-blocks-media-and-text--mobile-is-reversed {
+  .wp-block-misc-gutenberg-blocks-media-and-text.misc-gutenberg-blocks-media-and-text--mobile-is-reversed {
     flex-direction: row-reverse;
   }
 }

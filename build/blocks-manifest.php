@@ -4,10 +4,10 @@ return array(
 	'category-card' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'miscellaneous-gutenberg-blocks/category-card',
+		'name' => 'misc-gutenberg-blocks/category-card',
 		'version' => '0.1.0',
 		'title' => 'Category card',
-		'category' => 'miscellaneous-gutenberg-blocks',
+		'category' => 'misc-gutenberg-blocks',
 		'description' => 'Category card.',
 		'example' => array(
 			
@@ -87,7 +87,7 @@ return array(
 				'default' => 20
 			)
 		),
-		'textdomain' => 'miscellaneous-gutenberg-blocks',
+		'textdomain' => 'misc-gutenberg-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -96,10 +96,10 @@ return array(
 	'default-featured-image' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'miscellaneous-gutenberg-blocks/default-featured-image',
+		'name' => 'misc-gutenberg-blocks/default-featured-image',
 		'version' => '0.1.0',
 		'title' => 'Default featured image',
-		'category' => 'miscellaneous-gutenberg-blocks',
+		'category' => 'misc-gutenberg-blocks',
 		'description' => 'Default featured image for post query.',
 		'example' => array(
 			
@@ -172,7 +172,7 @@ return array(
 				'default' => true
 			)
 		),
-		'textdomain' => 'miscellaneous-gutenberg-blocks',
+		'textdomain' => 'misc-gutenberg-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -181,10 +181,10 @@ return array(
 	'flexbox' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'miscellaneous-gutenberg-blocks/flexbox',
+		'name' => 'misc-gutenberg-blocks/flexbox',
 		'version' => '0.1.0',
 		'title' => 'Flexbox',
-		'category' => 'miscellaneous-gutenberg-blocks',
+		'category' => 'misc-gutenberg-blocks',
 		'description' => 'Flexbox container',
 		'example' => array(
 			
@@ -393,7 +393,7 @@ return array(
 				'default' => ''
 			)
 		),
-		'textdomain' => 'miscellaneous-gutenberg-blocks',
+		'textdomain' => 'misc-gutenberg-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -402,10 +402,10 @@ return array(
 	'icon-and-text' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'miscellaneous-gutenberg-blocks/icon-and-text',
+		'name' => 'misc-gutenberg-blocks/icon-and-text',
 		'version' => '0.1.0',
 		'title' => 'Icon & Text',
-		'category' => 'miscellaneous-gutenberg-blocks',
+		'category' => 'misc-gutenberg-blocks',
 		'description' => '',
 		'example' => array(
 			
@@ -496,7 +496,7 @@ return array(
 				'type' => 'string'
 			)
 		),
-		'textdomain' => 'miscellaneous-gutenberg-blocks',
+		'textdomain' => 'misc-gutenberg-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -505,10 +505,10 @@ return array(
 	'media-and-text' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'miscellaneous-gutenberg-blocks/media-and-text',
+		'name' => 'misc-gutenberg-blocks/media-and-text',
 		'version' => '0.1.0',
 		'title' => 'Media & Text',
-		'category' => 'miscellaneous-gutenberg-blocks',
+		'category' => 'misc-gutenberg-blocks',
 		'description' => '',
 		'example' => array(
 			
@@ -584,7 +584,7 @@ return array(
 				'default' => 15
 			)
 		),
-		'textdomain' => 'miscellaneous-gutenberg-blocks',
+		'textdomain' => 'misc-gutenberg-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -593,10 +593,10 @@ return array(
 	'search' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'miscellaneous-gutenberg-blocks/search',
+		'name' => 'misc-gutenberg-blocks/search',
 		'version' => '0.1.0',
 		'title' => 'Search',
-		'category' => 'miscellaneous-gutenberg-blocks',
+		'category' => 'misc-gutenberg-blocks',
 		'description' => 'Search using post category.',
 		'example' => array(
 			
@@ -655,7 +655,7 @@ return array(
 				'default' => 300
 			)
 		),
-		'textdomain' => 'miscellaneous-gutenberg-blocks',
+		'textdomain' => 'misc-gutenberg-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',

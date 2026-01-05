@@ -1,10 +1,10 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "miscellaneous-gutenberg-blocks/flexbox",
+  "name": "misc-gutenberg-blocks/flexbox",
   "version": "0.1.0",
   "title": "Flexbox",
-  "category": "miscellaneous-gutenberg-blocks",
+  "category": "misc-gutenberg-blocks",
   "description": "Flexbox container",
   "example": {},
   "supports": {
@@ -211,7 +211,7 @@
       "default": ""
     }
   },
-  "textdomain": "miscellaneous-gutenberg-blocks",
+  "textdomain": "misc-gutenberg-blocks",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",

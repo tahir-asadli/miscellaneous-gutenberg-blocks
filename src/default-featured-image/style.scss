@@ -1,4 +1,4 @@
-.wp-block-miscellaneous-gutenberg-blocks-default-featured-image {
+.wp-block-misc-gutenberg-blocks-default-featured-image {
 	overflow: hidden;
 	img {
 		display: block;
@@ -7,13 +7,13 @@
 		object-fit: cover;
 		object-position: top;
 	}
-	&.wp-block-miscellaneous-gutenberg-blocks-default-featured-image--top img {
+	&.wp-block-misc-gutenberg-blocks-default-featured-image--top img {
 		object-position: top;
 	}
-	&.wp-block-miscellaneous-gutenberg-blocks-default-featured-image--center img {
+	&.wp-block-misc-gutenberg-blocks-default-featured-image--center img {
 		object-position: center;
 	}
-	&.wp-block-miscellaneous-gutenberg-blocks-default-featured-image--bottom img {
+	&.wp-block-misc-gutenberg-blocks-default-featured-image--bottom img {
 		object-position: bottom;
 	}
 }

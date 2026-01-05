@@ -327,7 +327,7 @@ const hasA11yProp = (props) => {
   \***********************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"miscellaneous-gutenberg-blocks/default-featured-image","version":"0.1.0","title":"Default featured image","category":"miscellaneous-gutenberg-blocks","description":"Default featured image for post query.","example":{},"usesContext":["postId","postType"],"supports":{"html":false,"color":{"background":true,"text":true},"typography":{"fontSize":true,"lineHeight":true,"textAlign":true},"background":{"backgroundSize":true},"spacing":{"margin":true,"padding":true,"blockGap":true},"multiple":false,"shadow":true,"border":{"radius":true,"color":true,"width":true,"style":true}},"attributes":{"style":{"type":"object","default":{}},"imageId":{"type":"number","default":0},"imageUrl":{"type":"string","default":""},"imageName":{"type":"string","default":""},"imagePosition":{"type":"string","default":"center"},"showFeaturedImage":{"type":"boolean","default":true},"height":{"type":"number","default":230},"isLink":{"type":"boolean","default":true}},"textdomain":"miscellaneous-gutenberg-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"misc-gutenberg-blocks/default-featured-image","version":"0.1.0","title":"Default featured image","category":"misc-gutenberg-blocks","description":"Default featured image for post query.","example":{},"usesContext":["postId","postType"],"supports":{"html":false,"color":{"background":true,"text":true},"typography":{"fontSize":true,"lineHeight":true,"textAlign":true},"background":{"backgroundSize":true},"spacing":{"margin":true,"padding":true,"blockGap":true},"multiple":false,"shadow":true,"border":{"radius":true,"color":true,"width":true,"style":true}},"attributes":{"style":{"type":"object","default":{}},"imageId":{"type":"number","default":0},"imageUrl":{"type":"string","default":""},"imageName":{"type":"string","default":""},"imagePosition":{"type":"string","default":"center"},"showFeaturedImage":{"type":"boolean","default":true},"height":{"type":"number","default":230},"isLink":{"type":"boolean","default":true}},"textdomain":"misc-gutenberg-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ }),
 
@@ -446,9 +446,9 @@ function Edit(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Settings", "miscellaneous-gutenberg-blocks"),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Settings", "misc-gutenberg-blocks"),
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Show post's featured image", "miscellaneous-gutenberg-blocks"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Show post's featured image", "misc-gutenberg-blocks"),
           __next40pxDefaultSize: true,
           checked: showFeaturedImage,
           onChange: () => {
@@ -460,7 +460,7 @@ function Edit(props) {
           style: {
             marginBottom: "15px"
           },
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Link to Post", "miscellaneous-gutenberg-blocks"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Link to Post", "misc-gutenberg-blocks"),
           __next40pxDefaultSize: true,
           checked: isLink,
           onChange: () => {
@@ -469,7 +469,7 @@ function Edit(props) {
             });
           }
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Image position", "miscellaneous-gutenberg-blocks"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Image position", "misc-gutenberg-blocks"),
           value: imagePosition,
           isBlock: true,
           __nextHasNoMarginBottom: true,
@@ -479,15 +479,15 @@ function Edit(props) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "top",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Top", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Top", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "center",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Center", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Center", "misc-gutenberg-blocks")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: "bottom",
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("bottom", "miscellaneous-gutenberg-blocks")
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("bottom", "misc-gutenberg-blocks")
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.MediaUploadCheck, {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.MediaUpload, {
@@ -498,7 +498,7 @@ function Edit(props) {
             render: ({
               open
             }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
-              class: `miscellaneous-gutenberg-blocks-media-and-text--left ${imageUrl ? "has-image" : "has-no-image"}`,
+              class: `misc-gutenberg-blocks-media-and-text--left ${imageUrl ? "has-image" : "has-no-image"}`,
               children: imageUrl ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
                   src: imageUrl,
@@ -507,18 +507,18 @@ function Edit(props) {
                     width: "100%"
                   }
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
-                  class: "miscellaneous-gutenberg-blocks-media-and-text-button-container",
+                  class: "misc-gutenberg-blocks-media-and-text-button-container",
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
                     isDestructive: true,
                     variant: "secondary",
                     onClick: removeImage,
-                    children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Remove Image", "miscellaneous-gutenberg-blocks")
+                    children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Remove Image", "misc-gutenberg-blocks")
                   })
                 })]
               }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
                 variant: "primary",
                 onClick: open,
-                children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Upload or Select Image", "miscellaneous-gutenberg-blocks")
+                children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Upload or Select Image", "misc-gutenberg-blocks")
               })
             })
           })
@@ -613,7 +613,7 @@ var SvgIcon = function SvgIcon(props) {
     strokeLinecap: "round",
     strokeLinejoin: "round",
     strokeWidth: 2,
-    className: "icon_svg__miscellaneous-gutenberg-blocks-default-featured-image-icon",
+    className: "icon_svg__misc-gutenberg-blocks-default-featured-image-icon",
     viewBox: "0 0 24 24"
   }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
     d: "M15 8h.01M11 21H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v5.5"
@@ -622,7 +622,7 @@ var SvgIcon = function SvgIcon(props) {
   })));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ibWlzY2VsbGFuZW91cy1ndXRlbmJlcmctYmxvY2tzLWRlZmF1bHQtZmVhdHVyZWQtaW1hZ2UtaWNvbiIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGhlaWdodD0iMjAwcHgiIHdpZHRoPSIyMDBweCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUgOGguMDEiPjwvcGF0aD48cGF0aCBkPSJNMTEgMjFoLTVhMyAzIDAgMCAxIC0zIC0zdi0xMmEzIDMgMCAwIDEgMyAtM2gxMmEzIDMgMCAwIDEgMyAzdjUuNSI+PC9wYXRoPjxwYXRoIGQ9Ik0zIDE2bDUgLTVjLjkyOCAtLjg5MyAyLjA3MiAtLjg5MyAzIDBsMiAyIj48L3BhdGg+PHBhdGggZD0iTTE3LjggMjAuODE3bC0yLjE3MiAxLjEzOGEuMzkyIC4zOTIgMCAwIDEgLS41NjggLS40MWwuNDE1IC0yLjQxMWwtMS43NTcgLTEuNzA3YS4zODkgLjM4OSAwIDAgMSAuMjE3IC0uNjY1bDIuNDI4IC0uMzUybDEuMDg2IC0yLjE5M2EuMzkyIC4zOTIgMCAwIDEgLjcwMiAwbDEuMDg2IDIuMTkzbDIuNDI4IC4zNTJhLjM5IC4zOSAwIDAgMSAuMjE3IC42NjVsLTEuNzU3IDEuNzA3bC40MTQgMi40MWEuMzkgLjM5IDAgMCAxIC0uNTY3IC40MTFsLTIuMTcyIC0xLjEzOHoiPjwvcGF0aD48L3N2Zz4=");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ibWlzYy1ndXRlbmJlcmctYmxvY2tzLWRlZmF1bHQtZmVhdHVyZWQtaW1hZ2UtaWNvbiIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGhlaWdodD0iMjAwcHgiIHdpZHRoPSIyMDBweCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUgOGguMDEiPjwvcGF0aD48cGF0aCBkPSJNMTEgMjFoLTVhMyAzIDAgMCAxIC0zIC0zdi0xMmEzIDMgMCAwIDEgMyAtM2gxMmEzIDMgMCAwIDEgMyAzdjUuNSI+PC9wYXRoPjxwYXRoIGQ9Ik0zIDE2bDUgLTVjLjkyOCAtLjg5MyAyLjA3MiAtLjg5MyAzIDBsMiAyIj48L3BhdGg+PHBhdGggZD0iTTE3LjggMjAuODE3bC0yLjE3MiAxLjEzOGEuMzkyIC4zOTIgMCAwIDEgLS41NjggLS40MWwuNDE1IC0yLjQxMWwtMS43NTcgLTEuNzA3YS4zODkgLjM4OSAwIDAgMSAuMjE3IC0uNjY1bDIuNDI4IC0uMzUybDEuMDg2IC0yLjE5M2EuMzkyIC4zOTIgMCAwIDEgLjcwMiAwbDEuMDg2IDIuMTkzbDIuNDI4IC4zNTJhLjM5IC4zOSAwIDAgMSAuMjE3IC42NjVsLTEuNzU3IDEuNzA3bC40MTQgMi40MWEuMzkgLjM5IDAgMCAxIC0uNTY3IC40MTFsLTIuMTcyIC0xLjEzOHoiPjwvcGF0aD48L3N2Zz4=");
 
 /***/ }),
 

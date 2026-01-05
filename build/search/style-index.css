@@ -1,10 +1,10 @@
 /*!**********************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/search/style.scss ***!
   \**********************************************************************************************************************************************************************************************************************************************/
-.wp-block-miscellaneous-gutenberg-blocks-search.show-search-icon button {
+.wp-block-misc-gutenberg-blocks-search.show-search-icon button {
   position: relative;
 }
-.wp-block-miscellaneous-gutenberg-blocks-search.show-search-icon button:before {
+.wp-block-misc-gutenberg-blocks-search.show-search-icon button:before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -20,7 +20,7 @@
   -webkit-mask-position: center;
           mask-position: center;
 }
-.wp-block-miscellaneous-gutenberg-blocks-search.has-style {
+.wp-block-misc-gutenberg-blocks-search.has-style {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -30,12 +30,12 @@
   overflow: hidden;
   border: solid 3px #eee;
 }
-.wp-block-miscellaneous-gutenberg-blocks-search.has-style *:focus {
+.wp-block-misc-gutenberg-blocks-search.has-style *:focus {
   outline: none;
 }
-.wp-block-miscellaneous-gutenberg-blocks-search.has-style select,
-.wp-block-miscellaneous-gutenberg-blocks-search.has-style input[type=search],
-.wp-block-miscellaneous-gutenberg-blocks-search.has-style button[type=submit] {
+.wp-block-misc-gutenberg-blocks-search.has-style select,
+.wp-block-misc-gutenberg-blocks-search.has-style input[type=search],
+.wp-block-misc-gutenberg-blocks-search.has-style button[type=submit] {
   border-radius: 0;
   background-color: transparent;
   border: none;
@@ -44,7 +44,7 @@
   font-weight: inherit;
   color: inherit;
 }
-.wp-block-miscellaneous-gutenberg-blocks-search.has-style select.search-category {
+.wp-block-misc-gutenberg-blocks-search.has-style select.search-category {
   padding: 0 25px 0 25px;
   white-space: nowrap;
   overflow: hidden;
@@ -54,11 +54,11 @@
   width: 50%;
   cursor: pointer;
 }
-.wp-block-miscellaneous-gutenberg-blocks-search.has-style input[type=search].search-input {
+.wp-block-misc-gutenberg-blocks-search.has-style input[type=search].search-input {
   padding: 8px 0 8px 25px;
   padding-right: 0;
 }
-.wp-block-miscellaneous-gutenberg-blocks-search.has-style button[type=submit].search-button {
+.wp-block-misc-gutenberg-blocks-search.has-style button[type=submit].search-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,20 +68,20 @@
   height: 100%;
   cursor: pointer;
 }
-.wp-block-miscellaneous-gutenberg-blocks-search.has-style button[type=submit].search-button svg {
+.wp-block-misc-gutenberg-blocks-search.has-style button[type=submit].search-button svg {
   color: #333;
   width: 14px;
   height: 14px;
 }
-.wp-block-miscellaneous-gutenberg-blocks-search.has-style.show-category.show-search-icon button[type=submit].search-button {
+.wp-block-misc-gutenberg-blocks-search.has-style.show-category.show-search-icon button[type=submit].search-button {
   width: 56px;
   padding: 0;
   aspect-ratio: 1;
 }
-.wp-block-miscellaneous-gutenberg-blocks-search.has-style.show-category.show-search-icon select.search-category {
+.wp-block-misc-gutenberg-blocks-search.has-style.show-category.show-search-icon select.search-category {
   width: calc((100% - 56px) / 2);
 }
-.wp-block-miscellaneous-gutenberg-blocks-search.has-style.show-category.show-search-icon input[type=search].search-input {
+.wp-block-misc-gutenberg-blocks-search.has-style.show-category.show-search-icon input[type=search].search-input {
   width: calc((100% - 56px) / 2);
 }
 

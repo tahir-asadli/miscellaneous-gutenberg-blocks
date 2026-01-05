@@ -1,10 +1,10 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "miscellaneous-gutenberg-blocks/icon-and-text",
+	"name": "misc-gutenberg-blocks/icon-and-text",
 	"version": "0.1.0",
 	"title": "Icon & Text",
-	"category": "miscellaneous-gutenberg-blocks",
+	"category": "misc-gutenberg-blocks",
 	"description": "",
 	"example": {},
 	"supports": {
@@ -93,7 +93,7 @@
 			"type": "string"
 		}
 	},
-	"textdomain": "miscellaneous-gutenberg-blocks",
+	"textdomain": "misc-gutenberg-blocks",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",

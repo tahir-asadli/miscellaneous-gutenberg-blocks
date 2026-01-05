@@ -1,23 +1,23 @@
 /*!************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/flexbox/editor.scss ***!
   \************************************************************************************************************************************************************************************************************************************************/
-.icon_svg__miscellaneous-gutenberg-blocks-flexbox-icon {
+.icon_svg__misc-gutenberg-blocks-flexbox-icon {
   fill: none !important;
   stroke: #2c817b !important;
 }
 
-.wp-block-miscellaneous-gutenberg-blocks-flexbox {
+.wp-block-misc-gutenberg-blocks-flexbox {
   display: flex;
   padding: 10px;
   box-sizing: border-box;
 }
-.wp-block-miscellaneous-gutenberg-blocks-flexbox .pick-column-count {
+.wp-block-misc-gutenberg-blocks-flexbox .pick-column-count {
   width: 100%;
   display: flex;
   gap: 20px;
   justify-content: space-between;
 }
-.wp-block-miscellaneous-gutenberg-blocks-flexbox .pick-column-count > * {
+.wp-block-misc-gutenberg-blocks-flexbox .pick-column-count > * {
   display: flex;
   flex-grow: 1;
   justify-content: center;

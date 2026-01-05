@@ -1,10 +1,10 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "miscellaneous-gutenberg-blocks/default-featured-image",
+	"name": "misc-gutenberg-blocks/default-featured-image",
 	"version": "0.1.0",
 	"title": "Default featured image",
-	"category": "miscellaneous-gutenberg-blocks",
+	"category": "misc-gutenberg-blocks",
 	"description": "Default featured image for post query.",
 	"example": {},
 	"usesContext": [
@@ -73,7 +73,7 @@
 			"default": true
 		}
 	},
-	"textdomain": "miscellaneous-gutenberg-blocks",
+	"textdomain": "misc-gutenberg-blocks",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
