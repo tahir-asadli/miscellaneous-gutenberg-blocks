@@ -43,9 +43,9 @@ export default function Edit({
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={__("Settings", "misc-gutenberg-blocks")}>
+				<PanelBody title={__("Settings", "block-booster")}>
 					<ToggleGroupControl
-						label={__("Category selector", "misc-gutenberg-blocks")}
+						label={__("Category selector", "block-booster")}
 						value={attributes.showCategory}
 						isBlock={true}
 						__nextHasNoMarginBottom
@@ -54,16 +54,16 @@ export default function Edit({
 						<ToggleGroupControlOption
 							isAdaptiveWidth={true}
 							value={true}
-							label={__("Show", "misc-gutenberg-blocks")}
+							label={__("Show", "block-booster")}
 						/>
 						<ToggleGroupControlOption
 							isAdaptiveWidth={true}
 							value={false}
-							label={__("Hide", "misc-gutenberg-blocks")}
+							label={__("Hide", "block-booster")}
 						/>
 					</ToggleGroupControl>
 					<ToggleGroupControl
-						label={__("Show search icon", "misc-gutenberg-blocks")}
+						label={__("Show search icon", "block-booster")}
 						value={attributes.showSearchIcon}
 						isBlock={true}
 						__nextHasNoMarginBottom
@@ -72,16 +72,16 @@ export default function Edit({
 						<ToggleGroupControlOption
 							isAdaptiveWidth={true}
 							value={true}
-							label={__("Show", "misc-gutenberg-blocks")}
+							label={__("Show", "block-booster")}
 						/>
 						<ToggleGroupControlOption
 							isAdaptiveWidth={true}
 							value={false}
-							label={__("Hide", "misc-gutenberg-blocks")}
+							label={__("Hide", "block-booster")}
 						/>
 					</ToggleGroupControl>
 					<ToggleGroupControl
-						label={__("Disable CSS", "misc-gutenberg-blocks")}
+						label={__("Disable CSS", "block-booster")}
 						value={attributes.disableCSS}
 						isBlock={true}
 						__nextHasNoMarginBottom
@@ -90,31 +90,31 @@ export default function Edit({
 						<ToggleGroupControlOption
 							isAdaptiveWidth={true}
 							value={true}
-							label={__("Yes", "misc-gutenberg-blocks")}
+							label={__("Yes", "block-booster")}
 						/>
 						<ToggleGroupControlOption
 							isAdaptiveWidth={true}
 							value={false}
-							label={__("No", "misc-gutenberg-blocks")}
+							label={__("No", "block-booster")}
 						/>
 					</ToggleGroupControl>
 					<TextControl
-						label={__("Search placeholder", "misc-gutenberg-blocks")}
+						label={__("Search placeholder", "block-booster")}
 						value={attributes.searchPlaceholder}
 						onChange={(value) => setAttributes({ searchPlaceholder: value })}
 					/>
 					<TextControl
-						label={__("Category text", "misc-gutenberg-blocks")}
+						label={__("Category text", "block-booster")}
 						value={attributes.categoryText}
 						onChange={(value) => setAttributes({ categoryText: value })}
 					/>
 					<TextControl
-						label={__("Button text", "misc-gutenberg-blocks")}
+						label={__("Button text", "block-booster")}
 						value={attributes.buttonText}
 						onChange={(value) => setAttributes({ buttonText: value })}
 					/>
 					<RangeControl
-						label={__("Height", "misc-gutenberg-blocks")}
+						label={__("Height", "block-booster")}
 						__nextHasNoMarginBottom
 						__next40pxDefaultSize
 						value={attributes.height}
@@ -127,7 +127,7 @@ export default function Edit({
 						max={100}
 					/>
 					<RangeControl
-						label={__("Width", "misc-gutenberg-blocks")}
+						label={__("Width", "block-booster")}
 						__nextHasNoMarginBottom
 						__next40pxDefaultSize
 						value={attributes.width}

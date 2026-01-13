@@ -4,13 +4,13 @@ return array(
 	'category-card' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'misc-gutenberg-blocks/category-card',
+		'name' => 'block-booster/category-card',
 		'version' => '0.1.0',
 		'title' => 'Category card',
-		'category' => 'misc-gutenberg-blocks',
+		'category' => 'block-booster',
 		'description' => 'Category card.',
 		'example' => array(
-			
+
 		),
 		'supports' => array(
 			'html' => false,
@@ -87,7 +87,7 @@ return array(
 				'default' => 20
 			)
 		),
-		'textdomain' => 'misc-gutenberg-blocks',
+		'textdomain' => 'block-booster',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -96,13 +96,13 @@ return array(
 	'default-featured-image' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'misc-gutenberg-blocks/default-featured-image',
+		'name' => 'block-booster/default-featured-image',
 		'version' => '0.1.0',
 		'title' => 'Default featured image',
-		'category' => 'misc-gutenberg-blocks',
+		'category' => 'block-booster',
 		'description' => 'Default featured image for post query.',
 		'example' => array(
-			
+
 		),
 		'usesContext' => array(
 			'postId',
@@ -140,7 +140,7 @@ return array(
 			'style' => array(
 				'type' => 'object',
 				'default' => array(
-					
+
 				)
 			),
 			'imageId' => array(
@@ -172,7 +172,7 @@ return array(
 				'default' => true
 			)
 		),
-		'textdomain' => 'misc-gutenberg-blocks',
+		'textdomain' => 'block-booster',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -181,13 +181,13 @@ return array(
 	'flexbox' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'misc-gutenberg-blocks/flexbox',
+		'name' => 'block-booster/flexbox',
 		'version' => '0.1.0',
 		'title' => 'Flexbox',
-		'category' => 'misc-gutenberg-blocks',
+		'category' => 'block-booster',
 		'description' => 'Flexbox container',
 		'example' => array(
-			
+
 		),
 		'supports' => array(
 			'color' => array(
@@ -393,7 +393,7 @@ return array(
 				'default' => ''
 			)
 		),
-		'textdomain' => 'misc-gutenberg-blocks',
+		'textdomain' => 'block-booster',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -402,13 +402,13 @@ return array(
 	'icon-and-text' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'misc-gutenberg-blocks/icon-and-text',
+		'name' => 'block-booster/icon-and-text',
 		'version' => '0.1.0',
 		'title' => 'Icon & Text',
-		'category' => 'misc-gutenberg-blocks',
+		'category' => 'block-booster',
 		'description' => '',
 		'example' => array(
-			
+
 		),
 		'supports' => array(
 			'html' => false,
@@ -496,7 +496,7 @@ return array(
 				'type' => 'string'
 			)
 		),
-		'textdomain' => 'misc-gutenberg-blocks',
+		'textdomain' => 'block-booster',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -505,13 +505,13 @@ return array(
 	'media-and-text' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'misc-gutenberg-blocks/media-and-text',
+		'name' => 'block-booster/media-and-text',
 		'version' => '0.1.0',
 		'title' => 'Media & Text',
-		'category' => 'misc-gutenberg-blocks',
+		'category' => 'block-booster',
 		'description' => '',
 		'example' => array(
-			
+
 		),
 		'supports' => array(
 			'html' => false,
@@ -584,7 +584,7 @@ return array(
 				'default' => 15
 			)
 		),
-		'textdomain' => 'misc-gutenberg-blocks',
+		'textdomain' => 'block-booster',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
@@ -593,13 +593,13 @@ return array(
 	'search' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'misc-gutenberg-blocks/search',
+		'name' => 'block-booster/search',
 		'version' => '0.1.0',
 		'title' => 'Search',
-		'category' => 'misc-gutenberg-blocks',
+		'category' => 'block-booster',
 		'description' => 'Search using post category.',
 		'example' => array(
-			
+
 		),
 		'supports' => array(
 			'html' => false,
@@ -655,7 +655,7 @@ return array(
 				'default' => 300
 			)
 		),
-		'textdomain' => 'misc-gutenberg-blocks',
+		'textdomain' => 'block-booster',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',

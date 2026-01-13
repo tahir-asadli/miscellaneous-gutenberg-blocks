@@ -138,148 +138,144 @@ export default function Edit(props) {
 	const classNames = [];
 
 	if (wrap == "wrap") {
-		classNames.push("misc-gutenberg-blocks-flexbox--wrap");
+		classNames.push("block-booster-flexbox--wrap");
 	} else if (wrap == "no-wrap") {
-		classNames.push("misc-gutenberg-blocks-flexbox--no-wrap");
+		classNames.push("block-booster-flexbox--no-wrap");
 	}
 
 	if (tabletWrap == "wrap") {
-		classNames.push("misc-gutenberg-blocks-flexbox--tablet-wrap");
+		classNames.push("block-booster-flexbox--tablet-wrap");
 	} else if (tabletWrap == "no-wrap") {
-		classNames.push("misc-gutenberg-blocks-flexbox--tablet-no-wrap");
+		classNames.push("block-booster-flexbox--tablet-no-wrap");
 	}
 
 	if (mobileWrap == "wrap") {
-		classNames.push("misc-gutenberg-blocks-flexbox--mobile-wrap");
+		classNames.push("block-booster-flexbox--mobile-wrap");
 	} else if (mobileWrap == "no-wrap") {
-		classNames.push("misc-gutenberg-blocks-flexbox--mobile-no-wrap");
+		classNames.push("block-booster-flexbox--mobile-no-wrap");
 	}
 
 	if (direction == "horizontal") {
-		classNames.push("misc-gutenberg-blocks-flexbox--horizontal");
+		classNames.push("block-booster-flexbox--horizontal");
 	} else if (direction == "vertical") {
-		classNames.push("misc-gutenberg-blocks-flexbox--vertical");
+		classNames.push("block-booster-flexbox--vertical");
 	}
 
 	if (tabletDirection == "horizontal") {
-		classNames.push("misc-gutenberg-blocks-flexbox--tablet-horizontal");
+		classNames.push("block-booster-flexbox--tablet-horizontal");
 	} else if (tabletDirection == "vertical") {
-		classNames.push("misc-gutenberg-blocks-flexbox--tablet-vertical");
+		classNames.push("block-booster-flexbox--tablet-vertical");
 	}
 
 	if (mobileDirection == "horizontal") {
-		classNames.push("misc-gutenberg-blocks-flexbox--mobile-horizontal");
+		classNames.push("block-booster-flexbox--mobile-horizontal");
 	} else if (mobileDirection == "vertical") {
-		classNames.push("misc-gutenberg-blocks-flexbox--mobile-vertical");
+		classNames.push("block-booster-flexbox--mobile-vertical");
 	}
 
 	if (reverse) {
-		classNames.push("misc-gutenberg-blocks-flexbox--reverse");
+		classNames.push("block-booster-flexbox--reverse");
 	}
 	if (tabletReverse) {
-		classNames.push("misc-gutenberg-blocks-flexbox--tablet-reverse");
+		classNames.push("block-booster-flexbox--tablet-reverse");
 	}
 	if (mobileReverse) {
-		classNames.push("misc-gutenberg-blocks-flexbox--mobile-reverse");
+		classNames.push("block-booster-flexbox--mobile-reverse");
 	}
 
 	if (justifyContent) {
-		classNames.push(`misc-gutenberg-blocks-flexbox--justify-${justifyContent}`);
+		classNames.push(`block-booster-flexbox--justify-${justifyContent}`);
 	}
 	if (tabletJustifyContent) {
 		classNames.push(
-			`misc-gutenberg-blocks-flexbox--justify-tablet-${tabletJustifyContent}`,
+			`block-booster-flexbox--justify-tablet-${tabletJustifyContent}`,
 		);
 	}
 	if (mobileJustifyContent) {
 		classNames.push(
-			`misc-gutenberg-blocks-flexbox--justify-mobile-${mobileJustifyContent}`,
+			`block-booster-flexbox--justify-mobile-${mobileJustifyContent}`,
 		);
 	}
 	if (alignItems) {
-		classNames.push(`misc-gutenberg-blocks-flexbox--align-${alignItems}`);
+		classNames.push(`block-booster-flexbox--align-${alignItems}`);
 	}
 	if (tabletAlignItems) {
-		classNames.push(
-			`misc-gutenberg-blocks-flexbox--align-tablet-${tabletAlignItems}`,
-		);
+		classNames.push(`block-booster-flexbox--align-tablet-${tabletAlignItems}`);
 	}
 	if (mobileAlignItems) {
-		classNames.push(
-			`misc-gutenberg-blocks-flexbox--align-mobile-${mobileAlignItems}`,
-		);
+		classNames.push(`block-booster-flexbox--align-mobile-${mobileAlignItems}`);
 	}
 
 	if (grow == "grow") {
-		classNames.push("misc-gutenberg-blocks-flexbox--grow");
+		classNames.push("block-booster-flexbox--grow");
 	} else if (grow == "no-grow") {
-		classNames.push("misc-gutenberg-blocks-flexbox--grow");
+		classNames.push("block-booster-flexbox--grow");
 	}
 	if (tabletGrow == "grow") {
-		classNames.push("misc-gutenberg-blocks-flexbox--tablet-grow");
+		classNames.push("block-booster-flexbox--tablet-grow");
 	} else if (tabletGrow == "no-grow") {
-		classNames.push("misc-gutenberg-blocks-flexbox--tablet-grow");
+		classNames.push("block-booster-flexbox--tablet-grow");
 	}
 	if (mobileGrow == "grow") {
-		classNames.push("misc-gutenberg-blocks-flexbox--mobile-grow");
+		classNames.push("block-booster-flexbox--mobile-grow");
 	} else if (mobileGrow == "no-grow") {
-		classNames.push("misc-gutenberg-blocks-flexbox--mobile-grow");
+		classNames.push("block-booster-flexbox--mobile-grow");
 	}
 
 	if (shrink == "shrink") {
-		classNames.push("misc-gutenberg-blocks-flexbox--shrink");
+		classNames.push("block-booster-flexbox--shrink");
 	} else if (shrink == "no-shrink") {
-		classNames.push("misc-gutenberg-blocks-flexbox--no-shrink");
+		classNames.push("block-booster-flexbox--no-shrink");
 	}
 	if (tabletShrink == "shrink") {
-		classNames.push("misc-gutenberg-blocks-flexbox--tablet-shrink");
+		classNames.push("block-booster-flexbox--tablet-shrink");
 	} else if (tabletShrink == "no-shrink") {
-		classNames.push("misc-gutenberg-blocks-flexbox--tablet-no-shrink");
+		classNames.push("block-booster-flexbox--tablet-no-shrink");
 	}
 	if (mobileShrink == "shrink") {
-		classNames.push("misc-gutenberg-blocks-flexbox--mobile-shrink");
+		classNames.push("block-booster-flexbox--mobile-shrink");
 	} else if (mobileShrink == "no-shrink") {
-		classNames.push("misc-gutenberg-blocks-flexbox--mobile-no-shrink");
+		classNames.push("block-booster-flexbox--mobile-no-shrink");
 	}
 
 	if (display == "flex") {
-		classNames.push("misc-gutenberg-blocks-flexbox--flex");
+		classNames.push("block-booster-flexbox--flex");
 	} else if (display == "inline-flex") {
-		classNames.push("misc-gutenberg-blocks-flexbox--inline-flex");
+		classNames.push("block-booster-flexbox--inline-flex");
 	} else if (display == "none") {
-		classNames.push("misc-gutenberg-blocks-flexbox--none");
+		classNames.push("block-booster-flexbox--none");
 	}
 
 	if (tabletDisplay == "flex") {
-		classNames.push("misc-gutenberg-blocks-flexbox--tablet-flex");
+		classNames.push("block-booster-flexbox--tablet-flex");
 	} else if (tabletDisplay == "inline-flex") {
-		classNames.push("misc-gutenberg-blocks-flexbox--tablet-inline-flex");
+		classNames.push("block-booster-flexbox--tablet-inline-flex");
 	} else if (tabletDisplay == "none") {
-		classNames.push("misc-gutenberg-blocks-flexbox--tablet-none");
+		classNames.push("block-booster-flexbox--tablet-none");
 	}
 
 	if (mobileDisplay == "flex") {
-		classNames.push("misc-gutenberg-blocks-flexbox--mobile-flex");
+		classNames.push("block-booster-flexbox--mobile-flex");
 	} else if (mobileDisplay == "inline-flex") {
-		classNames.push("misc-gutenberg-blocks-flexbox--mobile-inline-flex");
+		classNames.push("block-booster-flexbox--mobile-inline-flex");
 	} else if (mobileDisplay == "none") {
-		classNames.push("misc-gutenberg-blocks-flexbox--mobile-none");
+		classNames.push("block-booster-flexbox--mobile-none");
 	}
 
 	if (widthType == "auto") {
-		classNames.push("misc-gutenberg-blocks-flexbox--width-auto");
+		classNames.push("block-booster-flexbox--width-auto");
 	} else if (widthType == "initial") {
-		classNames.push("misc-gutenberg-blocks-flexbox--width-initial");
+		classNames.push("block-booster-flexbox--width-initial");
 	}
 	if (tabletWidthType == "auto") {
-		classNames.push("misc-gutenberg-blocks-flexbox--width-tablet-auto");
+		classNames.push("block-booster-flexbox--width-tablet-auto");
 	} else if (tabletWidthType == "initial") {
-		classNames.push("misc-gutenberg-blocks-flexbox--width-tablet-initial");
+		classNames.push("block-booster-flexbox--width-tablet-initial");
 	}
 	if (mobileWidthType == "auto") {
-		classNames.push("misc-gutenberg-blocks-flexbox--width-mobile-auto");
+		classNames.push("block-booster-flexbox--width-mobile-auto");
 	} else if (mobileWidthType == "initial") {
-		classNames.push("misc-gutenberg-blocks-flexbox--width-mobile-initial");
+		classNames.push("block-booster-flexbox--width-mobile-initial");
 	}
 
 	const blockProps = useBlockProps({
@@ -331,9 +327,9 @@ export default function Edit(props) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={__("Settings", "misc-gutenberg-blocks")}>
+				<PanelBody title={__("Settings", "block-booster")}>
 					<InspectorLabel
-						title={__("Width", "misc-gutenberg-blocks")}
+						title={__("Width", "block-booster")}
 						defaultValue={layout}
 						onChange={(value) => {
 							setLayout(value);
@@ -359,22 +355,22 @@ export default function Edit(props) {
 								<ToggleGroupControlOption
 									isAdaptiveWidth={true}
 									value={"full"}
-									label={__("Full", "misc-gutenberg-blocks")}
+									label={__("Full", "block-booster")}
 								/>
 								<ToggleGroupControlOption
 									isAdaptiveWidth={true}
 									value={"auto"}
-									label={__("Auto", "misc-gutenberg-blocks")}
+									label={__("Auto", "block-booster")}
 								/>
 								<ToggleGroupControlOption
 									isAdaptiveWidth={true}
 									value={"initial"}
-									label={__("Initial", "misc-gutenberg-blocks")}
+									label={__("Initial", "block-booster")}
 								/>
 								<ToggleGroupControlOption
 									isAdaptiveWidth={true}
 									value={"custom"}
-									label={__("Custom", "misc-gutenberg-blocks")}
+									label={__("Custom", "block-booster")}
 								/>
 							</ToggleGroupControl>
 							{widthType == "custom" ? (
@@ -430,22 +426,22 @@ export default function Edit(props) {
 								<ToggleGroupControlOption
 									isAdaptiveWidth={true}
 									value={"full"}
-									label={__("Full", "misc-gutenberg-blocks")}
+									label={__("Full", "block-booster")}
 								/>
 								<ToggleGroupControlOption
 									isAdaptiveWidth={true}
 									value={"auto"}
-									label={__("Auto", "misc-gutenberg-blocks")}
+									label={__("Auto", "block-booster")}
 								/>
 								<ToggleGroupControlOption
 									isAdaptiveWidth={true}
 									value={"initial"}
-									label={__("Initial", "misc-gutenberg-blocks")}
+									label={__("Initial", "block-booster")}
 								/>
 								<ToggleGroupControlOption
 									isAdaptiveWidth={true}
 									value={"custom"}
-									label={__("Custom", "misc-gutenberg-blocks")}
+									label={__("Custom", "block-booster")}
 								/>
 							</ToggleGroupControl>
 							{tabletWidthType == "custom" ? (
@@ -500,22 +496,22 @@ export default function Edit(props) {
 								<ToggleGroupControlOption
 									isAdaptiveWidth={true}
 									value={"full"}
-									label={__("Full", "misc-gutenberg-blocks")}
+									label={__("Full", "block-booster")}
 								/>
 								<ToggleGroupControlOption
 									isAdaptiveWidth={true}
 									value={"auto"}
-									label={__("Auto", "misc-gutenberg-blocks")}
+									label={__("Auto", "block-booster")}
 								/>
 								<ToggleGroupControlOption
 									isAdaptiveWidth={true}
 									value={"initial"}
-									label={__("Initial", "misc-gutenberg-blocks")}
+									label={__("Initial", "block-booster")}
 								/>
 								<ToggleGroupControlOption
 									isAdaptiveWidth={true}
 									value={"custom"}
-									label={__("Custom", "misc-gutenberg-blocks")}
+									label={__("Custom", "block-booster")}
 								/>
 							</ToggleGroupControl>
 							{mobileWidthType == "custom" ? (
@@ -562,7 +558,7 @@ export default function Edit(props) {
 					{/* Column gap */}
 
 					<InspectorLabel
-						title={__("Column gap", "misc-gutenberg-blocks")}
+						title={__("Column gap", "block-booster")}
 						defaultValue={layout}
 						onChange={(value) => {
 							setLayout(value);
@@ -696,7 +692,7 @@ export default function Edit(props) {
 					)}
 					{/* Row gap */}
 					<InspectorLabel
-						title={__("Row gap", "misc-gutenberg-blocks")}
+						title={__("Row gap", "block-booster")}
 						defaultValue={layout}
 						onChange={(value) => {
 							setLayout(value);
@@ -829,7 +825,7 @@ export default function Edit(props) {
 					)}
 					{/* Wrap */}
 					<InspectorLabel
-						title={__("Wrap", "misc-gutenberg-blocks")}
+						title={__("Wrap", "block-booster")}
 						defaultValue={layout}
 						onChange={(value) => {
 							setLayout(value);
@@ -853,17 +849,17 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"wrap"}
-								label={__("Wrap", "misc-gutenberg-blocks")}
+								label={__("Wrap", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"no-wrap"}
-								label={__("No wrap", "misc-gutenberg-blocks")}
+								label={__("No wrap", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : layout == "tablet" ? (
@@ -877,17 +873,17 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"wrap"}
-								label={__("Wrap", "misc-gutenberg-blocks")}
+								label={__("Wrap", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"no-wrap"}
-								label={__("No wrap", "misc-gutenberg-blocks")}
+								label={__("No wrap", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : (
@@ -901,22 +897,22 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"wrap"}
-								label={__("Wrap", "misc-gutenberg-blocks")}
+								label={__("Wrap", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"no-wrap"}
-								label={__("No wrap", "misc-gutenberg-blocks")}
+								label={__("No wrap", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					)}
 					<InspectorLabel
-						title={__("Direction", "misc-gutenberg-blocks")}
+						title={__("Direction", "block-booster")}
 						defaultValue={layout}
 						onChange={(value) => {
 							setLayout(value);
@@ -940,17 +936,17 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"horizontal"}
-								label={__("Horizontal", "misc-gutenberg-blocks")}
+								label={__("Horizontal", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"vertical"}
-								label={__("Vertical", "misc-gutenberg-blocks")}
+								label={__("Vertical", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : layout == "tablet" ? (
@@ -964,17 +960,17 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"horizontal"}
-								label={__("Horizontal", "misc-gutenberg-blocks")}
+								label={__("Horizontal", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"vertical"}
-								label={__("Vertical", "misc-gutenberg-blocks")}
+								label={__("Vertical", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : (
@@ -988,22 +984,22 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"horizontal"}
-								label={__("Horizontal", "misc-gutenberg-blocks")}
+								label={__("Horizontal", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"vertical"}
-								label={__("Vertical", "misc-gutenberg-blocks")}
+								label={__("Vertical", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					)}
 					<InspectorLabel
-						title={__("Reverse", "misc-gutenberg-blocks")}
+						title={__("Reverse", "block-booster")}
 						defaultValue={layout}
 						onChange={(value) => {
 							setLayout(value);
@@ -1027,12 +1023,12 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={false}
-								label={__("Disabled", "misc-gutenberg-blocks")}
+								label={__("Disabled", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={true}
-								label={__("Enabled", "misc-gutenberg-blocks")}
+								label={__("Enabled", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : layout == "tablet" ? (
@@ -1046,12 +1042,12 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={false}
-								label={__("Disabled", "misc-gutenberg-blocks")}
+								label={__("Disabled", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={true}
-								label={__("Enabled", "misc-gutenberg-blocks")}
+								label={__("Enabled", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : (
@@ -1065,17 +1061,17 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={false}
-								label={__("Disabled", "misc-gutenberg-blocks")}
+								label={__("Disabled", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={true}
-								label={__("Enabled", "misc-gutenberg-blocks")}
+								label={__("Enabled", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					)}
 					<InspectorLabel
-						title={__("Justify Content", "misc-gutenberg-blocks")}
+						title={__("Justify Content", "block-booster")}
 						defaultValue={layout}
 						onChange={(value) => {
 							setLayout(value);
@@ -1099,32 +1095,32 @@ export default function Edit(props) {
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsNoneIcon}
 								value=""
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignStartVerticalIcon}
 								value="flex-start"
-								label={__("Flex start", "misc-gutenberg-blocks")}
+								label={__("Flex start", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignEndVerticalIcon}
 								value="flex-end"
-								label={__("Flex end", "misc-gutenberg-blocks")}
+								label={__("Flex end", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignHorizontalJustifyCenterIcon}
 								value="center"
-								label={__("Center", "misc-gutenberg-blocks")}
+								label={__("Center", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignHorizontalSpaceBetweenIcon}
 								value="space-between"
-								label={__("Space Between", "misc-gutenberg-blocks")}
+								label={__("Space Between", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignHorizontalSpaceAroundIcon}
 								value="space-around"
-								label={__("Space Around", "misc-gutenberg-blocks")}
+								label={__("Space Around", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : layout == "tablet" ? (
@@ -1140,32 +1136,32 @@ export default function Edit(props) {
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsNoneIcon}
 								value=""
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignStartVerticalIcon}
 								value="flex-start"
-								label={__("Flex start", "misc-gutenberg-blocks")}
+								label={__("Flex start", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignEndVerticalIcon}
 								value="flex-end"
-								label={__("Flex end", "misc-gutenberg-blocks")}
+								label={__("Flex end", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignHorizontalJustifyCenterIcon}
 								value="center"
-								label={__("Center", "misc-gutenberg-blocks")}
+								label={__("Center", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignHorizontalSpaceBetweenIcon}
 								value="space-between"
-								label={__("Space Between", "misc-gutenberg-blocks")}
+								label={__("Space Between", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignHorizontalSpaceAroundIcon}
 								value="space-around"
-								label={__("Space Around", "misc-gutenberg-blocks")}
+								label={__("Space Around", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : (
@@ -1181,37 +1177,37 @@ export default function Edit(props) {
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsNoneIcon}
 								value=""
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignStartVerticalIcon}
 								value="flex-start"
-								label={__("Flex start", "misc-gutenberg-blocks")}
+								label={__("Flex start", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignEndVerticalIcon}
 								value="flex-end"
-								label={__("Flex end", "misc-gutenberg-blocks")}
+								label={__("Flex end", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignHorizontalJustifyCenterIcon}
 								value="center"
-								label={__("Center", "misc-gutenberg-blocks")}
+								label={__("Center", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignHorizontalSpaceBetweenIcon}
 								value="space-between"
-								label={__("Space Between", "misc-gutenberg-blocks")}
+								label={__("Space Between", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={AlignHorizontalSpaceAroundIcon}
 								value="space-around"
-								label={__("Space Around", "misc-gutenberg-blocks")}
+								label={__("Space Around", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					)}
 					<InspectorLabel
-						title={__("Align items", "misc-gutenberg-blocks")}
+						title={__("Align items", "block-booster")}
 						defaultValue={layout}
 						onChange={(value) => {
 							setLayout(value);
@@ -1236,32 +1232,32 @@ export default function Edit(props) {
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsNoneIcon}
 								value=""
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsStartIcon}
 								value="flex-start"
-								label={__("Flex start", "misc-gutenberg-blocks")}
+								label={__("Flex start", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsEndIcon}
 								value="flex-end"
-								label={__("Flex end", "misc-gutenberg-blocks")}
+								label={__("Flex end", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsCenterIcon}
 								value="center"
-								label={__("Center", "misc-gutenberg-blocks")}
+								label={__("Center", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsBaselineIcon}
 								value="baseline"
-								label={__("Baseline", "misc-gutenberg-blocks")}
+								label={__("Baseline", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsStretchIcon}
 								value="stretch"
-								label={__("Stretch", "misc-gutenberg-blocks")}
+								label={__("Stretch", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : layout == "tablet" ? (
@@ -1275,32 +1271,32 @@ export default function Edit(props) {
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsNoneIcon}
 								value=""
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsStartIcon}
 								value="flex-start"
-								label={__("Flex start", "misc-gutenberg-blocks")}
+								label={__("Flex start", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsEndIcon}
 								value="flex-end"
-								label={__("Flex end", "misc-gutenberg-blocks")}
+								label={__("Flex end", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsCenterIcon}
 								value="center"
-								label={__("Center", "misc-gutenberg-blocks")}
+								label={__("Center", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsBaselineIcon}
 								value="baseline"
-								label={__("Baseline", "misc-gutenberg-blocks")}
+								label={__("Baseline", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsStretchIcon}
 								value="stretch"
-								label={__("Stretch", "misc-gutenberg-blocks")}
+								label={__("Stretch", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : (
@@ -1314,37 +1310,37 @@ export default function Edit(props) {
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsNoneIcon}
 								value=""
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsStartIcon}
 								value="flex-start"
-								label={__("Flex start", "misc-gutenberg-blocks")}
+								label={__("Flex start", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsEndIcon}
 								value="flex-end"
-								label={__("Flex end", "misc-gutenberg-blocks")}
+								label={__("Flex end", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsCenterIcon}
 								value="center"
-								label={__("Center", "misc-gutenberg-blocks")}
+								label={__("Center", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsBaselineIcon}
 								value="baseline"
-								label={__("Baseline", "misc-gutenberg-blocks")}
+								label={__("Baseline", "block-booster")}
 							/>
 							<ToggleGroupControlOptionIcon
 								icon={alignItemsStretchIcon}
 								value="stretch"
-								label={__("Stretch", "misc-gutenberg-blocks")}
+								label={__("Stretch", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					)}
 					<InspectorLabel
-						title={__("Grow", "misc-gutenberg-blocks")}
+						title={__("Grow", "block-booster")}
 						defaultValue={layout}
 						onChange={(value) => {
 							setLayout(value);
@@ -1368,17 +1364,17 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"grow"}
-								label={__("On", "misc-gutenberg-blocks")}
+								label={__("On", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"no-grow"}
-								label={__("Off", "misc-gutenberg-blocks")}
+								label={__("Off", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : layout == "tablet" ? (
@@ -1392,17 +1388,17 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"grow"}
-								label={__("On", "misc-gutenberg-blocks")}
+								label={__("On", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"no-grow"}
-								label={__("Off", "misc-gutenberg-blocks")}
+								label={__("Off", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : (
@@ -1416,22 +1412,22 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"grow"}
-								label={__("On", "misc-gutenberg-blocks")}
+								label={__("On", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"no-grow"}
-								label={__("Off", "misc-gutenberg-blocks")}
+								label={__("Off", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					)}
 					<InspectorLabel
-						title={__("Shrink", "misc-gutenberg-blocks")}
+						title={__("Shrink", "block-booster")}
 						defaultValue={layout}
 						onChange={(value) => {
 							setLayout(value);
@@ -1456,17 +1452,17 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"shrink"}
-								label={__("On", "misc-gutenberg-blocks")}
+								label={__("On", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"no-shrink"}
-								label={__("Off", "misc-gutenberg-blocks")}
+								label={__("Off", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : layout == "tablet" ? (
@@ -1480,17 +1476,17 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"shrink"}
-								label={__("On", "misc-gutenberg-blocks")}
+								label={__("On", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"no-shrink"}
-								label={__("Off", "misc-gutenberg-blocks")}
+								label={__("Off", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : (
@@ -1504,23 +1500,23 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"shrink"}
-								label={__("On", "misc-gutenberg-blocks")}
+								label={__("On", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"no-shrink"}
-								label={__("Off", "misc-gutenberg-blocks")}
+								label={__("Off", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					)}
 
 					<InspectorLabel
-						title={__("Display", "misc-gutenberg-blocks")}
+						title={__("Display", "block-booster")}
 						defaultValue={layout}
 						onChange={(value) => {
 							setLayout(value);
@@ -1544,22 +1540,22 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"flex"}
-								label={__("Flex", "misc-gutenberg-blocks")}
+								label={__("Flex", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"inline-flex"}
-								label={__("Inline flex", "misc-gutenberg-blocks")}
+								label={__("Inline flex", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"none"}
-								label={__("None", "misc-gutenberg-blocks")}
+								label={__("None", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : layout == "tablet" ? (
@@ -1573,22 +1569,22 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"flex"}
-								label={__("Flex", "misc-gutenberg-blocks")}
+								label={__("Flex", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"inline-flex"}
-								label={__("Inline flex", "misc-gutenberg-blocks")}
+								label={__("Inline flex", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"none"}
-								label={__("None", "misc-gutenberg-blocks")}
+								label={__("None", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					) : (
@@ -1602,22 +1598,22 @@ export default function Edit(props) {
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={""}
-								label={__("Not set", "misc-gutenberg-blocks")}
+								label={__("Not set", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"flex"}
-								label={__("Flex", "misc-gutenberg-blocks")}
+								label={__("Flex", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"inline-flex"}
-								label={__("Inline flex", "misc-gutenberg-blocks")}
+								label={__("Inline flex", "block-booster")}
 							/>
 							<ToggleGroupControlOption
 								isAdaptiveWidth={true}
 								value={"none"}
-								label={__("None", "misc-gutenberg-blocks")}
+								label={__("None", "block-booster")}
 							/>
 						</ToggleGroupControl>
 					)}

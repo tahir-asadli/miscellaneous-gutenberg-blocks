@@ -57,7 +57,7 @@ export const generateTemplate = (number) => {
 	};
 	const templates = [];
 	for (let index = 0; index < number; index++) {
-		templates.push(["misc-gutenberg-blocks/box", innerBlocksAttributes]);
+		templates.push(["block-booster/box", innerBlocksAttributes]);
 	}
 	return templates;
 };

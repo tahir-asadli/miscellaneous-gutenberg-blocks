@@ -59,7 +59,7 @@ export default function Edit({
 	const [options, setOptions] = useState([]);
 	const classNames = [];
 	if (attributes.vertical) {
-		classNames.push("wp-block-misc-gutenberg-blocks-category-card--vertical");
+		classNames.push("wp-block-block-booster-category-card--vertical");
 	}
 
 	const blockProps = useBlockProps({
@@ -127,12 +127,12 @@ export default function Edit({
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={__("Settings", "misc-gutenberg-blocks")}>
+				<PanelBody title={__("Settings", "block-booster")}>
 					<SelectControl
 						__nextHasNoMarginBottom
 						__next40pxDefaultSize
 						width="100%"
-						label={__("Select an option", "misc-gutenberg-blocks")}
+						label={__("Select an option", "block-booster")}
 						value={attributes.categoryId}
 						options={options}
 						onChange={onCategorySelect}
@@ -140,7 +140,7 @@ export default function Edit({
 					<TextControl
 						__nextHasNoMarginBottom
 						__next40pxDefaultSize
-						label={__("Plural post name", "misc-gutenberg-blocks")}
+						label={__("Plural post name", "block-booster")}
 						value={attributes.postNameSingular}
 						onChange={(value) => {
 							setAttributes({ postNameSingular: value });
@@ -149,7 +149,7 @@ export default function Edit({
 					<TextControl
 						__nextHasNoMarginBottom
 						__next40pxDefaultSize
-						label={__("Plural post label", "misc-gutenberg-blocks")}
+						label={__("Plural post label", "block-booster")}
 						value={attributes.postNamePlural}
 						onChange={(value) => {
 							setAttributes({ postNamePlural: value });
@@ -157,7 +157,7 @@ export default function Edit({
 					/>
 					<ToggleControl
 						style={{ marginBottom: "15px" }}
-						label={__("Link to Post", "misc-gutenberg-blocks")}
+						label={__("Link to Post", "block-booster")}
 						__next40pxDefaultSize
 						checked={attributes.isLink}
 						onChange={(value) => {
@@ -166,7 +166,7 @@ export default function Edit({
 					/>
 					<ToggleControl
 						style={{ marginBottom: "15px" }}
-						label={__("Is vertical", "misc-gutenberg-blocks")}
+						label={__("Is vertical", "block-booster")}
 						__next40pxDefaultSize
 						checked={attributes.vertical}
 						onChange={(value) => {
@@ -195,7 +195,7 @@ export default function Edit({
 							onSelect={onImageSelect}
 							render={({ open }) => (
 								<div
-									class={`misc-gutenberg-blocks-media-and-text--left ${
+									class={`block-booster-media-and-text--left ${
 										attributes.imageUrl ? "has-image" : "has-no-image"
 									}`}
 								>
@@ -206,19 +206,19 @@ export default function Edit({
 												alt={attributes.imageName}
 												style={{ width: "100%" }}
 											/>
-											<div class="misc-gutenberg-blocks-media-and-text-button-container">
+											<div class="block-booster-media-and-text-button-container">
 												<Button
 													isDestructive
 													variant="secondary"
 													onClick={removeImage}
 												>
-													{__("Remove Image", "misc-gutenberg-blocks")}
+													{__("Remove Image", "block-booster")}
 												</Button>
 											</div>
 										</>
 									) : (
 										<Button variant="primary" onClick={open}>
-											{__("Upload or Select Image", "misc-gutenberg-blocks")}
+											{__("Upload or Select Image", "block-booster")}
 										</Button>
 									)}
 								</div>
@@ -229,7 +229,7 @@ export default function Edit({
 				</PanelBody>
 			</InspectorControls>
 			<div {...blockProps}>
-				<div className="wp-block-misc-gutenberg-blocks-category-card--left">
+				<div className="wp-block-block-booster-category-card--left">
 					<ResizableBox
 						size={{
 							width:
@@ -266,7 +266,7 @@ export default function Edit({
 								height: attributes.imageWidth,
 								borderRadius: attributes.imageWidth,
 							}}
-							className={`wp-block-misc-gutenberg-blocks-category-card--image-wrapper wp-block-misc-gutenberg-blocks-category-card--type-${getFileExtension(
+							className={`wp-block-block-booster-category-card--image-wrapper wp-block-block-booster-category-card--type-${getFileExtension(
 								attributes.imageUrl,
 							)}`}
 						>
@@ -274,11 +274,11 @@ export default function Edit({
 						</span>
 					</ResizableBox>
 				</div>
-				<div className="wp-block-misc-gutenberg-blocks-category-card--right">
-					<span className="wp-block-misc-gutenberg-blocks-category-card--name">
+				<div className="wp-block-block-booster-category-card--right">
+					<span className="wp-block-block-booster-category-card--name">
 						{attributes.categoryName}
 					</span>
-					<span className="wp-block-misc-gutenberg-blocks-category-card--count">
+					<span className="wp-block-block-booster-category-card--count">
 						{attributes.categoryCount}{" "}
 						{attributes.categoryCount > 1
 							? attributes.postNamePlural

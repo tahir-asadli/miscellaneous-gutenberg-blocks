@@ -103,9 +103,9 @@ export default function Edit(props) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={__("Settings", "misc-gutenberg-blocks")}>
+				<PanelBody title={__("Settings", "block-booster")}>
 					<ToggleControl
-						label={__("Show post's featured image", "misc-gutenberg-blocks")}
+						label={__("Show post's featured image", "block-booster")}
 						__next40pxDefaultSize
 						checked={showFeaturedImage}
 						onChange={() => {
@@ -114,7 +114,7 @@ export default function Edit(props) {
 					/>
 					<ToggleControl
 						style={{ marginBottom: "15px" }}
-						label={__("Link to Post", "misc-gutenberg-blocks")}
+						label={__("Link to Post", "block-booster")}
 						__next40pxDefaultSize
 						checked={isLink}
 						onChange={() => {
@@ -122,7 +122,7 @@ export default function Edit(props) {
 						}}
 					/>
 					<ToggleGroupControl
-						label={__("Image position", "misc-gutenberg-blocks")}
+						label={__("Image position", "block-booster")}
 						value={imagePosition}
 						isBlock={true}
 						__nextHasNoMarginBottom
@@ -131,17 +131,17 @@ export default function Edit(props) {
 						<ToggleGroupControlOption
 							isAdaptiveWidth={true}
 							value={"top"}
-							label={__("Top", "misc-gutenberg-blocks")}
+							label={__("Top", "block-booster")}
 						/>
 						<ToggleGroupControlOption
 							isAdaptiveWidth={true}
 							value={"center"}
-							label={__("Center", "misc-gutenberg-blocks")}
+							label={__("Center", "block-booster")}
 						/>
 						<ToggleGroupControlOption
 							isAdaptiveWidth={true}
 							value={"bottom"}
-							label={__("bottom", "misc-gutenberg-blocks")}
+							label={__("bottom", "block-booster")}
 						/>
 					</ToggleGroupControl>
 					<MediaUploadCheck>
@@ -152,7 +152,7 @@ export default function Edit(props) {
 							onSelect={onImageSelect}
 							render={({ open }) => (
 								<div
-									class={`misc-gutenberg-blocks-media-and-text--left ${
+									class={`block-booster-media-and-text--left ${
 										imageUrl ? "has-image" : "has-no-image"
 									}`}
 								>
@@ -163,19 +163,19 @@ export default function Edit(props) {
 												alt={imageName}
 												style={{ width: "100%" }}
 											/>
-											<div class="misc-gutenberg-blocks-media-and-text-button-container">
+											<div class="block-booster-media-and-text-button-container">
 												<Button
 													isDestructive
 													variant="secondary"
 													onClick={removeImage}
 												>
-													{__("Remove Image", "misc-gutenberg-blocks")}
+													{__("Remove Image", "block-booster")}
 												</Button>
 											</div>
 										</>
 									) : (
 										<Button variant="primary" onClick={open}>
-											{__("Upload or Select Image", "misc-gutenberg-blocks")}
+											{__("Upload or Select Image", "block-booster")}
 										</Button>
 									)}
 								</div>

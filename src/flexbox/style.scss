@@ -1,288 +1,288 @@
-.wp-block-misc-gutenberg-blocks-flexbox {
+.wp-block-block-booster-flexbox {
 	display: flex;
 	width: 100%;
 	box-sizing: border-box;
-	&.misc-gutenberg-blocks-flexbox--wrap {
+	&.block-booster-flexbox--wrap {
 		flex-wrap: wrap;
 	}
-	&.misc-gutenberg-blocks-flexbox--no-wrap {
+	&.block-booster-flexbox--no-wrap {
 		flex-wrap: nowrap;
 	}
 
-	&.misc-gutenberg-blocks-flexbox--reverse {
+	&.block-booster-flexbox--reverse {
 		flex-direction: row-reverse;
 	}
-	&.misc-gutenberg-blocks-flexbox--horizontal {
+	&.block-booster-flexbox--horizontal {
 		flex-direction: row;
-		&.misc-gutenberg-blocks-flexbox--reverse {
+		&.block-booster-flexbox--reverse {
 			flex-direction: row-reverse;
 		}
 	}
-	&.misc-gutenberg-blocks-flexbox--vertical {
+	&.block-booster-flexbox--vertical {
 		flex-direction: column;
-		&.misc-gutenberg-blocks-flexbox--reverse {
+		&.block-booster-flexbox--reverse {
 			flex-direction: column-reverse;
 		}
 	}
 
-	&.misc-gutenberg-blocks-flexbox--justify-flex-start {
+	&.block-booster-flexbox--justify-flex-start {
 		justify-content: flex-start;
 	}
 
-	&.misc-gutenberg-blocks-flexbox--justify-flex-end {
+	&.block-booster-flexbox--justify-flex-end {
 		justify-content: flex-end;
 	}
 
-	&.misc-gutenberg-blocks-flexbox--justify-center {
+	&.block-booster-flexbox--justify-center {
 		justify-content: center;
 	}
 
-	&.misc-gutenberg-blocks-flexbox--justify-space-between {
+	&.block-booster-flexbox--justify-space-between {
 		justify-content: space-between;
 	}
 
-	&.misc-gutenberg-blocks-flexbox--justify-space-around {
+	&.block-booster-flexbox--justify-space-around {
 		justify-content: space-around;
 	}
 
-	&.misc-gutenberg-blocks-flexbox--align-flex-start {
+	&.block-booster-flexbox--align-flex-start {
 		align-items: flex-start;
 	}
 
-	&.misc-gutenberg-blocks-flexbox--align-flex-end {
+	&.block-booster-flexbox--align-flex-end {
 		align-items: flex-end;
 	}
 
-	&.misc-gutenberg-blocks-flexbox--align-baseline {
+	&.block-booster-flexbox--align-baseline {
 		align-items: baseline;
 	}
 
-	&.misc-gutenberg-blocks-flexbox--align-center {
+	&.block-booster-flexbox--align-center {
 		align-items: center;
 	}
 
-	&.misc-gutenberg-blocks-flexbox--align-stretch {
+	&.block-booster-flexbox--align-stretch {
 		align-items: stretch;
 	}
 
-	&.misc-gutenberg-blocks-flexbox--align-none {
+	&.block-booster-flexbox--align-none {
 		align-items: initial;
 	}
-	&.misc-gutenberg-blocks-flexbox--grow {
+	&.block-booster-flexbox--grow {
 		flex-grow: 1;
 	}
-	&.misc-gutenberg-blocks-flexbox--no-grow {
+	&.block-booster-flexbox--no-grow {
 		flex-grow: 0;
 	}
-	&.misc-gutenberg-blocks-flexbox--shrink {
+	&.block-booster-flexbox--shrink {
 		flex-shrink: 1;
 	}
-	&.misc-gutenberg-blocks-flexbox--no-shrink {
+	&.block-booster-flexbox--no-shrink {
 		flex-shrink: 0;
 	}
-	&.misc-gutenberg-blocks-flexbox--flex {
+	&.block-booster-flexbox--flex {
 		display: flex;
 	}
-	&.misc-gutenberg-blocks-flexbox--inline-flex {
+	&.block-booster-flexbox--inline-flex {
 		display: inline-flex;
 	}
-	&.misc-gutenberg-blocks-flexbox--none {
+	&.block-booster-flexbox--none {
 		display: none;
 	}
-	&.misc-gutenberg-blocks-flexbox--width-auto {
+	&.block-booster-flexbox--width-auto {
 		width: auto;
 	}
-	&.misc-gutenberg-blocks-flexbox--width-initial {
+	&.block-booster-flexbox--width-initial {
 		width: initial;
 	}
 	// }
 	@media only screen and (max-width: 992px) {
-		&.misc-gutenberg-blocks-flexbox--tablet-wrap {
+		&.block-booster-flexbox--tablet-wrap {
 			flex-wrap: wrap;
 		}
-		&.misc-gutenberg-blocks-flexbox--tablet-no-wrap {
+		&.block-booster-flexbox--tablet-no-wrap {
 			flex-wrap: nowrap;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--tablet-reverse {
+		&.block-booster-flexbox--tablet-reverse {
 			flex-direction: row-reverse;
 		}
-		&.misc-gutenberg-blocks-flexbox--tablet-horizontal {
+		&.block-booster-flexbox--tablet-horizontal {
 			flex-direction: row;
-			&.misc-gutenberg-blocks-flexbox--tablet-reverse {
+			&.block-booster-flexbox--tablet-reverse {
 				flex-direction: row-reverse;
 			}
 		}
-		&.misc-gutenberg-blocks-flexbox--tablet-vertical {
+		&.block-booster-flexbox--tablet-vertical {
 			flex-direction: column;
-			&.misc-gutenberg-blocks-flexbox--tablet-reverse {
+			&.block-booster-flexbox--tablet-reverse {
 				flex-direction: column-reverse;
 			}
 		}
 
-		&.misc-gutenberg-blocks-flexbox--justify-tablet-flex-start {
+		&.block-booster-flexbox--justify-tablet-flex-start {
 			justify-content: flex-start;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--justify-tablet-flex-end {
+		&.block-booster-flexbox--justify-tablet-flex-end {
 			justify-content: flex-end;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--justify-tablet-center {
+		&.block-booster-flexbox--justify-tablet-center {
 			justify-content: center;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--justify-tablet-space-between {
+		&.block-booster-flexbox--justify-tablet-space-between {
 			justify-content: space-between;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--justify-tablet-space-around {
+		&.block-booster-flexbox--justify-tablet-space-around {
 			justify-content: space-around;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--align-tablet-flex-start {
+		&.block-booster-flexbox--align-tablet-flex-start {
 			align-items: flex-start;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--align-tablet-flex-end {
+		&.block-booster-flexbox--align-tablet-flex-end {
 			align-items: flex-end;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--align-tablet-baseline {
+		&.block-booster-flexbox--align-tablet-baseline {
 			align-items: baseline;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--align-tablet-center {
+		&.block-booster-flexbox--align-tablet-center {
 			align-items: center;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--align-tablet-stretch {
+		&.block-booster-flexbox--align-tablet-stretch {
 			align-items: stretch;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--align-tablet-none {
+		&.block-booster-flexbox--align-tablet-none {
 			align-items: initial;
 		}
-		&.misc-gutenberg-blocks-flexbox--tablet-grow {
+		&.block-booster-flexbox--tablet-grow {
 			flex-grow: 1;
 		}
-		&.misc-gutenberg-blocks-flexbox--tablet-no-grow {
+		&.block-booster-flexbox--tablet-no-grow {
 			flex-grow: 0;
 		}
-		&.misc-gutenberg-blocks-flexbox--tablet-shrink {
+		&.block-booster-flexbox--tablet-shrink {
 			flex-shrink: 1;
 		}
-		&.misc-gutenberg-blocks-flexbox--tablet-no-shrink {
+		&.block-booster-flexbox--tablet-no-shrink {
 			flex-shrink: 0;
 		}
-		&.misc-gutenberg-blocks-flexbox--tablet-flex {
+		&.block-booster-flexbox--tablet-flex {
 			display: flex;
 		}
-		&.misc-gutenberg-blocks-flexbox--tablet-inline-flex {
+		&.block-booster-flexbox--tablet-inline-flex {
 			display: inline-flex;
 		}
-		&.misc-gutenberg-blocks-flexbox--tablet-none {
+		&.block-booster-flexbox--tablet-none {
 			display: none;
 		}
-		&.misc-gutenberg-blocks-flexbox--width-tablet-auto {
+		&.block-booster-flexbox--width-tablet-auto {
 			width: auto;
 		}
-		&.misc-gutenberg-blocks-flexbox--width-tablet-initial {
+		&.block-booster-flexbox--width-tablet-initial {
 			width: initial;
 		}
 	}
 	@media only screen and (max-width: 600px) {
-		&.misc-gutenberg-blocks-flexbox--mobile-wrap {
+		&.block-booster-flexbox--mobile-wrap {
 			flex-wrap: wrap;
 		}
-		&.misc-gutenberg-blocks-flexbox--mobile-no-wrap {
+		&.block-booster-flexbox--mobile-no-wrap {
 			flex-wrap: nowrap;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--mobile-reverse {
+		&.block-booster-flexbox--mobile-reverse {
 			flex-direction: row-reverse;
 		}
-		&.misc-gutenberg-blocks-flexbox--mobile-horizontal {
+		&.block-booster-flexbox--mobile-horizontal {
 			flex-direction: row;
-			&.misc-gutenberg-blocks-flexbox--mobile-reverse {
+			&.block-booster-flexbox--mobile-reverse {
 				flex-direction: row-reverse;
 			}
 		}
-		&.misc-gutenberg-blocks-flexbox--mobile-vertical {
+		&.block-booster-flexbox--mobile-vertical {
 			flex-direction: column;
-			&.misc-gutenberg-blocks-flexbox--mobile-reverse {
+			&.block-booster-flexbox--mobile-reverse {
 				flex-direction: column-reverse;
 			}
 		}
 
-		&.misc-gutenberg-blocks-flexbox--justify-mobile-flex-start {
+		&.block-booster-flexbox--justify-mobile-flex-start {
 			justify-content: flex-start;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--justify-mobile-flex-end {
+		&.block-booster-flexbox--justify-mobile-flex-end {
 			justify-content: flex-end;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--justify-mobile-center {
+		&.block-booster-flexbox--justify-mobile-center {
 			justify-content: center;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--justify-mobile-space-between {
+		&.block-booster-flexbox--justify-mobile-space-between {
 			justify-content: space-between;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--justify-mobile-space-around {
+		&.block-booster-flexbox--justify-mobile-space-around {
 			justify-content: space-around;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--align-mobile-flex-start {
+		&.block-booster-flexbox--align-mobile-flex-start {
 			align-items: flex-start;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--align-mobile-flex-end {
+		&.block-booster-flexbox--align-mobile-flex-end {
 			align-items: flex-end;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--align-mobile-baseline {
+		&.block-booster-flexbox--align-mobile-baseline {
 			align-items: baseline;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--align-mobile-center {
+		&.block-booster-flexbox--align-mobile-center {
 			align-items: center;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--align-mobile-stretch {
+		&.block-booster-flexbox--align-mobile-stretch {
 			align-items: stretch;
 		}
 
-		&.misc-gutenberg-blocks-flexbox--align-mobile-none {
+		&.block-booster-flexbox--align-mobile-none {
 			align-items: initial;
 		}
-		&.misc-gutenberg-blocks-flexbox--mobile-grow {
+		&.block-booster-flexbox--mobile-grow {
 			flex-grow: 1;
 		}
-		&.misc-gutenberg-blocks-flexbox--mobile-no-grow {
+		&.block-booster-flexbox--mobile-no-grow {
 			flex-grow: 0;
 		}
-		&.misc-gutenberg-blocks-flexbox--mobile-shrink {
+		&.block-booster-flexbox--mobile-shrink {
 			flex-shrink: 1;
 		}
-		&.misc-gutenberg-blocks-flexbox--mobile-no-shrink {
+		&.block-booster-flexbox--mobile-no-shrink {
 			flex-shrink: 0;
 		}
-		&.misc-gutenberg-blocks-flexbox--mobile-flex {
+		&.block-booster-flexbox--mobile-flex {
 			display: flex;
 		}
-		&.misc-gutenberg-blocks-flexbox--mobile-inline-flex {
+		&.block-booster-flexbox--mobile-inline-flex {
 			display: inline-flex;
 		}
-		&.misc-gutenberg-blocks-flexbox--mobile-none {
+		&.block-booster-flexbox--mobile-none {
 			display: none;
 		}
-		&.misc-gutenberg-blocks-flexbox--width-mobile-auto {
+		&.block-booster-flexbox--width-mobile-auto {
 			width: auto;
 		}
-		&.misc-gutenberg-blocks-flexbox--width-mobile-initial {
+		&.block-booster-flexbox--width-mobile-initial {
 			width: initial;
 		}
 	}

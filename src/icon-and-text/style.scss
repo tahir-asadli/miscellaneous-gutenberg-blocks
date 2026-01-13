@@ -1,11 +1,11 @@
-.wp-block-misc-gutenberg-blocks-icon-and-text {
+.wp-block-block-booster-icon-and-text {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	gap: 15px;
 	> * {
 		min-width: 0;
-		&.misc-gutenberg-blocks-icon-and-text--left {
+		&.block-booster-icon-and-text--left {
 			img {
 				display: block;
 				margin: 0;
@@ -24,44 +24,44 @@
 		justify-content: center;
 	}
 	@media only screen and (min-width: 993px) {
-		&.misc-gutenberg-blocks-icon-and-text--is-stacked {
+		&.block-booster-icon-and-text--is-stacked {
 			flex-direction: column;
 			> * {
 				width: 100%;
 			}
-			&.misc-gutenberg-blocks-icon-and-text--is-reversed {
+			&.block-booster-icon-and-text--is-reversed {
 				flex-direction: column-reverse;
 			}
 		}
-		&.misc-gutenberg-blocks-icon-and-text--is-reversed {
+		&.block-booster-icon-and-text--is-reversed {
 			flex-direction: row-reverse;
 		}
 	}
 	@media only screen and (min-width: 601px) and (max-width: 992px) {
-		&.misc-gutenberg-blocks-icon-and-text--tablet-is-stacked {
+		&.block-booster-icon-and-text--tablet-is-stacked {
 			flex-direction: column;
 			> * {
 				width: 100%;
 			}
-			&.misc-gutenberg-blocks-icon-and-text--tablet-is-reversed {
+			&.block-booster-icon-and-text--tablet-is-reversed {
 				flex-direction: column-reverse;
 			}
 		}
-		&.misc-gutenberg-blocks-icon-and-text--tablet-is-reversed {
+		&.block-booster-icon-and-text--tablet-is-reversed {
 			flex-direction: row-reverse;
 		}
 	}
 	@media only screen and (max-width: 600px) {
-		&.misc-gutenberg-blocks-icon-and-text--mobile-is-stacked {
+		&.block-booster-icon-and-text--mobile-is-stacked {
 			flex-direction: column;
 			> * {
 				width: 100%;
 			}
-			&.misc-gutenberg-blocks-icon-and-text--mobile-is-reversed {
+			&.block-booster-icon-and-text--mobile-is-reversed {
 				flex-direction: column-reverse;
 			}
 		}
-		&.misc-gutenberg-blocks-icon-and-text--mobile-is-reversed {
+		&.block-booster-icon-and-text--mobile-is-reversed {
 			flex-direction: row-reverse;
 		}
 	}

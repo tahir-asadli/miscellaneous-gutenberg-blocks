@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name:       Miscellaneous Blocks for Block Editor
- * Description:       Miscellaneous Blocks for Block Editor
+ * Plugin Name:       Block Booster
+ * Description:       Block Booster is a collection of custom Gutenberg blocks designed to enhance the WordPress block editor
  * Version:           1.0.0
  * Requires at least: 6.7
  * Requires PHP:      7.4
  * Author:            Tahir Asadli
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       misc-blocks-for-block-editor
+ * Text Domain:       block-booster
  *
  * @package CreateBlock
  */
@@ -19,25 +19,25 @@ if (!defined('ABSPATH')) {
 if (!function_exists('get_plugin_data')) {
 	require_once(ABSPATH . 'wp-admin/includes/plugin.php');
 }
-$misc_gutenberg_blocks_plugin_data = get_plugin_data(__FILE__);
+$block_booster_plugin_data = get_plugin_data(__FILE__);
 
 
-if (!defined('MISC_GUTENBERG_BLOCKS_VERSION')) {
-	define('MISC_GUTENBERG_BLOCKS_VERSION', !empty($misc_gutenberg_blocks_plugin_data['Version']) ? $misc_gutenberg_blocks_plugin_data['Version'] : '1.0.0');
+if (!defined('BLOCK_BOOSTER_VERSION')) {
+	define('BLOCK_BOOSTER_VERSION', !empty($block_booster_plugin_data['Version']) ? $block_booster_plugin_data['Version'] : '1.0.0');
 }
 
-if (!defined('MISC_GUTENBERG_BLOCKS_MAX_MOBILE_BREAKING_POINT')) {
-	define('MISC_GUTENBERG_BLOCKS_MAX_MOBILE_BREAKING_POINT', '600px');
+if (!defined('BLOCK_BOOSTER_MAX_MOBILE_BREAKING_POINT')) {
+	define('BLOCK_BOOSTER_MAX_MOBILE_BREAKING_POINT', '600px');
 }
-if (!defined('MISC_GUTENBERG_BLOCKS_MIN_TABLET_BREAKING_POINT')) {
-	define('MISC_GUTENBERG_BLOCKS_MIN_TABLET_BREAKING_POINT', '601px');
+if (!defined('BLOCK_BOOSTER_MIN_TABLET_BREAKING_POINT')) {
+	define('BLOCK_BOOSTER_MIN_TABLET_BREAKING_POINT', '601px');
 }
-if (!defined('MISC_GUTENBERG_BLOCKS_MAX_TABLET_BREAKING_POINT')) {
-	define('MISC_GUTENBERG_BLOCKS_MAX_TABLET_BREAKING_POINT', '992px');
+if (!defined('BLOCK_BOOSTER_MAX_TABLET_BREAKING_POINT')) {
+	define('BLOCK_BOOSTER_MAX_TABLET_BREAKING_POINT', '992px');
 }
 
-if (!defined('MISC_GUTENBERG_BLOCKS_MIN_DESKTOP_BREAKING_POINT')) {
-	define('MISC_GUTENBERG_BLOCKS_MIN_DESKTOP_BREAKING_POINT', '993px');
+if (!defined('BLOCK_BOOSTER_MIN_DESKTOP_BREAKING_POINT')) {
+	define('BLOCK_BOOSTER_MIN_DESKTOP_BREAKING_POINT', '993px');
 }
 
 
@@ -50,7 +50,7 @@ if (!defined('MISC_GUTENBERG_BLOCKS_MIN_DESKTOP_BREAKING_POINT')) {
  * @see https://make.wordpress.org/core/2025/03/13/more-efficient-block-type-registration-in-6-8/
  * @see https://make.wordpress.org/core/2024/10/17/new-block-type-registration-apis-to-improve-performance-in-wordpress-6-7/
  */
-function misc_gutenberg_blocks_miscellaneous_gutenberg_blocks_init()
+function block_booster_block_booster_init()
 {
 	/**
 	 * Registers the block(s) metadata from the `blocks-manifest.php` and registers the block type(s)
@@ -83,20 +83,20 @@ function misc_gutenberg_blocks_miscellaneous_gutenberg_blocks_init()
 		register_block_type(__DIR__ . "/build/{$block_type}");
 	}
 }
-add_action('init', 'misc_gutenberg_blocks_miscellaneous_gutenberg_blocks_init');
+add_action('init', 'block_booster_block_booster_init');
 
 
 
 // Register block category
-if (!function_exists('misc_gutenberg_blocks_register_miscellaneous_gutenberg_blocks_category')) {
+if (!function_exists('block_booster_register_block_booster_category')) {
 
-	function misc_gutenberg_blocks_register_miscellaneous_gutenberg_blocks_category($categories, $post)
+	function block_booster_register_block_booster_category($categories, $post)
 	{
 		return array_merge(
 			array(
 				array(
-					'slug' => 'misc-blocks-for-block-editor',
-					'title' => __('Miscellaneous Blocks for Block Editor', 'misc-blocks-for-block-editor'),
+					'slug' => 'block-booster',
+					'title' => __('Block Booster', 'block-booster'),
 					'icon' => 'dashicons-star-filled',
 				),
 			),
@@ -104,5 +104,5 @@ if (!function_exists('misc_gutenberg_blocks_register_miscellaneous_gutenberg_blo
 
 		);
 	}
-	add_filter('block_categories_all', 'misc_gutenberg_blocks_register_miscellaneous_gutenberg_blocks_category', 10, 2);
+	add_filter('block_categories_all', 'block_booster_register_block_booster_category', 10, 2);
 }
