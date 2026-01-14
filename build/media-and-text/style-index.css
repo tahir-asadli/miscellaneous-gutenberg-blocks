@@ -2,100 +2,86 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/media-and-text/style.scss ***!
   \******************************************************************************************************************************************************************************************************************************************************/
 .wp-block-block-booster-media-and-text {
-	display: flex;
-	gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 .wp-block-block-booster-media-and-text > * {
-	min-width: 0;
-	width: 50%;
+  min-width: 0;
+  width: 50%;
 }
 .wp-block-block-booster-media-and-text > *.block-booster-media-and-text--left {
-	position: relative;
+  position: relative;
 }
-.wp-block-block-booster-media-and-text
-	> *.block-booster-media-and-text--left
-	img {
-	display: block;
-	margin: 0;
-	width: 100%;
+.wp-block-block-booster-media-and-text > *.block-booster-media-and-text--left img {
+  display: block;
+  margin: 0;
+  width: 100%;
 }
-.wp-block-block-booster-media-and-text
-	> *.block-booster-media-and-text--left.has-image
-	.block-booster-media-and-text-button-container {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	padding: 5px;
-	width: 100%;
-	background-color: rgba(255, 255, 255, 0.8);
+.wp-block-block-booster-media-and-text > *.block-booster-media-and-text--left.has-image .block-booster-media-and-text-button-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
 }
-.wp-block-block-booster-media-and-text
-	> *.block-booster-media-and-text--left.has-image
-	.block-booster-media-and-text-button-container
-	button {
-	margin: 10px;
+.wp-block-block-booster-media-and-text > *.block-booster-media-and-text--left.has-image .block-booster-media-and-text-button-container button {
+  margin: 10px;
 }
-.wp-block-block-booster-media-and-text
-	> *.block-booster-media-and-text--left.has-no-image {
-	padding: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.wp-block-block-booster-media-and-text > *.block-booster-media-and-text--left.has-no-image {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.wp-block-block-booster-media-and-text.block-booster-media-and-text--single-child
-	.block-booster-media-and-text--right {
-	display: flex;
+.wp-block-block-booster-media-and-text.block-booster-media-and-text--single-child .block-booster-media-and-text--right {
+  display: flex;
 }
-.wp-block-block-booster-media-and-text.block-booster-media-and-text--single-child
-	.block-booster-media-and-text--right
-	> div {
-	display: flex;
-	width: 100%;
+.wp-block-block-booster-media-and-text.block-booster-media-and-text--single-child .block-booster-media-and-text--right > div {
+  display: flex;
+  width: 100%;
 }
 @media only screen and (min-width: 993px) {
-	.wp-block-block-booster-media-and-text.block-booster-media-and-text--is-stacked {
-		flex-direction: column;
-	}
-	.wp-block-block-booster-media-and-text.block-booster-media-and-text--is-stacked
-		> * {
-		width: 100%;
-	}
-	.wp-block-block-booster-media-and-text.block-booster-media-and-text--is-stacked.block-booster-media-and-text--is-reversed {
-		flex-direction: column-reverse;
-	}
-	.wp-block-block-booster-media-and-text.block-booster-media-and-text--is-reversed {
-		flex-direction: row-reverse;
-	}
+  .wp-block-block-booster-media-and-text.block-booster-media-and-text--is-stacked {
+    flex-direction: column;
+  }
+  .wp-block-block-booster-media-and-text.block-booster-media-and-text--is-stacked > * {
+    width: 100%;
+  }
+  .wp-block-block-booster-media-and-text.block-booster-media-and-text--is-stacked.block-booster-media-and-text--is-reversed {
+    flex-direction: column-reverse;
+  }
+  .wp-block-block-booster-media-and-text.block-booster-media-and-text--is-reversed {
+    flex-direction: row-reverse;
+  }
 }
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-	.wp-block-block-booster-media-and-text.block-booster-media-and-text--tablet-is-stacked {
-		flex-direction: column;
-	}
-	.wp-block-block-booster-media-and-text.block-booster-media-and-text--tablet-is-stacked
-		> * {
-		width: 100%;
-	}
-	.wp-block-block-booster-media-and-text.block-booster-media-and-text--tablet-is-stacked.block-booster-media-and-text--tablet-is-reversed {
-		flex-direction: column-reverse;
-	}
-	.wp-block-block-booster-media-and-text.block-booster-media-and-text--tablet-is-reversed {
-		flex-direction: row-reverse;
-	}
+  .wp-block-block-booster-media-and-text.block-booster-media-and-text--tablet-is-stacked {
+    flex-direction: column;
+  }
+  .wp-block-block-booster-media-and-text.block-booster-media-and-text--tablet-is-stacked > * {
+    width: 100%;
+  }
+  .wp-block-block-booster-media-and-text.block-booster-media-and-text--tablet-is-stacked.block-booster-media-and-text--tablet-is-reversed {
+    flex-direction: column-reverse;
+  }
+  .wp-block-block-booster-media-and-text.block-booster-media-and-text--tablet-is-reversed {
+    flex-direction: row-reverse;
+  }
 }
 @media only screen and (max-width: 600px) {
-	.wp-block-block-booster-media-and-text.block-booster-media-and-text--mobile-is-stacked {
-		flex-direction: column;
-	}
-	.wp-block-block-booster-media-and-text.block-booster-media-and-text--mobile-is-stacked
-		> * {
-		width: 100%;
-	}
-	.wp-block-block-booster-media-and-text.block-booster-media-and-text--mobile-is-stacked.block-booster-media-and-text--mobile-is-reversed {
-		flex-direction: column-reverse;
-	}
-	.wp-block-block-booster-media-and-text.block-booster-media-and-text--mobile-is-reversed {
-		flex-direction: row-reverse;
-	}
+  .wp-block-block-booster-media-and-text.block-booster-media-and-text--mobile-is-stacked {
+    flex-direction: column;
+  }
+  .wp-block-block-booster-media-and-text.block-booster-media-and-text--mobile-is-stacked > * {
+    width: 100%;
+  }
+  .wp-block-block-booster-media-and-text.block-booster-media-and-text--mobile-is-stacked.block-booster-media-and-text--mobile-is-reversed {
+    flex-direction: column-reverse;
+  }
+  .wp-block-block-booster-media-and-text.block-booster-media-and-text--mobile-is-reversed {
+    flex-direction: row-reverse;
+  }
 }
 
 /*# sourceMappingURL=style-index.css.map*/

@@ -24,12 +24,12 @@ $block_booster_additional_attributes['class'] = join(' ', $block_booster_classes
 $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
 $block_booster_additional_attributes['style'] = $block_booster_styles;
 ?>
-<div <?php echo esc_html(get_block_wrapper_attributes($block_booster_additional_attributes)); ?>>
+<div <?php echo get_block_wrapper_attributes($block_booster_additional_attributes); ?>>
   <?php if ($block_booster_isLink) { ?>
-      <a href="<?php echo esc_html($block_booster_postLink); ?>" title="<?php echo esc_html($block_booster_postTitle); ?>">
+    <a href="<?php echo esc_html($block_booster_postLink); ?>" title="<?php echo esc_html($block_booster_postTitle); ?>">
     <?php } ?>
     <img src="<?php echo esc_html($block_booster_imageUrl); ?>" alt="<?php echo esc_html($block_booster_imageAlt); ?>">
     <?php if ($block_booster_isLink) { ?>
-      </a>
+    </a>
   <?php } ?>
 </div>

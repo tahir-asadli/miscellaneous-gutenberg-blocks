@@ -40,13 +40,13 @@ if ($block_booster_hasSingleChild) {
 $block_booster_additional_attributes['class'] = join(' ', $block_booster_classes);
 $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
 ?>
-<div <?php echo esc_html(get_block_wrapper_attributes($block_booster_additional_attributes));
+<div <?php echo get_block_wrapper_attributes($block_booster_additional_attributes);
 ; ?>>
   <div class="block-booster-media-and-text--left">
     <?php if (!empty($attributes['imageUrl'])) { ?>
-          <img src="<?php echo esc_html($attributes['imageUrl']);
-          ; ?>" alt="<?php echo esc_html($attributes['imageName']);
-           ; ?>">
+      <img src="<?php echo esc_html($attributes['imageUrl']);
+      ; ?>" alt="<?php echo esc_html($attributes['imageName']);
+       ; ?>">
     <?php } ?>
   </div>
   <div class="block-booster-media-and-text--right">

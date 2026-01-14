@@ -10,7 +10,7 @@ return array(
 		'category' => 'block-booster',
 		'description' => 'Category card.',
 		'example' => array(
-
+			
 		),
 		'supports' => array(
 			'html' => false,
@@ -102,7 +102,7 @@ return array(
 		'category' => 'block-booster',
 		'description' => 'Default featured image for post query.',
 		'example' => array(
-
+			
 		),
 		'usesContext' => array(
 			'postId',
@@ -140,7 +140,7 @@ return array(
 			'style' => array(
 				'type' => 'object',
 				'default' => array(
-
+					
 				)
 			),
 			'imageId' => array(
@@ -187,7 +187,7 @@ return array(
 		'category' => 'block-booster',
 		'description' => 'Flexbox container',
 		'example' => array(
-
+			
 		),
 		'supports' => array(
 			'color' => array(
@@ -408,7 +408,7 @@ return array(
 		'category' => 'block-booster',
 		'description' => '',
 		'example' => array(
-
+			
 		),
 		'supports' => array(
 			'html' => false,
@@ -511,7 +511,7 @@ return array(
 		'category' => 'block-booster',
 		'description' => '',
 		'example' => array(
-
+			
 		),
 		'supports' => array(
 			'html' => false,
@@ -599,7 +599,7 @@ return array(
 		'category' => 'block-booster',
 		'description' => 'Search using post category.',
 		'example' => array(
-
+			
 		),
 		'supports' => array(
 			'html' => false,

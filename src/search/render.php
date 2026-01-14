@@ -26,17 +26,17 @@ $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
 $block_booster_categories = get_categories();
 ?>
 <div class="block-booster-search-container">
-  <form action="/">
-    <div <?php echo esc_html(get_block_wrapper_attributes($block_booster_additional_attributes)); ?>>
+  <form action="<?php echo esc_url(home_url('/')); ?>">
+    <div <?php echo get_block_wrapper_attributes($block_booster_additional_attributes); ?>>
       <?php if ($block_booster_showCategory && !empty($block_booster_categories)) { ?>
-          <select name="cat" class="search-category">
-            <?php if ($block_booster_categoryText != '') { ?>
-                <option value=""><?php echo esc_html($block_booster_categoryText); ?></option>
-            <?php } ?>
-            <?php foreach ($block_booster_categories as $block_booster_category) { ?>
-                <option <?php echo get_query_var('cat') == $block_booster_category->term_id ? 'selected' : ''; ?> value="<?php echo esc_html($block_booster_category->term_id); ?>"><?php echo esc_html($block_booster_category->name); ?></option>
-            <?php } ?>
-          </select>
+        <select name="cat" class="search-category">
+          <?php if ($block_booster_categoryText != '') { ?>
+            <option value=""><?php echo esc_html($block_booster_categoryText); ?></option>
+          <?php } ?>
+          <?php foreach ($block_booster_categories as $block_booster_category) { ?>
+            <option <?php selected(get_query_var('cat'), $block_booster_category->term_id); ?> value="<?php echo esc_html($block_booster_category->term_id); ?>"><?php echo esc_html($block_booster_category->name); ?></option>
+          <?php } ?>
+        </select>
       <?php } ?>
       <input name="s" type="search" value="<?php echo esc_html(get_query_var('s')); ?>" class="search-input" placeholder="<?php echo esc_html($block_booster_searchPlaceholder); ?>" />
       <button type="submit" class="search-button"><?php echo !$block_booster_showSearchIcon && $block_booster_buttonText ? esc_html($block_booster_buttonText) : '&nbsp;' ?></button>
@@ -46,10 +46,10 @@ $block_booster_categories = get_categories();
 <style>
   #<?php echo esc_html($block_booster_additional_attributes['id']); ?> {
     <?php if ($block_booster_height > 0) { ?>
-        <?php echo esc_html("height: {$block_booster_height}px;") ?>
+      <?php echo esc_html("height: {$block_booster_height}px;") ?>
     <?php } ?>
     <?php if ($block_booster_width > 0) { ?>
-        <?php echo esc_html("width: {$block_booster_width}px;") ?>
+      <?php echo esc_html("width: {$block_booster_width}px;") ?>
     <?php } ?>
   }
 </style>

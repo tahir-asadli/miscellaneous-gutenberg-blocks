@@ -40,14 +40,14 @@ if ($block_booster_mobileStacked) {
 $block_booster_additional_attributes['class'] = join(' ', $block_booster_classes);
 $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
 ?>
-<div <?php echo esc_html(get_block_wrapper_attributes($block_booster_additional_attributes)); ?>>
+<div <?php echo get_block_wrapper_attributes($block_booster_additional_attributes); ?>>
   <div class="block-booster-icon-and-text--left">
     <?php if (!empty($attributes['imageUrl'])) { ?>
-          <?php if (str_ends_with($attributes['imageUrl'], '.svg')) { ?>
-                <?php echo esc_html($block_booster_imageContent); ?>
-          <?php } else { ?>
-                <img style="width: <?php echo esc_html($block_booster_imageWidth); ?>px" src="<?php echo esc_html($attributes['imageUrl']); ?>" alt="<?php echo esc_html($attributes['imageName']); ?>">
-          <?php } ?>
+      <?php if (substr($attributes['imageUrl'], -4) === '.svg') { ?>
+        <?php echo esc_html($block_booster_imageContent); ?>
+      <?php } else { ?>
+        <img style="width: <?php echo esc_html($block_booster_imageWidth); ?>px" src="<?php echo esc_html($attributes['imageUrl']); ?>" alt="<?php echo esc_html($attributes['imageName']); ?>">
+      <?php } ?>
     <?php } ?>
   </div>
   <div class="block-booster-icon-and-text--right">
@@ -57,7 +57,7 @@ $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
 <style>
   #<?php echo esc_html($block_booster_additional_attributes['id']); ?> svg {
     <?php if ($block_booster_svgColor) { ?>
-          <?php echo esc_html("color: { $block_booster_svgColor};") ?>
+      <?php echo esc_html("color: { $block_booster_svgColor};") ?>
     <?php } ?>
     <?php echo esc_html("width: { $block_booster_imageWidth }px;") ?>
   }
