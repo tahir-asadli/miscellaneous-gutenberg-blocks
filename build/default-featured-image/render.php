@@ -26,9 +26,9 @@ $block_booster_additional_attributes['style'] = $block_booster_styles;
 ?>
 <div <?php echo get_block_wrapper_attributes($block_booster_additional_attributes); ?>>
   <?php if ($block_booster_isLink) { ?>
-    <a href="<?php echo esc_html($block_booster_postLink); ?>" title="<?php echo esc_html($block_booster_postTitle); ?>">
+    <a href="<?php echo esc_url($block_booster_postLink); ?>" title="<?php echo esc_attr($block_booster_postTitle); ?>">
     <?php } ?>
-    <img src="<?php echo esc_html($block_booster_imageUrl); ?>" alt="<?php echo esc_html($block_booster_imageAlt); ?>">
+    <img src="<?php echo esc_url($block_booster_imageUrl); ?>" alt="<?php echo esc_attr($block_booster_imageAlt); ?>">
     <?php if ($block_booster_isLink) { ?>
     </a>
   <?php } ?>

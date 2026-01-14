@@ -35,7 +35,7 @@ $block_booster_href = $block_booster_isLink ? ' href="' . $block_booster_categor
 ?>
 <<?php echo esc_html($block_booster_tagName); ?> <?php echo esc_html($block_booster_href); ?> <?php echo get_block_wrapper_attributes($block_booster_additional_attributes); ?>> <div class="wp-block-block-booster-category-card--left">
     <span class="wp-block-block-booster-category-card--image-wrapper wp-block-block-booster-category-card--type-<?php echo esc_html($block_booster_imageExtension); ?>">
-      <img src="<?php echo esc_html($block_booster_imageUrl); ?>" alt="<?php echo esc_html($block_booster_imageName); ?>">
+      <img src="<?php echo esc_url($block_booster_imageUrl); ?>" alt="<?php echo esc_attr($block_booster_imageName); ?>">
     </span>
   </div>
   <div class="wp-block-block-booster-category-card--right">
@@ -47,16 +47,16 @@ $block_booster_href = $block_booster_isLink ? ' href="' . $block_booster_categor
     <?php } ?>
   </div>
 </<?php echo esc_html($block_booster_tagName); ?>> <style>
-  #<?php echo esc_html($block_booster_additional_attributes['id']); ?> {
+  #<?php echo esc_attr($block_booster_additional_attributes['id']); ?> {
 
     <?php if ($block_booster_gap) { ?>
       <?php echo esc_html("gap: {$block_booster_gap}px;") ?>
     <?php } ?>
     <?php if ($block_booster_imageWidth) { ?>
       .wp-block-block-booster-category-card--image-wrapper {
-        <?php echo esc_html("width: {$block_booster_imageWidth}px;") ?>
-        <?php echo esc_html("height: {$block_booster_imageWidth}px;") ?>
-        <?php echo esc_html("border-radius: {$block_booster_imageWidth}px;") ?>
+        <?php echo "width: {$block_booster_imageWidth}px;" ?>
+        <?php echo "height: {$block_booster_imageWidth}px;" ?>
+        <?php echo "border-radius: {$block_booster_imageWidth}px;" ?>
       }
 
     <?php } ?>

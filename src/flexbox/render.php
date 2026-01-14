@@ -219,7 +219,7 @@ $block_booster_hasTabletStyles = ($block_booster_mobileWidthType == 'custom' && 
 <?php if ($block_booster_MobileStyles || $block_booster_hasMobileStyles || $block_booster_hasTabletStyles): ?>
   <style>
     @media only screen {
-      #<?php echo esc_html($block_booster_additional_attributes['id']); ?> {
+      #<?php echo esc_attr($block_booster_additional_attributes['id']); ?> {
         <?php echo $block_booster_widthType == 'custom' && $block_booster_width != '' ? esc_html("width: {$block_booster_width};") : ''; ?>
         <?php echo $block_booster_columnGap ? esc_html("column-gap: $block_booster_columnGap;") : ''; ?>
         <?php echo $block_booster_rowGap ? esc_html("row-gap: $block_booster_rowGap;") : ''; ?>
@@ -229,7 +229,7 @@ $block_booster_hasTabletStyles = ($block_booster_mobileWidthType == 'custom' && 
     @media only screen and (max-width:
       <?php echo esc_html(BLOCK_BOOSTER_MAX_TABLET_BREAKING_POINT); ?>
     ) {
-      #<?php echo esc_html($block_booster_additional_attributes['id']); ?> {
+      #<?php echo esc_attr($block_booster_additional_attributes['id']); ?> {
         <?php echo $block_booster_tabletWidthType == 'custom' && $block_booster_tabletWidth != '' ? esc_html("width: {$block_booster_tabletWidth};") : ''; ?>
         <?php echo $block_booster_tabletColumnGap ? esc_html("column-gap: $block_booster_tabletColumnGap;") : ''; ?>
         <?php echo $block_booster_tabletRowGap ? esc_html("row-gap: $block_booster_tabletRowGap;") : ''; ?>
@@ -239,7 +239,7 @@ $block_booster_hasTabletStyles = ($block_booster_mobileWidthType == 'custom' && 
     @media only screen and (max-width:
       <?php echo esc_html(BLOCK_BOOSTER_MAX_MOBILE_BREAKING_POINT); ?>
     ) {
-      #<?php echo esc_html($block_booster_additional_attributes['id']); ?> {
+      #<?php echo esc_attr($block_booster_additional_attributes['id']); ?> {
         <?php echo $block_booster_mobileWidthType == 'custom' && $block_booster_mobileWidth != '' ? esc_html("width: {$block_booster_mobileWidth};") : ''; ?>
         <?php echo $block_booster_mobileColumnGap ? esc_html("column-gap: $block_booster_mobileColumnGap;") : ''; ?>
         <?php echo $block_booster_mobileRowGap ? esc_html("row-gap: $block_booster_mobileRowGap;") : ''; ?>

@@ -44,8 +44,8 @@ $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
 ; ?>>
   <div class="block-booster-media-and-text--left">
     <?php if (!empty($attributes['imageUrl'])) { ?>
-      <img src="<?php echo esc_html($attributes['imageUrl']);
-      ; ?>" alt="<?php echo esc_html($attributes['imageName']);
+      <img src="<?php echo esc_url($attributes['imageUrl']);
+      ; ?>" alt="<?php echo esc_attr($attributes['imageName']);
        ; ?>">
     <?php } ?>
   </div>
@@ -66,7 +66,7 @@ $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
     <?php echo esc_html(BLOCK_BOOSTER_MIN_DESKTOP_BREAKING_POINT);
     ; ?>
   ) {
-    #<?php echo esc_html($block_booster_additional_attributes['id']);
+    #<?php echo esc_attr($block_booster_additional_attributes['id']);
     ; ?> {
       <?php echo esc_html("gap: {$block_booster_gap}px;"); ?>
     }
@@ -79,7 +79,7 @@ $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
     <?php echo esc_html(BLOCK_BOOSTER_MAX_TABLET_BREAKING_POINT);
     ; ?>
   ) {
-    #<?php echo esc_html($block_booster_additional_attributes['id']);
+    #<?php echo esc_attr($block_booster_additional_attributes['id']);
     ; ?> {
       <?php echo esc_html("gap: {$block_booster_tabletGap}px;"); ?>
     }
@@ -89,7 +89,7 @@ $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
     <?php echo esc_html(BLOCK_BOOSTER_MAX_MOBILE_BREAKING_POINT);
     ; ?>
   ) {
-    #<?php echo esc_html($block_booster_additional_attributes['id']);
+    #<?php echo esc_attr($block_booster_additional_attributes['id']);
     ; ?> {
       <?php echo esc_html("gap: {$block_booster_mobileGap}px;"); ?>
     }

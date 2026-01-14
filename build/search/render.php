@@ -34,17 +34,17 @@ $block_booster_categories = get_categories();
             <option value=""><?php echo esc_html($block_booster_categoryText); ?></option>
           <?php } ?>
           <?php foreach ($block_booster_categories as $block_booster_category) { ?>
-            <option <?php selected(get_query_var('cat'), $block_booster_category->term_id); ?> value="<?php echo esc_html($block_booster_category->term_id); ?>"><?php echo esc_html($block_booster_category->name); ?></option>
+            <option <?php selected(get_query_var('cat'), $block_booster_category->term_id); ?> value="<?php echo esc_attr($block_booster_category->term_id); ?>"><?php echo esc_html($block_booster_category->name); ?></option>
           <?php } ?>
         </select>
       <?php } ?>
-      <input name="s" type="search" value="<?php echo esc_html(get_query_var('s')); ?>" class="search-input" placeholder="<?php echo esc_html($block_booster_searchPlaceholder); ?>" />
+      <input name="s" type="search" value="<?php echo esc_attr(get_query_var('s')); ?>" class="search-input" placeholder="<?php echo esc_attr($block_booster_searchPlaceholder); ?>" />
       <button type="submit" class="search-button"><?php echo !$block_booster_showSearchIcon && $block_booster_buttonText ? esc_html($block_booster_buttonText) : '&nbsp;' ?></button>
     </div>
   </form>
 </div>
 <style>
-  #<?php echo esc_html($block_booster_additional_attributes['id']); ?> {
+  #<?php echo esc_attr($block_booster_additional_attributes['id']); ?> {
     <?php if ($block_booster_height > 0) { ?>
       <?php echo esc_html("height: {$block_booster_height}px;") ?>
     <?php } ?>

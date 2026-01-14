@@ -46,7 +46,7 @@ $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
       <?php if (substr($attributes['imageUrl'], -4) === '.svg') { ?>
         <?php echo esc_html($block_booster_imageContent); ?>
       <?php } else { ?>
-        <img style="width: <?php echo esc_html($block_booster_imageWidth); ?>px" src="<?php echo esc_html($attributes['imageUrl']); ?>" alt="<?php echo esc_html($attributes['imageName']); ?>">
+        <img style="width: <?php echo esc_attr($block_booster_imageWidth); ?>px" src="<?php echo esc_url($attributes['imageUrl']); ?>" alt="<?php echo esc_attr($attributes['imageName']); ?>">
       <?php } ?>
     <?php } ?>
   </div>
@@ -55,7 +55,7 @@ $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
   </div>
 </div>
 <style>
-  #<?php echo esc_html($block_booster_additional_attributes['id']); ?> svg {
+  #<?php echo esc_attr($block_booster_additional_attributes['id']); ?> svg {
     <?php if ($block_booster_svgColor) { ?>
       <?php echo esc_html("color: { $block_booster_svgColor};") ?>
     <?php } ?>
@@ -65,7 +65,7 @@ $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
   @media only screen and (min-width:
     <?php echo esc_html(BLOCK_BOOSTER_MIN_DESKTOP_BREAKING_POINT); ?>
   ) {
-    #<?php echo esc_html($block_booster_additional_attributes['id']); ?> {
+    #<?php echo esc_attr($block_booster_additional_attributes['id']); ?> {
       <?php echo esc_html("gap: { $block_booster_gap }px;") ?>
     }
   }
@@ -75,7 +75,7 @@ $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
   ) and (max-width:
     <?php echo esc_html(BLOCK_BOOSTER_MAX_TABLET_BREAKING_POINT); ?>
   ) {
-    #<?php echo esc_html($block_booster_additional_attributes['id']); ?> {
+    #<?php echo esc_attr($block_booster_additional_attributes['id']); ?> {
       <?php echo esc_html("gap: { $block_booster_tabletGap }px;") ?>
     }
   }
@@ -83,7 +83,7 @@ $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
   @media only screen and (max-width:
     <?php echo esc_html(BLOCK_BOOSTER_MAX_MOBILE_BREAKING_POINT); ?>
   ) {
-    #<?php echo esc_html($block_booster_additional_attributes['id']); ?> {
+    #<?php echo esc_attr($block_booster_additional_attributes['id']); ?> {
       <?php echo esc_html("gap: { $block_booster_mobileGap }px;") ?>
     }
   }
