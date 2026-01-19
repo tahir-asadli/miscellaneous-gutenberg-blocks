@@ -1,3 +1,6 @@
+/*
+ * WordPress Dependencies
+ */
 import {
 	InspectorControls,
 	MediaUpload,
@@ -13,42 +16,16 @@ import {
 	SelectControl,
 	ResizableBox,
 } from "@wordpress/components";
-
 import { useSelect } from "@wordpress/data";
-/**
- * Retrieves the translation of text.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
- */
 import { __ } from "@wordpress/i18n";
-
-/**
- * React hook that is used to mark the block wrapper element.
- * It provides all the necessary props like the class name.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
- */
 import { useBlockProps } from "@wordpress/block-editor";
 
-/**
- * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
- * Those files can contain any CSS code that gets applied to the editor.
- *
- * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
+/*
+ * Internal  Dependencies
  */
 import "./editor.scss";
 import { useEffect, useState } from "react";
-
-import { lineDotted } from "@wordpress/icons";
 import { getFileExtension } from "../libs/global";
-/**
- * The edit function describes the structure of your block in the context of the
- * editor. This represents what the editor will render when the block is used.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
- *
- * @return {Element} Element to render.
- */
 
 export default function Edit({
 	attributes,
@@ -69,7 +46,6 @@ export default function Edit({
 		},
 	});
 
-	// 1. Fetch all categories using the core data store.
 	const { allCategories, hasResolved } = useSelect((select) => {
 		const selectorArgs = ["taxonomy", "category", { per_page: -1 }];
 		return {
@@ -118,7 +94,7 @@ export default function Edit({
 			imageUrl: media.sizes?.full
 				? media.sizes.full.url
 				: media.sizes.thumbnail.url,
-			imageName: media.title || media.filename, // Use title or filename
+			imageName: media.title || media.filename,
 		});
 	};
 	const removeImage = () => {
