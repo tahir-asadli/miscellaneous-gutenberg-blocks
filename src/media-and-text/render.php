@@ -39,14 +39,14 @@ if ($block_booster_hasSingleChild) {
 }
 $block_booster_additional_attributes['class'] = join(' ', $block_booster_classes);
 $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
+
+// Prepare wrapper attributes safely.
+$block_booster_wrapper_attrs = get_block_wrapper_attributes($block_booster_additional_attributes);
 ?>
-<div <?php echo get_block_wrapper_attributes($block_booster_additional_attributes);
-; ?>>
+<div <?php echo $block_booster_wrapper_attrs; ?>>
   <div class="block-booster-media-and-text--left">
     <?php if (!empty($attributes['imageUrl'])) { ?>
-      <img src="<?php echo esc_url($attributes['imageUrl']);
-      ; ?>" alt="<?php echo esc_attr($attributes['imageName']);
-       ; ?>">
+      <img src="<?php echo esc_url($attributes['imageUrl']); ?>" alt="<?php echo esc_attr($attributes['imageName']); ?>">
     <?php } ?>
   </div>
   <div class="block-booster-media-and-text--right">
@@ -57,41 +57,40 @@ $block_booster_additional_attributes['id'] = 'block-booster-' . uniqid();
         echo '<div>' . wp_kses_post($block_booster_inner_block->render()) . '</div>';
       }
     }
-
-    ?>
+    ?> ?>
   </div>
 </div>
 <style>
-  @media only screen and (min-width:
-    <?php echo esc_html(BLOCK_BOOSTER_MIN_DESKTOP_BREAKING_POINT);
-    ; ?>
-  ) {
-    #<?php echo esc_attr($block_booster_additional_attributes['id']);
-    ; ?> {
-      <?php echo esc_html("gap: {$block_booster_gap}px;"); ?>
-    }
+  <?php echo esc_html(BLOCK_BOOSTER_MIN_DESKTOP_BREAKING_POINT); ?>
+  ;
+
+  ?>#<?php echo esc_attr($block_booster_additional_attributes['id']); ?> {
+    <?php $gap_desktop = (int) $block_booster_gap;
+    echo esc_attr("gap: {$gap_desktop}px;"); ?>
+    <?php echo esc_html("gap: {$block_booster_gap}px;"); ?>
+  }
   }
 
-  @media only screen and (min-width:
-    <?php echo esc_html(BLOCK_BOOSTER_MIN_TABLET_BREAKING_POINT);
-    ; ?>
-  ) and (max-width:
-    <?php echo esc_html(BLOCK_BOOSTER_MAX_TABLET_BREAKING_POINT);
-    ; ?>
-  ) {
-    #<?php echo esc_attr($block_booster_additional_attributes['id']);
-    ; ?> {
-      <?php echo esc_html("gap: {$block_booster_tabletGap}px;"); ?>
-    }
+  <?php echo esc_html(BLOCK_BOOSTER_MIN_TABLET_BREAKING_POINT); ?>
+  ;
+  ?>
+  <?php echo esc_html(BLOCK_BOOSTER_MAX_TABLET_BREAKING_POINT); ?>
+  ;
+
+  ?>#<?php echo esc_attr($block_booster_additional_attributes['id']); ?> {
+    <?php $gap_tablet = (int) $block_booster_tabletGap;
+    echo esc_attr("gap: {$gap_tablet}px;"); ?>
+    <?php echo esc_html("gap: {$block_booster_tabletGap}px;"); ?>
+  }
   }
 
-  @media only screen and (max-width:
-    <?php echo esc_html(BLOCK_BOOSTER_MAX_MOBILE_BREAKING_POINT);
-    ; ?>
-  ) {
-    #<?php echo esc_attr($block_booster_additional_attributes['id']);
-    ; ?> {
-      <?php echo esc_html("gap: {$block_booster_mobileGap}px;"); ?>
-    }
+  <?php echo esc_html(BLOCK_BOOSTER_MAX_MOBILE_BREAKING_POINT); ?>
+  ;
+
+  ?>#<?php echo esc_attr($block_booster_additional_attributes['id']); ?> {
+    <?php $gap_mobile = (int) $block_booster_mobileGap;
+    echo esc_attr("gap: {$gap_mobile}px;"); ?>
+    <?php echo esc_html("gap: {$block_booster_mobileGap}px;"); ?>
+  }
   }
 </style>
