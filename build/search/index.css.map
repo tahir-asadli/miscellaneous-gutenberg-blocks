@@ -1,1 +1,0 @@
-{"version":3,"file":"search/index.css","mappings":";;;AAAA;EACC;EACA;AACD,C","sources":["webpack://block-booster/./src/search/editor.scss"],"sourcesContent":[".icon_svg__block-booster-search-icon {\n\tfill: none !important;\n\tstroke: #2c817b !important;\n}\n"],"names":[],"sourceRoot":""}

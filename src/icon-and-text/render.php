@@ -66,13 +66,13 @@ $block_booster_additional_attributes['id']    = 'block-booster-' . uniqid();
 	#<?php echo esc_attr( $block_booster_additional_attributes['id'] ); ?> svg {
 	<?php
 	if ( $block_booster_svg_color ) {
-		$svg_color = esc_attr( $block_booster_svg_color );
-		echo esc_attr( "color: {$svg_color};" );
+		$block_booster_svg_color = esc_attr( $block_booster_svg_color );
+		echo esc_attr( "color: {$block_booster_svg_color};" );
 	}
 	?>
 	<?php
-	$icon_image_width = (int) $block_booster_image_width;
-	echo esc_attr( "width: {$icon_image_width}px;" );
+	$block_booster_icon_image_width = (int) $block_booster_image_width;
+	echo esc_attr( "width: {$block_booster_icon_image_width}px;" );
 	?>
 	}
 
@@ -81,8 +81,8 @@ $block_booster_additional_attributes['id']    = 'block-booster-' . uniqid();
 	) {
 	#<?php echo esc_attr( $block_booster_additional_attributes['id'] ); ?> {
 		<?php
-		$icon_gap = (int) $block_booster_gap;
-		echo esc_attr( "gap: {$icon_gap}px;" );
+		$block_booster_icon_gap = (int) $block_booster_gap;
+		echo esc_attr( "gap: {$block_booster_icon_gap}px;" );
 		?>
 	}
 	}
@@ -94,8 +94,8 @@ $block_booster_additional_attributes['id']    = 'block-booster-' . uniqid();
 	) {
 	#<?php echo esc_attr( $block_booster_additional_attributes['id'] ); ?> {
 		<?php
-		$icon_tablet_gap = (int) $block_booster_tablet_gap;
-		echo esc_attr( "gap: {$icon_tablet_gap}px;" );
+		$block_booster_icon_tablet_gap = (int) $block_booster_tablet_gap;
+		echo esc_attr( "gap: {$block_booster_icon_tablet_gap}px;" );
 		?>
 	}
 	}
@@ -105,8 +105,8 @@ $block_booster_additional_attributes['id']    = 'block-booster-' . uniqid();
 	) {
 	#<?php echo esc_attr( $block_booster_additional_attributes['id'] ); ?> {
 		<?php
-		$icon_mobile_gap = (int) $block_booster_mobile_gap;
-		echo esc_attr( "gap: {$icon_mobile_gap}px;" );
+		$block_booster_icon_mobile_gap = (int) $block_booster_mobile_gap;
+		echo esc_attr( "gap: {$block_booster_icon_mobile_gap}px;" );
 		?>
 	}
 	}

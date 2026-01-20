@@ -37,8 +37,8 @@ if ( $block_booster_image_url ) {
 $block_booster_tag_name = $block_booster_is_link ? 'a' : 'div';
 
 // Validate tag name against a safe whitelist to avoid tag injection.
-$allowed_block_tags = array( 'div', 'a' );
-if ( ! in_array( $block_booster_tag_name, $allowed_block_tags, true ) ) {
+$block_booster_allowed_block_tags = array( 'div', 'a' );
+if ( ! in_array( $block_booster_tag_name, $block_booster_allowed_block_tags, true ) ) {
 	$block_booster_tag_name = 'div';
 }
 
@@ -70,18 +70,18 @@ if ( 'a' === $block_booster_tag_name ) {
 
 	<?php
 	if ( $block_booster_gap ) {
-		$cat_gap = (int) $block_booster_gap;
+		$block_booster_cat_gap = (int) $block_booster_gap;
 		?>
-		<?php echo esc_attr( "gap: {$cat_gap}px;" ); ?>
+		<?php echo esc_attr( "gap: {$block_booster_cat_gap}px;" ); ?>
 	<?php } ?>
 	<?php
 	if ( $block_booster_image_width ) {
-		$cat_image_w = (int) $block_booster_image_width;
+		$block_booster_cat_image_w = (int) $block_booster_image_width;
 		?>
 		.wp-block-block-booster-category-card--image-wrapper {
-		<?php echo esc_attr( "width: {$cat_image_w}px;" ); ?>
-		<?php echo esc_attr( "height: {$cat_image_w}px;" ); ?>
-		<?php echo esc_attr( "border-radius: {$cat_image_w}px;" ); ?>
+		<?php echo esc_attr( "width: {$block_booster_cat_image_w}px;" ); ?>
+		<?php echo esc_attr( "height: {$block_booster_cat_image_w}px;" ); ?>
+		<?php echo esc_attr( "border-radius: {$block_booster_cat_image_w}px;" ); ?>
 		}
 
 	<?php } ?>
