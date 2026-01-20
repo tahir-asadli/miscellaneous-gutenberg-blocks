@@ -52,7 +52,7 @@ $block_booster_additional_attributes['id']    = 'block-booster-' . uniqid();
 	<div class="block-booster-icon-and-text--left">
 	<?php if ( ! empty( $attributes['imageUrl'] ) ) { ?>
 		<?php if ( substr( $attributes['imageUrl'], -4 ) === '.svg' ) { ?>
-			<?php echo esc_html( $block_booster_image_content ); ?>
+			<?php echo wp_kses_post( $block_booster_image_content ); ?>
 		<?php } else { ?>
 		<img style="width: <?php echo esc_attr( $block_booster_image_width ); ?>px" src="<?php echo esc_url( $attributes['imageUrl'] ); ?>" alt="<?php echo esc_attr( $attributes['imageName'] ); ?>">
 		<?php } ?>
