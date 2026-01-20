@@ -2,17 +2,15 @@
 /**
  * Category Card
  *
- * This file is deprecated, use 'wp-admin/includes/admin.php' instead.
- *
  * @package block-booster
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-$block_booster_vertical           = ! empty( $attributes['vertical'] ) && $attributes['vertical'] == true ? true : false;
-$block_booster_is_link            = ! empty( $attributes['isLink'] ) && $attributes['isLink'] == true ? true : false;
-$block_booster_disable_css        = ! empty( $attributes['disable_css'] ) && $attributes['disable_css'] == 1;
+$block_booster_vertical           = ! empty( $attributes['vertical'] ) && true === $attributes['vertical'] ? true : false;
+$block_booster_is_link            = ! empty( $attributes['isLink'] ) && true === $attributes['isLink'] ? true : false;
+$block_booster_disable_css        = ! empty( $attributes['disable_css'] ) && true === $attributes['disable_css'];
 $block_booster_category_name      = ! empty( $attributes['categoryName'] ) ? $attributes['categoryName'] : '';
 $block_booster_category_count     = ! empty( $attributes['categoryCount'] ) ? $attributes['categoryCount'] : '';
 $block_booster_category_url       = ! empty( $attributes['categoryUrl'] ) ? $attributes['categoryUrl'] : '';
@@ -35,9 +33,6 @@ $block_booster_image_extension                = '';
 if ( $block_booster_image_url ) {
 	$block_booster_image_extension = pathinfo( $block_booster_image_url, PATHINFO_EXTENSION );
 }
-
-
-
 
 $block_booster_tag_name = $block_booster_is_link ? 'a' : 'div';
 

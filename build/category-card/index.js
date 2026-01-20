@@ -36,42 +36,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _libs_global__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../libs/global */ "./src/libs/global.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__);
-
-
-
-/**
- * Retrieves the translation of text.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
- */
-
-
-/**
- * React hook that is used to mark the block wrapper element.
- * It provides all the necessary props like the class name.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
- */
-
-
-/**
- * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
- * Those files can contain any CSS code that gets applied to the editor.
- *
- * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
+/*
+ * WordPress Dependencies
  */
 
 
 
 
-/**
- * The edit function describes the structure of your block in the context of the
- * editor. This represents what the editor will render when the block is used.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
- *
- * @return {Element} Element to render.
+
+
+/*
+ * Internal  Dependencies
  */
+
+
+
 
 function Edit({
   attributes,
@@ -90,8 +69,6 @@ function Edit({
       gap: attributes.gap ? `${attributes.gap}px` : 0
     }
   });
-
-  // 1. Fetch all categories using the core data store.
   const {
     allCategories,
     hasResolved
@@ -137,7 +114,7 @@ function Edit({
       imageId: media.id,
       imageUrl: media.sizes.full.url,
       imageUrl: media.sizes?.full ? media.sizes.full.url : media.sizes.thumbnail.url,
-      imageName: media.title || media.filename // Use title or filename
+      imageName: media.title || media.filename
     });
   };
   const removeImage = () => {
