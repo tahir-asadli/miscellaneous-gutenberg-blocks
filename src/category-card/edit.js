@@ -15,6 +15,8 @@ import {
 	Button,
 	SelectControl,
 	ResizableBox,
+	__experimentalToggleGroupControl as ToggleGroupControl,
+	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
 } from "@wordpress/components";
 import { useSelect } from "@wordpress/data";
 import { __ } from "@wordpress/i18n";
@@ -37,6 +39,9 @@ export default function Edit({
 	const classNames = [];
 	if (attributes.vertical) {
 		classNames.push("wp-block-block-booster-category-card--vertical");
+	}
+	if (attributes.disableCSS) {
+		classNames.push("wp-block-block-booster-category-card--no-css");
 	}
 
 	const blockProps = useBlockProps({
@@ -104,6 +109,24 @@ export default function Edit({
 		<>
 			<InspectorControls>
 				<PanelBody title={__("Settings", "block-booster")}>
+					<ToggleGroupControl
+						label={__("Disable CSS", "block-booster")}
+						value={attributes.disableCSS}
+						isBlock={true}
+						__nextHasNoMarginBottom
+						onChange={(value) => setAttributes({ disableCSS: value })}
+					>
+						<ToggleGroupControlOption
+							isAdaptiveWidth={true}
+							value={true}
+							label={__("Yes", "block-booster")}
+						/>
+						<ToggleGroupControlOption
+							isAdaptiveWidth={true}
+							value={false}
+							label={__("No", "block-booster")}
+						/>
+					</ToggleGroupControl>
 					<SelectControl
 						__nextHasNoMarginBottom
 						__next40pxDefaultSize

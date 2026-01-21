@@ -1,1 +1,603 @@
-(()=>{"use strict";var e,o={315:()=>{const e=window.wp.blocks,o=window.wp.components,t=window.wp.blockEditor,r=window.wp.i18n,l=window.ReactJSXRuntime,n=JSON.parse('{"UU":"block-booster/search"}'),i=window.React;var s;function a(){return a=Object.assign?Object.assign.bind():function(e){for(var o=1;o<arguments.length;o++){var t=arguments[o];for(var r in t)({}).hasOwnProperty.call(t,r)&&(e[r]=t[r])}return e},a.apply(null,arguments)}(0,e.registerBlockType)(n.UU,{icon:function(e){return i.createElement("svg",a({xmlns:"http://www.w3.org/2000/svg",width:200,height:200,fill:"none",stroke:"currentColor",strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,className:"icon_svg__block-booster-search-icon",viewBox:"0 0 24 24"},e),s||(s=i.createElement("path",{d:"M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0M21 21l-6-6"})))},edit:function({attributes:e,setAttributes:n,toggleSelection:i,isSelected:s}){const a=[];e.disableCSS||a.push("has-style"),e.showSearchIcon&&a.push("show-search-icon"),e.showCategory&&a.push("show-category");const h=(0,t.useBlockProps)({className:a.join(" "),style:{height:e.height>0?`${e.height}px`:void 0,width:e.width>0?`${e.width}px`:void 0}});return(0,l.jsxs)(l.Fragment,{children:[(0,l.jsx)(t.InspectorControls,{children:(0,l.jsxs)(o.PanelBody,{title:(0,r.__)("Settings","block-booster"),children:[(0,l.jsxs)(o.__experimentalToggleGroupControl,{label:(0,r.__)("Category selector","block-booster"),value:e.showCategory,isBlock:!0,__nextHasNoMarginBottom:!0,onChange:e=>n({showCategory:e}),children:[(0,l.jsx)(o.__experimentalToggleGroupControlOption,{isAdaptiveWidth:!0,value:!0,label:(0,r.__)("Show","block-booster")}),(0,l.jsx)(o.__experimentalToggleGroupControlOption,{isAdaptiveWidth:!0,value:!1,label:(0,r.__)("Hide","block-booster")})]}),(0,l.jsxs)(o.__experimentalToggleGroupControl,{label:(0,r.__)("Show search icon","block-booster"),value:e.showSearchIcon,isBlock:!0,__nextHasNoMarginBottom:!0,onChange:e=>n({showSearchIcon:e}),children:[(0,l.jsx)(o.__experimentalToggleGroupControlOption,{isAdaptiveWidth:!0,value:!0,label:(0,r.__)("Show","block-booster")}),(0,l.jsx)(o.__experimentalToggleGroupControlOption,{isAdaptiveWidth:!0,value:!1,label:(0,r.__)("Hide","block-booster")})]}),(0,l.jsxs)(o.__experimentalToggleGroupControl,{label:(0,r.__)("Disable CSS","block-booster"),value:e.disableCSS,isBlock:!0,__nextHasNoMarginBottom:!0,onChange:e=>n({disableCSS:e}),children:[(0,l.jsx)(o.__experimentalToggleGroupControlOption,{isAdaptiveWidth:!0,value:!0,label:(0,r.__)("Yes","block-booster")}),(0,l.jsx)(o.__experimentalToggleGroupControlOption,{isAdaptiveWidth:!0,value:!1,label:(0,r.__)("No","block-booster")})]}),(0,l.jsx)(o.TextControl,{label:(0,r.__)("Search placeholder","block-booster"),value:e.searchPlaceholder,onChange:e=>n({searchPlaceholder:e})}),(0,l.jsx)(o.TextControl,{label:(0,r.__)("Category text","block-booster"),value:e.categoryText,onChange:e=>n({categoryText:e})}),(0,l.jsx)(o.TextControl,{label:(0,r.__)("Button text","block-booster"),value:e.buttonText,onChange:e=>n({buttonText:e})}),(0,l.jsx)(o.RangeControl,{label:(0,r.__)("Height","block-booster"),__nextHasNoMarginBottom:!0,__next40pxDefaultSize:!0,value:e.height,onChange:e=>n({height:e}),min:0,max:100}),(0,l.jsx)(o.RangeControl,{label:(0,r.__)("Width","block-booster"),__nextHasNoMarginBottom:!0,__next40pxDefaultSize:!0,value:e.width,onChange:e=>n({width:e}),min:0,max:500})]})}),(0,l.jsx)(o.ResizableBox,{size:{height:e.height>0?e.height:void 0,width:e.width>0?e.width:void 0},__experimentalShowTooltip:!0,minHeight:"50",minWidth:"50",enable:{top:!1,right:!0,bottom:!0,left:!1,topRight:!1,bottomRight:!0,bottomLeft:!1,topLeft:!1},onResizeStop:(o,t,r,l)=>{n({height:e.height+l.height,width:e.width+l.width}),i(!0)},onResizeStart:()=>{i(!1)},showHandle:s,children:(0,l.jsxs)("div",{...h,children:[e.showCategory&&(0,l.jsx)("select",{name:"cat",class:"search-category",children:e.categoryText&&(0,l.jsx)("option",{value:"",children:e.categoryText})}),(0,l.jsx)("input",{name:"s",type:"search",class:"search-input",placeholder:e.searchPlaceholder}),(0,l.jsx)("button",{type:"submit",class:"search-button",children:e.showSearchIcon?(0,l.jsx)("span",{dangerouslySetInnerHTML:{__html:"&nbsp;"}}):e.buttonText})]})})]})},save:function(){return(0,l.jsx)(t.InnerBlocks.Content,{})}})}},t={};function r(e){var l=t[e];if(void 0!==l)return l.exports;var n=t[e]={exports:{}};return o[e](n,n.exports,r),n.exports}r.m=o,e=[],r.O=(o,t,l,n)=>{if(!t){var i=1/0;for(c=0;c<e.length;c++){for(var[t,l,n]=e[c],s=!0,a=0;a<t.length;a++)(!1&n||i>=n)&&Object.keys(r.O).every(e=>r.O[e](t[a]))?t.splice(a--,1):(s=!1,n<i&&(i=n));if(s){e.splice(c--,1);var h=l();void 0!==h&&(o=h)}}return o}n=n||0;for(var c=e.length;c>0&&e[c-1][2]>n;c--)e[c]=e[c-1];e[c]=[t,l,n]},r.o=(e,o)=>Object.prototype.hasOwnProperty.call(e,o),(()=>{var e={842:0,326:0};r.O.j=o=>0===e[o];var o=(o,t)=>{var l,n,[i,s,a]=t,h=0;if(i.some(o=>0!==e[o])){for(l in s)r.o(s,l)&&(r.m[l]=s[l]);if(a)var c=a(r)}for(o&&o(t);h<i.length;h++)n=i[h],r.o(e,n)&&e[n]&&e[n][0](),e[n]=0;return r.O(c)},t=globalThis.webpackChunkblock_booster=globalThis.webpackChunkblock_booster||[];t.forEach(o.bind(null,0)),t.push=o.bind(null,t.push.bind(t))})();var l=r.O(void 0,[326],()=>r(315));l=r.O(l)})();
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/search/block.json":
+/*!*******************************!*\
+  !*** ./src/search/block.json ***!
+  \*******************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"block-booster/search","version":"0.1.0","title":"Search","category":"block-booster","description":"Search using post category.","example":{},"supports":{"html":false,"color":{"background":true,"text":true},"typography":{"fontSize":true,"lineHeight":true,"textAlign":true},"background":{"backgroundSize":true},"spacing":{"margin":true,"padding":true,"blockGap":true}},"attributes":{"disableCSS":{"type":"boolean","default":false},"showCategory":{"type":"boolean","default":false},"showSearchIcon":{"type":"boolean","default":true},"searchPlaceholder":{"type":"string","default":""},"buttonText":{"type":"string","default":""},"categoryText":{"type":"string","default":""},"height":{"type":"number","default":40},"width":{"type":"number","default":300}},"textdomain":"block-booster","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+
+/***/ }),
+
+/***/ "./src/search/edit.js":
+/*!****************************!*\
+  !*** ./src/search/edit.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Edit)
+/* harmony export */ });
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/search/editor.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+/**
+ * WordPress dependencies
+ */
+
+
+
+
+
+/**
+ * Block edit function
+ */
+
+function Edit({
+  attributes,
+  setAttributes,
+  toggleSelection,
+  isSelected
+}) {
+  const classNames = [];
+  if (!attributes.disableCSS) {
+    classNames.push("has-style");
+  }
+  if (attributes.showSearchIcon) {
+    classNames.push("show-search-icon");
+  }
+  if (attributes.showCategory) {
+    classNames.push("show-category");
+  }
+  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
+    className: classNames.join(" "),
+    style: {
+      height: attributes.height > 0 ? `${attributes.height}px` : undefined,
+      width: attributes.width > 0 ? `${attributes.width}px` : undefined
+    }
+  });
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.PanelBody, {
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Settings", "block-booster"),
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalToggleGroupControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Category selector", "block-booster"),
+          value: attributes.showCategory,
+          isBlock: true,
+          __nextHasNoMarginBottom: true,
+          onChange: value => setAttributes({
+            showCategory: value
+          }),
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalToggleGroupControlOption, {
+            isAdaptiveWidth: true,
+            value: true,
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Show", "block-booster")
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalToggleGroupControlOption, {
+            isAdaptiveWidth: true,
+            value: false,
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Hide", "block-booster")
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalToggleGroupControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Show search icon", "block-booster"),
+          value: attributes.showSearchIcon,
+          isBlock: true,
+          __nextHasNoMarginBottom: true,
+          onChange: value => setAttributes({
+            showSearchIcon: value
+          }),
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalToggleGroupControlOption, {
+            isAdaptiveWidth: true,
+            value: true,
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Show", "block-booster")
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalToggleGroupControlOption, {
+            isAdaptiveWidth: true,
+            value: false,
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Hide", "block-booster")
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalToggleGroupControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Disable CSS", "block-booster"),
+          value: attributes.disableCSS,
+          isBlock: true,
+          __nextHasNoMarginBottom: true,
+          onChange: value => setAttributes({
+            disableCSS: value
+          }),
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalToggleGroupControlOption, {
+            isAdaptiveWidth: true,
+            value: true,
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Yes", "block-booster")
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalToggleGroupControlOption, {
+            isAdaptiveWidth: true,
+            value: false,
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("No", "block-booster")
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.TextControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Search placeholder", "block-booster"),
+          value: attributes.searchPlaceholder,
+          onChange: value => setAttributes({
+            searchPlaceholder: value
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.TextControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Category text", "block-booster"),
+          value: attributes.categoryText,
+          onChange: value => setAttributes({
+            categoryText: value
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.TextControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Button text", "block-booster"),
+          value: attributes.buttonText,
+          onChange: value => setAttributes({
+            buttonText: value
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.RangeControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Height", "block-booster"),
+          __nextHasNoMarginBottom: true,
+          __next40pxDefaultSize: true,
+          value: attributes.height,
+          onChange: value => setAttributes({
+            height: value
+          }),
+          min: 0,
+          max: 100
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.RangeControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Width", "block-booster"),
+          __nextHasNoMarginBottom: true,
+          __next40pxDefaultSize: true,
+          value: attributes.width,
+          onChange: value => setAttributes({
+            width: value
+          }),
+          min: 0,
+          max: 500
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.ResizableBox, {
+      size: {
+        height: attributes.height > 0 ? attributes.height : undefined,
+        width: attributes.width > 0 ? attributes.width : undefined
+      },
+      __experimentalShowTooltip: true,
+      minHeight: "50",
+      minWidth: "50",
+      enable: {
+        top: false,
+        right: true,
+        bottom: true,
+        left: false,
+        topRight: false,
+        bottomRight: true,
+        bottomLeft: false,
+        topLeft: false
+      },
+      onResizeStop: (event, direction, elt, delta) => {
+        setAttributes({
+          height: attributes.height + delta.height,
+          width: attributes.width + delta.width
+        });
+        toggleSelection(true);
+      },
+      onResizeStart: () => {
+        toggleSelection(false);
+      },
+      showHandle: isSelected,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        ...blockProps,
+        children: [attributes.showCategory && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("select", {
+          name: "cat",
+          class: "search-category",
+          children: attributes.categoryText && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+            value: "",
+            children: attributes.categoryText
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+          name: "s",
+          type: "search",
+          class: "search-input",
+          placeholder: attributes.searchPlaceholder
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+          type: "submit",
+          class: "search-button",
+          children: attributes.showSearchIcon ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+            dangerouslySetInnerHTML: {
+              __html: "&nbsp;"
+            }
+          }) : attributes.buttonText
+        })]
+      })
+    })]
+  });
+}
+
+/***/ }),
+
+/***/ "./src/search/editor.scss":
+/*!********************************!*\
+  !*** ./src/search/editor.scss ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/search/icon.svg":
+/*!*****************************!*\
+  !*** ./src/search/icon.svg ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ReactComponent: () => (/* binding */ SvgIcon),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _path;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+
+var SvgIcon = function SvgIcon(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 200,
+    height: 200,
+    fill: "none",
+    stroke: "currentColor",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    className: "icon_svg__block-booster-search-icon",
+    viewBox: "0 0 24 24"
+  }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0M21 21l-6-6"
+  })));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iYmxvY2stYm9vc3Rlci1zZWFyY2gtaWNvbiIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGhlaWdodD0iMjAwcHgiIHdpZHRoPSIyMDBweCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAgMTBtLTcgMGE3IDcgMCAxIDAgMTQgMGE3IDcgMCAxIDAgLTE0IDAiPjwvcGF0aD48cGF0aCBkPSJNMjEgMjFsLTYgLTYiPjwvcGF0aD48L3N2Zz4=");
+
+/***/ }),
+
+/***/ "./src/search/index.js":
+/*!*****************************!*\
+  !*** ./src/search/index.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/search/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/search/edit.js");
+/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/search/save.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/search/block.json");
+/* harmony import */ var _icon_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./icon.svg */ "./src/search/icon.svg");
+/**
+ * Registers a new block provided a unique name and an object defining its behavior.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
+ */
+
+
+/**
+ * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
+ * All files containing `style` keyword are bundled together. The code used
+ * gets applied both to the front of your site and to the editor.
+ *
+ * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+
+/**
+ * Every block starts by registering a new block type definition.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
+ */
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_4__.name, {
+  icon: _icon_svg__WEBPACK_IMPORTED_MODULE_5__.ReactComponent,
+  /**
+   * @see ./edit.js
+   */
+  edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
+  /**
+   * @see ./save.js
+   */
+  save: _save__WEBPACK_IMPORTED_MODULE_3__["default"]
+});
+
+/***/ }),
+
+/***/ "./src/search/save.js":
+/*!****************************!*\
+  !*** ./src/search/save.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Save)
+/* harmony export */ });
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+/**
+ * React hook that is used to mark the block wrapper element.
+ * It provides all the necessary props like the class name.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
+ */
+
+/**
+ * The save function defines the way in which the different attributes should
+ * be combined into the final markup, which is then serialized by the block
+ * editor into `post_content`.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#save
+ *
+ * @return {Element} Element to render.
+ */
+
+function Save() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InnerBlocks.Content, {});
+}
+
+/***/ }),
+
+/***/ "./src/search/style.scss":
+/*!*******************************!*\
+  !*** ./src/search/style.scss ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "@wordpress/block-editor":
+/*!*************************************!*\
+  !*** external ["wp","blockEditor"] ***!
+  \*************************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["blockEditor"];
+
+/***/ }),
+
+/***/ "@wordpress/blocks":
+/*!********************************!*\
+  !*** external ["wp","blocks"] ***!
+  \********************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["blocks"];
+
+/***/ }),
+
+/***/ "@wordpress/components":
+/*!************************************!*\
+  !*** external ["wp","components"] ***!
+  \************************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["components"];
+
+/***/ }),
+
+/***/ "@wordpress/i18n":
+/*!******************************!*\
+  !*** external ["wp","i18n"] ***!
+  \******************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["i18n"];
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "React" ***!
+  \************************/
+/***/ ((module) => {
+
+module.exports = window["React"];
+
+/***/ }),
+
+/***/ "react/jsx-runtime":
+/*!**********************************!*\
+  !*** external "ReactJSXRuntime" ***!
+  \**********************************/
+/***/ ((module) => {
+
+module.exports = window["ReactJSXRuntime"];
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/chunk loaded */
+/******/ 	(() => {
+/******/ 		var deferred = [];
+/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 			if(chunkIds) {
+/******/ 				priority = priority || 0;
+/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
+/******/ 				deferred[i] = [chunkIds, fn, priority];
+/******/ 				return;
+/******/ 			}
+/******/ 			var notFulfilled = Infinity;
+/******/ 			for (var i = 0; i < deferred.length; i++) {
+/******/ 				var [chunkIds, fn, priority] = deferred[i];
+/******/ 				var fulfilled = true;
+/******/ 				for (var j = 0; j < chunkIds.length; j++) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 						chunkIds.splice(j--, 1);
+/******/ 					} else {
+/******/ 						fulfilled = false;
+/******/ 						if(priority < notFulfilled) notFulfilled = priority;
+/******/ 					}
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferred.splice(i--, 1)
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
+/******/ 				}
+/******/ 			}
+/******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"search/index": 0,
+/******/ 			"search/style-index": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 			return __webpack_require__.O(result);
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkblock_booster"] = globalThis["webpackChunkblock_booster"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["search/style-index"], () => (__webpack_require__("./src/search/index.js")))
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
+/******/ 	
+/******/ })()
+;
+//# sourceMappingURL=index.js.map

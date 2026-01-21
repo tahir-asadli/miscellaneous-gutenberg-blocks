@@ -34,6 +34,10 @@ return array(
 			'shadow' => true
 		),
 		'attributes' => array(
+			'disableCSS' => array(
+				'type' => 'boolean',
+				'default' => false
+			),
 			'imageId' => array(
 				'type' => 'number',
 				'default' => 0

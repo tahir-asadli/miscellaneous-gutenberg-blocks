@@ -29,6 +29,10 @@
 		"shadow": true
 	},
 	"attributes": {
+		"disableCSS": {
+			"type": "boolean",
+			"default": false
+		},
 		"imageId": {
 			"type": "number",
 			"default": 0

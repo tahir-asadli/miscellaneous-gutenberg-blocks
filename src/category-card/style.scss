@@ -1,4 +1,6 @@
-.wp-block-block-booster-category-card {
+.wp-block-block-booster-category-card:not(
+		.wp-block-block-booster-category-card--no-css
+	) {
 	box-sizing: border-box;
 	width: 100%;
 	display: flex;
