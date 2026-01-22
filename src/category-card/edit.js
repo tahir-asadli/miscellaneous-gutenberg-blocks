@@ -2,13 +2,13 @@
  * WordPress Dependencies
  */
 import {
+	useBlockProps,
 	InspectorControls,
 	MediaUpload,
 	MediaUploadCheck,
 } from "@wordpress/block-editor";
 import {
 	PanelBody,
-	PanelRow,
 	TextControl,
 	RangeControl,
 	ToggleControl,
@@ -20,7 +20,6 @@ import {
 } from "@wordpress/components";
 import { useSelect } from "@wordpress/data";
 import { __ } from "@wordpress/i18n";
-import { useBlockProps } from "@wordpress/block-editor";
 
 /*
  * Internal  Dependencies
@@ -40,7 +39,7 @@ export default function Edit({
 	if (attributes.vertical) {
 		classNames.push("wp-block-block-booster-category-card--vertical");
 	}
-	if (attributes.disableCSS) {
+	if (attributes.disableCSS === "true") {
 		classNames.push("wp-block-block-booster-category-card--no-css");
 	}
 
@@ -63,20 +62,34 @@ export default function Edit({
 	}, []);
 	useEffect(() => {
 		if (!hasResolved) return;
+		if (attributes.categoryId) {
+			const selectedCategory = allCategories?.filter(
+				(cat) => cat.id === attributes.categoryId,
+			);
+			if (selectedCategory && selectedCategory.length) {
+				setAttributes({
+					categoryId: selectedCategory[0].id,
+					categoryName: selectedCategory[0].name,
+					categoryCount: selectedCategory[0].count,
+					categoryUrl: selectedCategory[0].link,
+				});
+			}
+		}
 		setOptions(
-			allCategories.map((category) => {
-				return {
-					label: category.name,
-					value: category.id,
-				};
-			}),
+			allCategories
+				? allCategories.map((category) => ({
+						label: category.name,
+						value: category.id,
+				  }))
+				: [],
 		);
 	}, [allCategories, hasResolved]);
 
 	const onCategorySelect = (categoryId) => {
-		const category = allCategories.filter(
-			(category) => category.id == categoryId,
+		const category = allCategories?.filter(
+			(category) => category.id === Number(categoryId),
 		);
+
 		if (category && category.length) {
 			setAttributes({
 				categoryId: category[0].id,
@@ -90,17 +103,14 @@ export default function Edit({
 	const onImageSelect = (media) => {
 		if (!media || !media.url) {
 			setAttributes({ imageId: 0, imageUrl: "", imageName: "" });
-			return;
+		} else {
+			setAttributes({
+				imageId: media.id,
+				imageUrl:
+					media.sizes?.full?.url ?? media.sizes?.thumbnail?.url ?? media.url,
+				imageName: media.title || media.filename || "",
+			});
 		}
-
-		setAttributes({
-			imageId: media.id,
-			imageUrl: media.sizes.full.url,
-			imageUrl: media.sizes?.full
-				? media.sizes.full.url
-				: media.sizes.thumbnail.url,
-			imageName: media.title || media.filename,
-		});
 	};
 	const removeImage = () => {
 		setAttributes({ imageId: 0, imageUrl: "", imageName: "" });
@@ -118,12 +128,12 @@ export default function Edit({
 					>
 						<ToggleGroupControlOption
 							isAdaptiveWidth={true}
-							value={true}
+							value={"true"}
 							label={__("Yes", "block-booster")}
 						/>
 						<ToggleGroupControlOption
 							isAdaptiveWidth={true}
-							value={false}
+							value={"false"}
 							label={__("No", "block-booster")}
 						/>
 					</ToggleGroupControl>
@@ -139,7 +149,7 @@ export default function Edit({
 					<TextControl
 						__nextHasNoMarginBottom
 						__next40pxDefaultSize
-						label={__("Plural post name", "block-booster")}
+						label={__("Singular post label", "block-booster")}
 						value={attributes.postNameSingular}
 						onChange={(value) => {
 							setAttributes({ postNameSingular: value });
@@ -194,7 +204,7 @@ export default function Edit({
 							onSelect={onImageSelect}
 							render={({ open }) => (
 								<div
-									class={`block-booster-media-and-text--left ${
+									className={`block-booster-media-and-text--left ${
 										attributes.imageUrl ? "has-image" : "has-no-image"
 									}`}
 								>
@@ -205,7 +215,7 @@ export default function Edit({
 												alt={attributes.imageName}
 												style={{ width: "100%" }}
 											/>
-											<div class="block-booster-media-and-text-button-container">
+											<div className="block-booster-media-and-text-button-container">
 												<Button
 													isDestructive
 													variant="secondary"
@@ -224,7 +234,6 @@ export default function Edit({
 							)}
 						/>
 					</MediaUploadCheck>
-					<PanelRow></PanelRow>
 				</PanelBody>
 			</InspectorControls>
 			<div {...blockProps}>
@@ -249,9 +258,13 @@ export default function Edit({
 							topLeft: false,
 						}}
 						onResizeStop={(event, direction, elt, delta) => {
-							setAttributes({
-								imageWidth: attributes.imageWidth + delta.width,
-							});
+							const currentWidth = Number(attributes.imageWidth || 0);
+							const imageWidth = currentWidth + delta.width;
+							if (imageWidth > 0) {
+								setAttributes({
+									imageWidth,
+								});
+							}
 							toggleSelection(true);
 						}}
 						onResizeStart={() => {
@@ -269,7 +282,9 @@ export default function Edit({
 								attributes.imageUrl,
 							)}`}
 						>
-							{attributes.imageId ? <img src={attributes.imageUrl} /> : null}
+							{attributes.imageId ? (
+								<img alt={attributes.imageName} src={attributes.imageUrl} />
+							) : null}
 						</span>
 					</ResizableBox>
 				</div>
@@ -279,7 +294,7 @@ export default function Edit({
 					</span>
 					<span className="wp-block-block-booster-category-card--count">
 						{attributes.categoryCount}{" "}
-						{attributes.categoryCount > 1
+						{attributes.categoryCount !== 1
 							? attributes.postNamePlural
 							: attributes.postNameSingular}
 					</span>

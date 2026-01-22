@@ -8,7 +8,7 @@
   \**************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"block-booster/category-card","version":"0.1.0","title":"Category card","category":"block-booster","description":"Category card.","example":{},"supports":{"html":false,"color":{"background":true,"text":true},"typography":{"fontSize":true,"lineHeight":true,"textAlign":true},"background":{"backgroundSize":true},"spacing":{"margin":true,"padding":true,"blockGap":true},"shadow":true},"attributes":{"disableCSS":{"type":"boolean","default":false},"imageId":{"type":"number","default":0},"imageUrl":{"type":"string","default":""},"imageName":{"type":"string","default":""},"imageWidth":{"type":"number","default":64},"categoryId":{"type":"number","default":0},"categoryCount":{"type":"number","default":0},"categoryUrl":{"type":"string","default":""},"categoryName":{"type":"string","default":""},"postNameSingular":{"type":"string","default":""},"postNamePlural":{"type":"string","default":""},"isLink":{"type":"boolean","default":true},"vertical":{"type":"boolean","default":false},"gap":{"type":"number","default":20}},"textdomain":"block-booster","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"block-booster/category-card","version":"0.1.0","title":"Category card","category":"block-booster","description":"Category card.","example":{},"supports":{"html":false,"color":{"background":true,"text":true},"typography":{"fontSize":true,"lineHeight":true,"textAlign":true},"background":{"backgroundSize":true},"spacing":{"margin":true,"padding":true,"blockGap":true},"shadow":true},"attributes":{"disableCSS":{"type":"string","default":"false"},"imageId":{"type":"number","default":0},"imageUrl":{"type":"string","default":""},"imageName":{"type":"string","default":""},"imageWidth":{"type":"number","default":64},"categoryId":{"type":"number","default":0},"categoryCount":{"type":"number","default":0},"categoryUrl":{"type":"string","default":""},"categoryName":{"type":"string","default":""},"postNameSingular":{"type":"string","default":""},"postNamePlural":{"type":"string","default":""},"isLink":{"type":"boolean","default":true},"vertical":{"type":"boolean","default":false},"gap":{"type":"number","default":20}},"textdomain":"block-booster","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ }),
 
@@ -44,7 +44,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 /*
  * Internal  Dependencies
  */
@@ -63,7 +62,7 @@ function Edit({
   if (attributes.vertical) {
     classNames.push("wp-block-block-booster-category-card--vertical");
   }
-  if (attributes.disableCSS) {
+  if (attributes.disableCSS === "true") {
     classNames.push("wp-block-block-booster-category-card--no-css");
   }
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)({
@@ -86,15 +85,24 @@ function Edit({
   }, []);
   (0,react__WEBPACK_IMPORTED_MODULE_5__.useEffect)(() => {
     if (!hasResolved) return;
-    setOptions(allCategories.map(category => {
-      return {
-        label: category.name,
-        value: category.id
-      };
-    }));
+    if (attributes.categoryId) {
+      const selectedCategory = allCategories?.filter(cat => cat.id === attributes.categoryId);
+      if (selectedCategory && selectedCategory.length) {
+        setAttributes({
+          categoryId: selectedCategory[0].id,
+          categoryName: selectedCategory[0].name,
+          categoryCount: selectedCategory[0].count,
+          categoryUrl: selectedCategory[0].link
+        });
+      }
+    }
+    setOptions(allCategories ? allCategories.map(category => ({
+      label: category.name,
+      value: category.id
+    })) : []);
   }, [allCategories, hasResolved]);
   const onCategorySelect = categoryId => {
-    const category = allCategories.filter(category => category.id == categoryId);
+    const category = allCategories?.filter(category => category.id === Number(categoryId));
     if (category && category.length) {
       setAttributes({
         categoryId: category[0].id,
@@ -111,14 +119,14 @@ function Edit({
         imageUrl: "",
         imageName: ""
       });
-      return;
+    } else {
+      var _ref, _media$sizes$full$url;
+      setAttributes({
+        imageId: media.id,
+        imageUrl: (_ref = (_media$sizes$full$url = media.sizes?.full?.url) !== null && _media$sizes$full$url !== void 0 ? _media$sizes$full$url : media.sizes?.thumbnail?.url) !== null && _ref !== void 0 ? _ref : media.url,
+        imageName: media.title || media.filename || ""
+      });
     }
-    setAttributes({
-      imageId: media.id,
-      imageUrl: media.sizes.full.url,
-      imageUrl: media.sizes?.full ? media.sizes.full.url : media.sizes.thumbnail.url,
-      imageName: media.title || media.filename
-    });
   };
   const removeImage = () => {
     setAttributes({
@@ -141,11 +149,11 @@ function Edit({
           }),
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
-            value: true,
+            value: "true",
             label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Yes", "block-booster")
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
-            value: false,
+            value: "false",
             label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("No", "block-booster")
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
@@ -159,7 +167,7 @@ function Edit({
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.TextControl, {
           __nextHasNoMarginBottom: true,
           __next40pxDefaultSize: true,
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Plural post name", "block-booster"),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Singular post label", "block-booster"),
           value: attributes.postNameSingular,
           onChange: value => {
             setAttributes({
@@ -219,7 +227,7 @@ function Edit({
             render: ({
               open
             }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-              class: `block-booster-media-and-text--left ${attributes.imageUrl ? "has-image" : "has-no-image"}`,
+              className: `block-booster-media-and-text--left ${attributes.imageUrl ? "has-image" : "has-no-image"}`,
               children: attributes.imageUrl ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
                   src: attributes.imageUrl,
@@ -228,7 +236,7 @@ function Edit({
                     width: "100%"
                   }
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-                  class: "block-booster-media-and-text-button-container",
+                  className: "block-booster-media-and-text-button-container",
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Button, {
                     isDestructive: true,
                     variant: "secondary",
@@ -243,7 +251,7 @@ function Edit({
               })
             })
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelRow, {})]
+        })]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
       ...blockProps,
@@ -267,9 +275,13 @@ function Edit({
             topLeft: false
           },
           onResizeStop: (event, direction, elt, delta) => {
-            setAttributes({
-              imageWidth: attributes.imageWidth + delta.width
-            });
+            const currentWidth = Number(attributes.imageWidth || 0);
+            const imageWidth = currentWidth + delta.width;
+            if (imageWidth > 0) {
+              setAttributes({
+                imageWidth
+              });
+            }
             toggleSelection(true);
           },
           onResizeStart: () => {
@@ -284,6 +296,7 @@ function Edit({
             },
             className: `wp-block-block-booster-category-card--image-wrapper wp-block-block-booster-category-card--type-${(0,_libs_global__WEBPACK_IMPORTED_MODULE_6__.getFileExtension)(attributes.imageUrl)}`,
             children: attributes.imageId ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+              alt: attributes.imageName,
               src: attributes.imageUrl
             }) : null
           })
@@ -295,7 +308,7 @@ function Edit({
           children: attributes.categoryName
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("span", {
           className: "wp-block-block-booster-category-card--count",
-          children: [attributes.categoryCount, " ", attributes.categoryCount > 1 ? attributes.postNamePlural : attributes.postNameSingular]
+          children: [attributes.categoryCount, " ", attributes.categoryCount !== 1 ? attributes.postNamePlural : attributes.postNameSingular]
         })]
       })]
     })]

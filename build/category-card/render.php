@@ -10,8 +10,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 $block_booster_vertical           = ! empty( $attributes['vertical'] ) && true === $attributes['vertical'] ? true : false;
 $block_booster_is_link            = ! empty( $attributes['isLink'] ) && true === $attributes['isLink'] ? true : false;
-$block_booster_disable_css        = ! empty( $attributes['disableCSS'] ) && true === $attributes['disableCSS'];
-$block_booster_category_id        = ! empty( $attributes['categoryId'] ) ? $attributes['categoryId'] : 0;
+$block_booster_disable_css        = ! empty( $attributes['disableCSS'] ) && 'true' === $attributes['disableCSS'];
+$block_booster_category_id        = ! empty( $attributes['categoryId'] ) ? intval( $attributes['categoryId'] ) : 0;
 $block_booster_post_name_plural   = ! empty( $attributes['postNamePlural'] ) ? $attributes['postNamePlural'] : '';
 $block_booster_post_name_singular = ! empty( $attributes['postNameSingular'] ) ? $attributes['postNameSingular'] : '';
 $block_booster_image_name         = ! empty( $attributes['imageName'] ) ? $attributes['imageName'] : '';
@@ -20,6 +20,9 @@ $block_booster_image_url          = ! empty( $attributes['imageUrl'] ) ? $attrib
 $category = get_category( $block_booster_category_id );
 
 if ( ! $category ) {
+	return;
+}
+if ( is_wp_error( $category ) ) {
 	return;
 }
 

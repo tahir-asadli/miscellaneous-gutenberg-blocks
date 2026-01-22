@@ -30,8 +30,8 @@
   },
   "attributes": {
     "disableCSS": {
-      "type": "boolean",
-      "default": false
+      "type": "string",
+      "default": "false"
     },
     "imageId": {
       "type": "number",
