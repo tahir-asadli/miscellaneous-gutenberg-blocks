@@ -235,7 +235,7 @@ $block_booster_has_tablet_styles = ( 'custom' === $block_booster_mobile_width_ty
 	}
 
 	@media only screen and (max-width:
-		<?php echo esc_html( BLOCK_BOOSTER_MAX_TABLET_BREAKING_POINT ); ?>
+		<?php echo esc_attr( BLOCK_BOOSTER_MAX_TABLET_BREAKING_POINT ); ?>
 	) {
 		#<?php echo esc_attr( $block_booster_additional_attributes['id'] ); ?> {
 		<?php echo 'custom' === $block_booster_tablet_width_type && '' !== $block_booster_tablet_width ? esc_attr( "width: {$block_booster_tablet_width};" ) : ''; ?>
@@ -245,7 +245,7 @@ $block_booster_has_tablet_styles = ( 'custom' === $block_booster_mobile_width_ty
 	}
 
 	@media only screen and (max-width:
-		<?php echo esc_html( BLOCK_BOOSTER_MAX_MOBILE_BREAKING_POINT ); ?>
+		<?php echo esc_attr( BLOCK_BOOSTER_MAX_MOBILE_BREAKING_POINT ); ?>
 	) {
 		#<?php echo esc_attr( $block_booster_additional_attributes['id'] ); ?> {
 		<?php echo 'custom' === $block_booster_mobile_width_type && '' !== $block_booster_mobile_width ? esc_attr( "width: {$block_booster_mobile_width};" ) : ''; ?>

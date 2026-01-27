@@ -9,9 +9,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-$block_booster_show_category      = ! empty( $attributes['showCategory'] ) && 1 === $attributes['showCategory'];
-$block_booster_show_search_icon   = ! empty( $attributes['showSearchIcon'] ) && 1 === $attributes['showSearchIcon'];
-$block_booster_disable_css        = ! empty( $attributes['disableCSS'] ) && 1 === $attributes['disableCSS'];
+$block_booster_show_category      = ! empty( $attributes['showCategory'] ) && true === $attributes['showCategory'];
+$block_booster_show_search_icon   = ! empty( $attributes['showSearchIcon'] ) && true === $attributes['showSearchIcon'];
+$block_booster_disable_css        = ! empty( $attributes['disableCSS'] ) && true === $attributes['disableCSS'];
 $block_booster_search_placeholder = ! empty( $attributes['searchPlaceholder'] ) ? $attributes['searchPlaceholder'] : '';
 $block_booster_category_text      = ! empty( $attributes['categoryText'] ) ? $attributes['categoryText'] : '';
 $block_booster_button_text        = ! empty( $attributes['buttonText'] ) ? $attributes['buttonText'] : '';

@@ -77,7 +77,7 @@ $block_booster_additional_attributes['id']    = 'block-booster-' . uniqid();
 	}
 
 	@media only screen and (min-width:
-	<?php echo esc_html( BLOCK_BOOSTER_MIN_DESKTOP_BREAKING_POINT ); ?>
+	<?php echo esc_attr( BLOCK_BOOSTER_MIN_DESKTOP_BREAKING_POINT ); ?>
 	) {
 	#<?php echo esc_attr( $block_booster_additional_attributes['id'] ); ?> {
 		<?php
@@ -88,9 +88,9 @@ $block_booster_additional_attributes['id']    = 'block-booster-' . uniqid();
 	}
 
 	@media only screen and (min-width:
-	<?php echo esc_html( BLOCK_BOOSTER_MIN_TABLET_BREAKING_POINT ); ?>
+	<?php echo esc_attr( BLOCK_BOOSTER_MIN_TABLET_BREAKING_POINT ); ?>
 	) and (max-width:
-	<?php echo esc_html( BLOCK_BOOSTER_MAX_TABLET_BREAKING_POINT ); ?>
+	<?php echo esc_attr( BLOCK_BOOSTER_MAX_TABLET_BREAKING_POINT ); ?>
 	) {
 	#<?php echo esc_attr( $block_booster_additional_attributes['id'] ); ?> {
 		<?php
@@ -101,7 +101,7 @@ $block_booster_additional_attributes['id']    = 'block-booster-' . uniqid();
 	}
 
 	@media only screen and (max-width:
-	<?php echo esc_html( BLOCK_BOOSTER_MAX_MOBILE_BREAKING_POINT ); ?>
+	<?php echo esc_attr( BLOCK_BOOSTER_MAX_MOBILE_BREAKING_POINT ); ?>
 	) {
 	#<?php echo esc_attr( $block_booster_additional_attributes['id'] ); ?> {
 		<?php
