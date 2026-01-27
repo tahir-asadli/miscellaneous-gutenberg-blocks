@@ -42,7 +42,6 @@ if ( $block_booster_disable_css ) {
 }
 $block_booster_additional_attributes['class'] = join( ' ', $block_booster_classes );
 $block_booster_additional_attributes['id']    = 'block-booster-' . uniqid();
-$block_booster_categories                     = get_categories();
 $block_booster_image_extension                = '';
 if ( $block_booster_image_url ) {
 	$block_booster_image_extension = pathinfo( $block_booster_image_url, PATHINFO_EXTENSION );
