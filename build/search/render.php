@@ -54,10 +54,10 @@ $block_booster_categories                     = get_categories();
 <style>
 	#<?php echo esc_attr( $block_booster_additional_attributes['id'] ); ?> {
 	<?php if ( $block_booster_height > 0 ) { ?>
-		<?php echo esc_html( "height: {$block_booster_height}px;" ); ?>
+		<?php echo esc_attr( "height: {$block_booster_height}px;" ); ?>
 	<?php } ?>
 	<?php if ( $block_booster_width > 0 ) { ?>
-		<?php echo esc_html( "width: {$block_booster_width}px;" ); ?>
+		<?php echo esc_attr( "width: {$block_booster_width}px;" ); ?>
 	<?php } ?>
 	}
 </style>

@@ -53,6 +53,7 @@
   background-color: #eee;
   width: 50%;
   cursor: pointer;
+  flex-shrink: 0;
 }
 .wp-block-block-booster-search.has-style input[type=search].search-input {
   padding: 8px 25px 8px 0;

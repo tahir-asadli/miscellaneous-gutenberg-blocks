@@ -70,7 +70,7 @@ $block_booster_wrapper_attrs = get_block_wrapper_attributes( $block_booster_addi
 	</div>
 </div>
 <style>
-	<?php echo esc_html( BLOCK_BOOSTER_MIN_DESKTOP_BREAKING_POINT ); ?>
+	<?php echo esc_attr( BLOCK_BOOSTER_MIN_DESKTOP_BREAKING_POINT ); ?>
 	;
 
 	?>#<?php echo esc_attr( $block_booster_additional_attributes['id'] ); ?> {
@@ -78,14 +78,14 @@ $block_booster_wrapper_attrs = get_block_wrapper_attributes( $block_booster_addi
 	$block_booster_gap_desktop = (int) $block_booster_gap;
 	echo esc_attr( "gap: {$block_booster_gap_desktop}px;" );
 	?>
-	<?php echo esc_html( "gap: {$block_booster_gap}px;" ); ?>
+	<?php echo esc_attr( "gap: {$block_booster_gap}px;" ); ?>
 	}
 	}
 
-	<?php echo esc_html( BLOCK_BOOSTER_MIN_TABLET_BREAKING_POINT ); ?>
+	<?php echo esc_attr( BLOCK_BOOSTER_MIN_TABLET_BREAKING_POINT ); ?>
 	;
 	?>
-	<?php echo esc_html( BLOCK_BOOSTER_MAX_TABLET_BREAKING_POINT ); ?>
+	<?php echo esc_attr( BLOCK_BOOSTER_MAX_TABLET_BREAKING_POINT ); ?>
 	;
 
 	?>#<?php echo esc_attr( $block_booster_additional_attributes['id'] ); ?> {
@@ -93,11 +93,11 @@ $block_booster_wrapper_attrs = get_block_wrapper_attributes( $block_booster_addi
 	$block_booster_gap_tablet = (int) $block_booster_tablet_gap;
 	echo esc_attr( "gap: {$block_booster_gap_tablet}px;" );
 	?>
-	<?php echo esc_html( "gap: {$block_booster_tablet_gap}px;" ); ?>
+	<?php echo esc_attr( "gap: {$block_booster_tablet_gap}px;" ); ?>
 	}
 	}
 
-	<?php echo esc_html( BLOCK_BOOSTER_MAX_MOBILE_BREAKING_POINT ); ?>
+	<?php echo esc_attr( BLOCK_BOOSTER_MAX_MOBILE_BREAKING_POINT ); ?>
 	;
 
 	?>#<?php echo esc_attr( $block_booster_additional_attributes['id'] ); ?> {
@@ -105,7 +105,7 @@ $block_booster_wrapper_attrs = get_block_wrapper_attributes( $block_booster_addi
 	$block_booster_gap_mobile = (int) $block_booster_mobile_gap;
 	echo esc_attr( "gap: {$block_booster_gap_mobile}px;" );
 	?>
-	<?php echo esc_html( "gap: {$block_booster_mobile_gap}px;" ); ?>
+	<?php echo esc_attr( "gap: {$block_booster_mobile_gap}px;" ); ?>
 	}
 	}
 </style>

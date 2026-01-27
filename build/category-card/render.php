@@ -78,7 +78,7 @@ if ( 'a' === $block_booster_tag_name ) {
 	<?php } ?>
 	<span class="wp-block-block-booster-category-card--count"><?php echo esc_html( $block_booster_category_count ); ?>&nbsp;<?php echo $block_booster_category_count > 1 ? esc_html( $block_booster_post_name_plural ) : esc_html( $block_booster_post_name_singular ); ?></span>
 </div>
-</<?php echo esc_html( $block_booster_tag_name ); ?>> <style>
+</<?php echo esc_attr( $block_booster_tag_name ); ?>> <style>
 	#<?php echo esc_attr( $block_booster_additional_attributes['id'] ); ?> {
 
 	<?php
