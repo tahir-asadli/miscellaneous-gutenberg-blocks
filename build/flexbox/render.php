@@ -185,7 +185,7 @@ if ( $block_booster_tablet_align_items ) {
 	$block_booster_classes[] = 'block-booster-flexbox--align-tablet-' . $block_booster_tablet_align_items;
 }
 if ( $block_booster_mobile_align_items ) {
-	$block_booster_classes[] = 'block-booster-flexbox--align-mobile-' . $block_booster_mobilea_align_items;
+	$block_booster_classes[] = 'block-booster-flexbox--align-mobile-' . $block_booster_mobile_align_items;
 }
 
 $block_booster_column_gap_unit        = ! empty( $attributes['columnGapUnit'] ) ? $attributes['columnGapUnit'] : 'px';
@@ -218,7 +218,7 @@ $block_booster_has_tablet_styles = ( 'custom' === $block_booster_mobile_width_ty
 
 	if ( ! empty( $block->inner_blocks ) ) {
 		foreach ( $block->inner_blocks as $block_booster_inner_block ) {
-			echo wp_kses_post( render_block( $block_booster_inner_block ) );
+			echo wp_kses_post( $block_booster_inner_block->render() );
 		}
 	}
 
