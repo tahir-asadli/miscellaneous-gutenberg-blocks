@@ -17,12 +17,12 @@ $block_booster_post_name_singular = ! empty( $attributes['postNameSingular'] ) ?
 $block_booster_image_name         = ! empty( $attributes['imageName'] ) ? $attributes['imageName'] : '';
 $block_booster_image_url          = ! empty( $attributes['imageUrl'] ) ? $attributes['imageUrl'] : '';
 
-$category = get_category( $block_booster_category_id );
+$block_booster_category = get_category( $block_booster_category_id );
 
-if ( ! $category ) {
+if ( ! $block_booster_category ) {
 	return;
 }
-if ( is_wp_error( $category ) ) {
+if ( is_wp_error( $block_booster_category ) ) {
 	return;
 }
 

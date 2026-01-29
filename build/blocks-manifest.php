@@ -450,7 +450,7 @@ return array(
 			),
 			'imageWidth' => array(
 				'type' => 'number',
-				'default' => '32'
+				'default' => 32
 			),
 			'imageContent' => array(
 				'type' => 'string',

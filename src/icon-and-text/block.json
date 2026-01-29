@@ -43,7 +43,7 @@
 		},
 		"imageWidth": {
 			"type": "number",
-			"default": "32"
+			"default": 32
 		},
 		"imageContent": {
 			"type": "string",

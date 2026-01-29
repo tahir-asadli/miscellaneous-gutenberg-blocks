@@ -61,7 +61,7 @@ export default function Edit({
 }) {
 	const [layout, setLayout] = useState("desktop");
 	useEffect(() => {
-		if (imageUrl && imageUrl.endsWith(".svg")) {
+		if (imageUrl && /\.svg($|\?)/i.test(imageUrl)) {
 			fetch(imageUrl)
 				.then((response) => response.text())
 				.then((svgText) => {
@@ -70,18 +70,17 @@ export default function Edit({
 				.catch((error) => {
 					console.error("Error fetching SVG:", error);
 				});
-		} else {
 		}
+		subscribe(() => {
+			const newDeviceType = select("core/editor").getDeviceType();
+
+			if (newDeviceType !== previousDeviceType) {
+				setLayout(newDeviceType?.toLowerCase());
+				previousDeviceType = newDeviceType;
+			}
+		});
 	}, [imageUrl]);
 	let previousDeviceType = select("core/editor").getDeviceType();
-	subscribe(() => {
-		const newDeviceType = select("core/editor").getDeviceType();
-
-		if (newDeviceType !== previousDeviceType) {
-			setLayout(newDeviceType?.toLowerCase());
-			previousDeviceType = newDeviceType;
-		}
-	});
 
 	let __experimentalSetPreviewDeviceType = (device) => {};
 	const siteEditor = useDispatch("core/edit-site");
@@ -456,27 +455,27 @@ export default function Edit({
 			</InspectorControls>
 			<div {...blockProps}>
 				{imageUrl &&
-					(imageUrl.endsWith(".svg") ? (
-						<div className="block-booster-media-and-text--left">
+					(/\.svg($|\?)/i.test(imageUrl) ? (
+						<div className="block-booster-icon-and-text--left">
 							<span
 								style={{
 									color: svgColor,
-									width: imageWidth,
+									width: `${imageWidth}px`,
 									display: "inline-block",
 								}}
 								dangerouslySetInnerHTML={{ __html: imageContent }}
 							></span>
 						</div>
 					) : (
-						<div className="block-booster-media-and-text--left">
+						<div className="block-booster-icon-and-text--left">
 							<img
-								style={{ width: imageWidth }}
+								style={{ width: `${imageWidth}px` }}
 								src={imageUrl}
 								alt={imageName}
 							/>
 						</div>
 					))}
-				<div class="block-booster-icon-and-text--right">{text}</div>
+				<div className="block-booster-icon-and-text--right">{text}</div>
 			</div>
 		</>
 	);

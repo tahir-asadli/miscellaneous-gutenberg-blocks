@@ -9,12 +9,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-$block_booster_reversed        = ! empty( $attributes['reversed'] ) && 1 === $attributes['reversed'];
-$block_booster_tablet_reversed = ! empty( $attributes['tabletReversed'] ) && 1 === $attributes['tabletReversed'];
-$block_booster_mobile_reversed = ! empty( $attributes['mobileReversed'] ) && 1 === $attributes['mobileReversed'];
-$block_booster_stacked         = ! empty( $attributes['stacked'] ) && 1 === $attributes['stacked'];
-$block_booster_tablet_stacked  = ! empty( $attributes['tabletStacked'] ) && 1 === $attributes['tabletStacked'];
-$block_booster_mobile_stacked  = ! empty( $attributes['mobileStacked'] ) && 1 === $attributes['mobileStacked'];
+$block_booster_reversed        = ! empty( $attributes['reversed'] ) && true === $attributes['reversed'];
+$block_booster_tablet_reversed = ! empty( $attributes['tabletReversed'] ) && true === $attributes['tabletReversed'];
+$block_booster_mobile_reversed = ! empty( $attributes['mobileReversed'] ) && true === $attributes['mobileReversed'];
+$block_booster_stacked         = ! empty( $attributes['stacked'] ) && true === $attributes['stacked'];
+$block_booster_tablet_stacked  = ! empty( $attributes['tabletStacked'] ) && true === $attributes['tabletStacked'];
+$block_booster_mobile_stacked  = ! empty( $attributes['mobileStacked'] ) && true === $attributes['mobileStacked'];
 $block_booster_gap             = ! empty( $attributes['gap'] ) ? $attributes['gap'] : 0;
 $block_booster_tablet_gap      = ! empty( $attributes['tabletGap'] ) ? $attributes['tabletGap'] : 0;
 $block_booster_mobile_gap      = ! empty( $attributes['mobileGap'] ) ? $attributes['mobileGap'] : 0;
@@ -51,7 +51,7 @@ $block_booster_additional_attributes['id']    = 'block-booster-' . uniqid();
 <div <?php echo get_block_wrapper_attributes( $block_booster_additional_attributes ); ?>>
 	<div class="block-booster-icon-and-text--left">
 	<?php if ( ! empty( $attributes['imageUrl'] ) ) { ?>
-		<?php if ( substr( $attributes['imageUrl'], -4 ) === '.svg' ) { ?>
+		<?php if ( strtolower( pathinfo( $attributes['imageUrl'], PATHINFO_EXTENSION ) ) === 'svg' ) { ?>
 			<?php echo wp_kses_post( $block_booster_image_content ); ?>
 		<?php } else { ?>
 		<img style="width: <?php echo esc_attr( $block_booster_image_width ); ?>px" src="<?php echo esc_url( $attributes['imageUrl'] ); ?>" alt="<?php echo esc_attr( $attributes['imageName'] ); ?>">
@@ -59,7 +59,7 @@ $block_booster_additional_attributes['id']    = 'block-booster-' . uniqid();
 	<?php } ?>
 	</div>
 	<div class="block-booster-icon-and-text--right">
-	<?php echo esc_html( $block_booster_text ); ?>
+	<?php echo wp_kses_post( $block_booster_text ); ?>
 	</div>
 </div>
 <style>
