@@ -106,3 +106,7 @@ export const getFileExtension = (filename) => {
 		return null;
 	}
 };
+
+export const isSVGFile = (filename) => {
+	return /\.svg($|\?)/i.test(filename);
+};

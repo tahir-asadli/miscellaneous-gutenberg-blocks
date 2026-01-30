@@ -352,10 +352,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./editor.scss */ "./src/icon-and-text/editor.scss");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/arrow-right-left.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/arrow-right-left.js");
 /* harmony import */ var _libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../libs/components/inspector-label */ "./src/libs/components/inspector-label.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _libs_global__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../libs/global */ "./src/libs/global.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__);
 /**
  * WordPress dependencies
  */
@@ -374,6 +375,7 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * Internal dependencies
  */
+
 
 
 /**
@@ -404,7 +406,7 @@ function Edit({
 }) {
   const [layout, setLayout] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("desktop");
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    if (imageUrl && /\.svg($|\?)/i.test(imageUrl)) {
+    if (imageUrl && (0,_libs_global__WEBPACK_IMPORTED_MODULE_7__.isSVGFile)(imageUrl)) {
       fetch(imageUrl).then(response => response.text()).then(svgText => {
         setAttributes({
           imageContent: svgText
@@ -490,14 +492,14 @@ function Edit({
       imageName: ""
     });
   };
-  const ArrowRightLeftIcon = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  const ArrowRightLeftIcon = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
     fill: "white",
     className: "svg-no-fill"
   });
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.BlockControls, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToolbarGroup, {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToolbarButton, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.BlockControls, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToolbarGroup, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToolbarButton, {
           label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Reverse", "block-booster"),
           icon: ArrowRightLeftIcon,
           isPressed: reversed,
@@ -508,19 +510,19 @@ function Edit({
           }
         })
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
         title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Settings", "block-booster"),
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
           style: {
             marginTop: "10px",
             marginBottom: "10px"
           },
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
             title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Image width", "block-booster"),
             hideLayoutButton: true
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
           __nextHasNoMarginBottom: true,
           __next40pxDefaultSize: true,
           value: imageWidth,
@@ -530,7 +532,7 @@ function Edit({
           }),
           min: 0,
           max: 500
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
           __nextHasNoMarginBottom: true,
           __next40pxDefaultSize: true,
           label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Add text", "block-booster"),
@@ -538,14 +540,14 @@ function Edit({
           onChange: value => setAttributes({
             text: value
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
           title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Gap", "block-booster"),
           defaultValue: layout,
           onChange: value => {
             setLayout(value);
             setEditorDeviceType(value == "desktop" ? "Desktop" : value == "tablet" ? "Tablet" : "Mobile");
           }
-        }), layout == "desktop" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
+        }), layout == "desktop" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
           __nextHasNoMarginBottom: true,
           __next40pxDefaultSize: true,
           value: gap,
@@ -555,7 +557,7 @@ function Edit({
           }),
           min: 0,
           max: 100
-        }) : layout == "tablet" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
+        }) : layout == "tablet" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
           __nextHasNoMarginBottom: true,
           __next40pxDefaultSize: true,
           value: tabletGap,
@@ -565,7 +567,7 @@ function Edit({
           }),
           min: 0,
           max: 100
-        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
+        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
           __nextHasNoMarginBottom: true,
           __next40pxDefaultSize: true,
           value: mobileGap,
@@ -575,14 +577,14 @@ function Edit({
           }),
           min: 0,
           max: 100
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
           title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Reverse", "block-booster"),
           defaultValue: layout,
           onChange: value => {
             setLayout(value);
             setEditorDeviceType(value == "desktop" ? "Desktop" : value == "tablet" ? "Tablet" : "Mobile");
           }
-        }), layout == "desktop" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControl, {
+        }), layout == "desktop" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControl, {
           value: reversed,
           isBlock: true,
           __nextHasNoMarginBottom: true,
@@ -590,16 +592,16 @@ function Edit({
           onChange: value => setAttributes({
             reversed: value
           }),
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: true,
             label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Enabled", "block-booster")
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: false,
             label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Disabled", "block-booster")
           })]
-        }) : layout == "tablet" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControl, {
+        }) : layout == "tablet" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControl, {
           value: tabletReversed,
           isBlock: true,
           __nextHasNoMarginBottom: true,
@@ -607,16 +609,16 @@ function Edit({
           onChange: value => setAttributes({
             tabletReversed: value
           }),
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: true,
             label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Enabled", "block-booster")
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: false,
             label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Disabled", "block-booster")
           })]
-        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControl, {
+        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControl, {
           value: mobileReversed,
           isBlock: true,
           __nextHasNoMarginBottom: true,
@@ -624,23 +626,23 @@ function Edit({
           onChange: value => setAttributes({
             mobileReversed: value
           }),
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: true,
             label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Enabled", "block-booster")
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: false,
             label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Disabled", "block-booster")
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
           title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Stacked", "block-booster"),
           defaultValue: layout,
           onChange: value => {
             setLayout(value);
             setEditorDeviceType(value == "desktop" ? "Desktop" : value == "tablet" ? "Tablet" : "Mobile");
           }
-        }), layout == "desktop" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControl, {
+        }), layout == "desktop" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControl, {
           value: stacked,
           isBlock: true,
           __nextHasNoMarginBottom: true,
@@ -648,16 +650,16 @@ function Edit({
           onChange: value => setAttributes({
             stacked: value
           }),
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: true,
             label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Enabled", "block-booster")
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: false,
             label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Disabled", "block-booster")
           })]
-        }) : layout == "tablet" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControl, {
+        }) : layout == "tablet" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControl, {
           value: tabletStacked,
           isBlock: true,
           __nextHasNoMarginBottom: true,
@@ -665,16 +667,16 @@ function Edit({
           onChange: value => setAttributes({
             tabletStacked: value
           }),
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: true,
             label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Enabled", "block-booster")
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: false,
             label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Disabled", "block-booster")
           })]
-        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControl, {
+        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControl, {
           value: mobileStacked,
           isBlock: true,
           __nextHasNoMarginBottom: true,
@@ -682,24 +684,24 @@ function Edit({
           onChange: value => setAttributes({
             mobileStacked: value
           }),
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: true,
             label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Enabled", "block-booster")
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.__experimentalToggleGroupControlOption, {
             isAdaptiveWidth: true,
             value: false,
             label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Disabled", "block-booster")
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.MediaUploadCheck, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.MediaUpload, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.MediaUploadCheck, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.MediaUpload, {
             allowedTypes: ["image"],
             multiple: false,
             value: imageId,
             onSelect: onImageSelect,
             render: ({
               open
-            }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+            }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
               style: {
                 display: "flex",
                 flexDirection: "column",
@@ -707,20 +709,20 @@ function Edit({
                 alignItems: "center",
                 width: "100%"
               },
-              children: imageUrl ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+              children: imageUrl ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
                   src: imageUrl,
                   alt: imageName,
                   style: {
                     width: "150px"
                   }
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Button, {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Button, {
                   isDestructive: true,
                   variant: "secondary",
                   onClick: removeImage,
                   children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Remove Image", "block-booster")
                 })]
-              }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+              }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
                 style: {
                   display: "flex",
                   flexDirection: "column",
@@ -728,7 +730,7 @@ function Edit({
                   alignItems: "center",
                   width: "100%"
                 },
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Button, {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Button, {
                   variant: "primary",
                   onClick: open,
                   children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Upload or Select Image", "block-booster")
@@ -736,16 +738,16 @@ function Edit({
               })
             })
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
           style: {
             marginTop: "10px",
             marginBottom: "10px"
           },
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_libs_components_inspector_label__WEBPACK_IMPORTED_MODULE_6__.InspectorLabel, {
             title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("SVG color", "block-booster"),
             hideLayoutButton: true
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ColorPalette, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ColorPalette, {
           asButtons: true,
           clearable: true,
           width: "100%",
@@ -755,30 +757,30 @@ function Edit({
           })
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
       ...blockProps,
-      children: [imageUrl && (/\.svg($|\?)/i.test(imageUrl) ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+      children: [imageUrl && ((0,_libs_global__WEBPACK_IMPORTED_MODULE_7__.isSVGFile)(imageUrl) ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
         className: "block-booster-icon-and-text--left",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
           style: {
             color: svgColor,
-            width: `${imageWidth}px`,
+            fontSize: `${imageWidth}px`,
             display: "inline-block"
           },
           dangerouslySetInnerHTML: {
             __html: imageContent
           }
         })
-      }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+      }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
         className: "block-booster-icon-and-text--left",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
           style: {
             width: `${imageWidth}px`
           },
           src: imageUrl,
           alt: imageName
         })
-      })), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+      })), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
         className: "block-booster-icon-and-text--right",
         children: text
       })]
@@ -1026,6 +1028,129 @@ const InspectorLabel = ({
       })
     })]
   });
+};
+
+/***/ }),
+
+/***/ "./src/libs/global.js":
+/*!****************************!*\
+  !*** ./src/libs/global.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   gapUnits: () => (/* binding */ gapUnits),
+/* harmony export */   generateTemplate: () => (/* binding */ generateTemplate),
+/* harmony export */   getFileExtension: () => (/* binding */ getFileExtension),
+/* harmony export */   isSVGFile: () => (/* binding */ isSVGFile),
+/* harmony export */   numberRange: () => (/* binding */ numberRange)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+ // For the plus icon
+
+// export const InspectorLabel = ({ title, onChange, defaultValue }) => {
+// 	const [currentVariant, setVariant] = useState(defaultValue ?? "desktop");
+// 	const currentIcon =
+// 		defaultValue == "desktop"
+// 			? desktop
+// 			: defaultValue == "tablet"
+// 			? tablet
+// 			: mobile;
+// 	const variants = ["Desktop", "Tablet", "Mobile"];
+// 	return (
+// 		<div className="flexbox-inspector-label">
+// 			<label className="components-base-control__label">{title}</label>
+// 			<div className="layout-buttons-container">
+// 				<button className="layout-button">{currentIcon}</button>
+// 				<div className="layout-buttons">
+// 					<div className="layout-button-variants">
+// 						{variants.map((variant) => {
+// 							const name = variant.toLowerCase();
+
+// 							const icon =
+// 								name == "desktop"
+// 									? desktop
+// 									: name == "tablet"
+// 									? tablet
+// 									: mobile;
+// 							return (
+// 								<button
+// 									className="layout-button"
+// 									data-selected={name == currentVariant}
+// 									title={variant}
+// 									onClick={() => {
+// 										if (onChange) {
+// 											onChange(name);
+// 											setVariant(name);
+// 										}
+// 									}}
+// 								>
+// 									{icon}
+// 								</button>
+// 							);
+// 						})}
+// 					</div>
+// 				</div>
+// 			</div>
+// 		</div>
+// 	);
+// };
+const generateTemplate = number => {
+  const innerBlocksAttributes = {
+    column: 1,
+    width: 100 / number,
+    tablet_width: 50,
+    mobile_width: 100
+  };
+  const templates = [];
+  for (let index = 0; index < number; index++) {
+    templates.push(["block-booster/box", innerBlocksAttributes]);
+  }
+  return templates;
+};
+const numberRange = (start, end) => {
+  const startNum = Number(start);
+  const endNum = Number(end);
+  return Array.from({
+    length: endNum - startNum + 1
+  }, (_, i) => startNum + i);
+};
+const gapUnits = [{
+  value: "px",
+  label: "px"
+}, {
+  value: "%",
+  label: "%"
+}, {
+  value: "em",
+  label: "em"
+}, {
+  value: "rem",
+  label: "rem"
+}, {
+  value: "vw",
+  label: "vw"
+}, {
+  value: "vh",
+  label: "vh"
+}];
+const getFileExtension = filename => {
+  // Use a regular expression to find the last dot and everything after it.
+  const regex = /(?:\.([^.]+))?$/;
+  const match = regex.exec(filename);
+
+  // If a match is found, return the extension, otherwise return null.
+  if (match && match[1]) {
+    return match[1].toLowerCase();
+  } else {
+    return null;
+  }
+};
+const isSVGFile = filename => {
+  return /\.svg($|\?)/i.test(filename);
 };
 
 /***/ }),

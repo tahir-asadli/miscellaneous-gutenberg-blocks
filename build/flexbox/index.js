@@ -2309,6 +2309,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   gapUnits: () => (/* binding */ gapUnits),
 /* harmony export */   generateTemplate: () => (/* binding */ generateTemplate),
 /* harmony export */   getFileExtension: () => (/* binding */ getFileExtension),
+/* harmony export */   isSVGFile: () => (/* binding */ isSVGFile),
 /* harmony export */   numberRange: () => (/* binding */ numberRange)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
@@ -2413,6 +2414,9 @@ const getFileExtension = filename => {
   } else {
     return null;
   }
+};
+const isSVGFile = filename => {
+  return /\.svg($|\?)/i.test(filename);
 };
 
 /***/ }),

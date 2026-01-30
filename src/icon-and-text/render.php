@@ -22,7 +22,10 @@ $block_booster_svg_color       = ! empty( $attributes['svgColor'] ) ? $attribute
 $block_booster_image_width     = ! empty( $attributes['imageWidth'] ) ? $attributes['imageWidth'] : '';
 $block_booster_image_content   = ! empty( $attributes['imageContent'] ) ? $attributes['imageContent'] : '';
 $block_booster_text            = ! empty( $attributes['text'] ) ? $attributes['text'] : '';
-$block_booster_classes         = array();
+$block_booster_image_url       = ! empty( $attributes['imageUrl'] ) ? $attributes['imageUrl'] : '';
+$block_booster_image_is_svg    = strtolower( pathinfo( $block_booster_image_url, PATHINFO_EXTENSION ) ) === 'svg';
+
+$block_booster_classes = array();
 if ( $block_booster_reversed ) {
 	$block_booster_classes[] = 'block-booster-icon-and-text--is-reversed';
 }
@@ -46,15 +49,38 @@ if ( $block_booster_mobile_stacked ) {
 
 $block_booster_additional_attributes['class'] = join( ' ', $block_booster_classes );
 $block_booster_additional_attributes['id']    = 'block-booster-' . uniqid();
+$block_booster_svg_allowed_attributes         = array(
+	'svg'  => array(
+		'class'       => true,
+		'aria-hidden' => true,
+		'role'        => true,
+		'xmlns'       => true,
+		'width'       => true,
+		'height'      => true,
+		'viewbox'     => true,
+		'fill'        => true,
+	),
+	'path' => array(
+		'd'    => true,
+		'fill' => true,
+	),
+);
+
+
 ?>
 <?php // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 <div <?php echo get_block_wrapper_attributes( $block_booster_additional_attributes ); ?>>
 	<div class="block-booster-icon-and-text--left">
 	<?php if ( ! empty( $attributes['imageUrl'] ) ) { ?>
-		<?php if ( strtolower( pathinfo( $attributes['imageUrl'], PATHINFO_EXTENSION ) ) === 'svg' ) { ?>
-			<?php echo wp_kses_post( $block_booster_image_content ); ?>
+		<?php if ( $block_booster_image_is_svg ) { ?>
+				<?php
+				echo wp_kses(
+					$block_booster_image_content,
+					$block_booster_svg_allowed_attributes
+				);
+				?>
 		<?php } else { ?>
-		<img style="width: <?php echo esc_attr( $block_booster_image_width ); ?>px" src="<?php echo esc_url( $attributes['imageUrl'] ); ?>" alt="<?php echo esc_attr( $attributes['imageName'] ); ?>">
+		<img src="<?php echo esc_url( $attributes['imageUrl'] ); ?>" alt="<?php echo esc_attr( $attributes['imageName'] ); ?>">
 		<?php } ?>
 	<?php } ?>
 	</div>
@@ -72,7 +98,7 @@ $block_booster_additional_attributes['id']    = 'block-booster-' . uniqid();
 	?>
 	<?php
 	$block_booster_icon_image_width = (int) $block_booster_image_width;
-	echo esc_attr( "width: {$block_booster_icon_image_width}px;" );
+	echo esc_attr( "font-size: {$block_booster_icon_image_width}px;" );
 	?>
 	}
 

@@ -33,6 +33,7 @@ import { ArrowRightLeft } from "lucide-react";
  * Internal dependencies
  */
 import { InspectorLabel } from "../libs/components/inspector-label";
+import { isSVGFile } from "../libs/global";
 
 /**
  * Block edit function
@@ -61,7 +62,7 @@ export default function Edit({
 }) {
 	const [layout, setLayout] = useState("desktop");
 	useEffect(() => {
-		if (imageUrl && /\.svg($|\?)/i.test(imageUrl)) {
+		if (imageUrl && isSVGFile(imageUrl)) {
 			fetch(imageUrl)
 				.then((response) => response.text())
 				.then((svgText) => {
@@ -462,12 +463,12 @@ export default function Edit({
 			</InspectorControls>
 			<div {...blockProps}>
 				{imageUrl &&
-					(/\.svg($|\?)/i.test(imageUrl) ? (
+					(isSVGFile(imageUrl) ? (
 						<div className="block-booster-icon-and-text--left">
 							<span
 								style={{
 									color: svgColor,
-									width: `${imageWidth}px`,
+									fontSize: `${imageWidth}px`,
 									display: "inline-block",
 								}}
 								dangerouslySetInnerHTML={{ __html: imageContent }}
